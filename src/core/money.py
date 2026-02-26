@@ -83,6 +83,22 @@ class Money:
     def __repr__(self) -> str:
         """Developer-friendly representation"""
         return f"Money({self.amount}, '{self.currency}')"
+
+
+    def __format__(self, format_spec: str) -> str:
+        """
+        Support f-string formatting.
+        
+        Examples:
+            >>> m = Money(1000, "KES")
+            >>> f"{m}"           # 'KES 1,000.00'
+            >>> f"{m:>20}"       # '     KES 1,000.00'
+            >>> f"{m:<20}"       # 'KES 1,000.00     '
+        """
+        formatted = str(self)
+        if format_spec:
+            return format(formatted, format_spec)
+        return formatted
     
     def __eq__(self, other) -> bool:
         """Compare money amounts with same currency"""

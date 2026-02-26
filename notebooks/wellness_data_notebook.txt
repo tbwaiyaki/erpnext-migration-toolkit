@@ -1,0 +1,473 @@
+# Notebook 03: Apply to Wellness Centre Data
+
+**Purpose:** Validate core types with real wellness centre transactions
+
+**Data source:** transactions.csv (947 records, Mar 2024 - Feb 2025)
+
+**Goals:**
+1. Load CSV data with pandas
+2. Convert amounts to Money objects
+3. Map categories to Account objects
+4. Build sample Journal Entries
+5. Identify data quality issues
+
+---
+
+## Setup
+
+```python
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path.cwd().parent if 'notebooks' in str(Path.cwd()) else Path.cwd()
+SRC_DIR = REPO_ROOT / 'src'
+DATA_DIR = Path('/mnt/project')  # Where CSV files are located
+
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+print(f"Repository: {REPO_ROOT}")
+print(f"Source: {SRC_DIR}")
+print(f"Data: {DATA_DIR}")
+```
+
+```python
+# Imports
+import pandas as pd
+from decimal import Decimal
+from datetime import date, datetime
+
+# Our types
+from core import Money, Account, AccountType, TaxRate, FiscalPeriod
+from gl import JournalEntry, JournalEntryLine, create_simple_entry
+
+# Auto-reload
+%load_ext autoreload
+%autoreload 2
+```
+
+---
+
+## Phase 1: Load and Explore Data
+
+### Load transactions
+
+```python
+# Load transactions CSV
+transactions_df = pd.read_csv(DATA_DIR / 'transactions.csv')
+
+print(f"Total transactions: {len(transactions_df)}")
+print(f"Columns: {list(transactions_df.columns)}")
+print(f"\nFirst few rows:")
+transactions_df.head()
+```
+
+### Understand transaction types
+
+```python
+# Check transaction types
+print("Transaction types:")
+print(transactions_df['type'].value_counts())
+print(f"\nDate range:")
+print(f"  Earliest: {transactions_df['transaction_date'].min()}")
+print(f"  Latest: {transactions_df['transaction_date'].max()}")
+```
+
+### Load transaction categories
+
+```python
+# Load categories for mapping
+categories_df = pd.read_csv(DATA_DIR / 'transaction_categories.csv')
+
+print(f"Total categories: {len(categories_df)}")
+print("\nCategories by type:")
+print(categories_df.groupby('type')['name'].apply(list))
+```
+
+### Merge transactions with categories
+
+```python
+# Join to get category names
+txn_with_cat = transactions_df.merge(
+    categories_df[['id', 'name', 'type']], 
+    left_on='category_id', 
+    right_on='id',
+    how='left',
+    suffixes=('', '_cat')
+)
+
+print("Sample transactions with categories:")
+txn_with_cat[['transaction_date', 'type', 'name', 'amount', 'description']].head(10)
+```
+
+---
+
+## Phase 2: Convert Amounts to Money Objects
+
+### Test Money conversion
+
+```python
+# Convert sample amounts to Money objects
+sample_amounts = transactions_df['amount'].head(10)
+
+print("Converting amounts to Money objects:")
+for i, amount in enumerate(sample_amounts):
+    money_obj = Money(amount, "KES")
+    print(f"  Row {i}: {amount:>10} → {money_obj}")
+```
+
+### Check for negative amounts
+
+```python
+# Find negative amounts (expenses should be positive, direction determined by account)
+negative_amounts = transactions_df[transactions_df['amount'] < 0]
+
+print(f"Negative amounts found: {len(negative_amounts)}")
+if len(negative_amounts) > 0:
+    print("\nSample negative amounts:")
+    print(negative_amounts[['transaction_date', 'type', 'amount', 'description']].head())
+```
+
+### Summary statistics with Money
+
+```python
+# Calculate totals by transaction type using Money
+print("Transaction totals by type:")
+for txn_type in transactions_df['type'].unique():
+    subset = transactions_df[transactions_df['type'] == txn_type]
+    
+    # Convert to Money and sum
+    total = sum(
+        (Money(amt, "KES") for amt in subset['amount']),
+        Money.zero("KES")
+    )
+    
+    print(f"  {txn_type:15} {len(subset):>4} txns, Total: {total}")
+```
+
+---
+
+## Phase 3: Map Categories to Accounts
+
+### Create account mapping
+
+```python
+# Map transaction categories to Chart of Accounts
+# This is wellness-centre specific mapping
+
+account_mapping = {
+    # Income categories → Income accounts
+    "Event Venue Hire": Account("Event Venue Hire - WC", AccountType.INCOME),
+    "Room Accommodation": Account("Room Accommodation - WC", AccountType.INCOME),
+    "Farm Eggs": Account("Farm Eggs - WC", AccountType.INCOME),
+    "Wellness Services": Account("Wellness Services - WC", AccountType.INCOME),
+    
+    # Expense categories → Expense accounts
+    "Inventory Purchases": Account("Inventory Purchases - WC", AccountType.EXPENSE),
+    "Permanent Staff Salaries": Account("Salaries - WC", AccountType.EXPENSE),
+    "Property Renovations": Account("Property Renovations - WC", AccountType.EXPENSE),
+    "Animal Feed (Chicken)": Account("Animal Feed - WC", AccountType.EXPENSE),
+    "Garden & Landscaping Maintenance": Account("Garden Maintenance - WC", AccountType.EXPENSE),
+    "Casual Labour - Security": Account("Security Labour - WC", AccountType.EXPENSE),
+    "Event Supplies & Setup": Account("Event Supplies - WC", AccountType.EXPENSE),
+    "Casual Labour - Cleaning & Housekeeping": Account("Cleaning Labour - WC", AccountType.EXPENSE),
+    "Estate Service Charge": Account("Service Charges - WC", AccountType.EXPENSE),
+    "Supplies & Provisions": Account("Supplies - WC", AccountType.EXPENSE),
+    "Livestock Acquisition": Account("Livestock - WC", AccountType.EXPENSE),
+    "Agent Commissions": Account("Commissions - WC", AccountType.EXPENSE),
+    "Consultant Fees": Account("Consultant Fees - WC", AccountType.EXPENSE),
+    "Utilities (Electricity)": Account("Electricity - WC", AccountType.EXPENSE),
+    "Furniture & Fittings": Account("Furniture - WC", AccountType.EXPENSE),
+    "Casual Labour - Event Setup": Account("Event Labour - WC", AccountType.EXPENSE),
+    "Dog Care": Account("Dog Care - WC", AccountType.EXPENSE),
+    "Borehole Water": Account("Water - Borehole - WC", AccountType.EXPENSE),
+    "Veterinary Care": Account("Veterinary - WC", AccountType.EXPENSE),
+    "Utilities (Water)": Account("Water - WC", AccountType.EXPENSE),
+    "Casual Labour - Transport": Account("Transport Labour - WC", AccountType.EXPENSE),
+    "Casual Labour - Maintenance & Repairs": Account("Maintenance Labour - WC", AccountType.EXPENSE),
+    "Business Registration & Permits": Account("Permits - WC", AccountType.EXPENSE),
+    "Miscellaneous": Account("Miscellaneous - WC", AccountType.EXPENSE),
+}
+
+print(f"Account mapping created: {len(account_mapping)} categories")
+print("\nSample mappings:")
+for cat_name, account in list(account_mapping.items())[:5]:
+    print(f"  {cat_name:40} → {account.name}")
+```
+
+### Map payment methods to accounts
+
+```python
+# Map payment methods to bank/cash accounts
+payment_method_accounts = {
+    "M-Pesa": Account("Mobile Money - WC", AccountType.BANK),
+    "Cash": Account("Cash - WC", AccountType.CASH),
+    "Bank Transfer": Account("KCB - WC", AccountType.BANK),
+}
+
+print("Payment method accounts:")
+for method, account in payment_method_accounts.items():
+    print(f"  {method:15} → {account.name}")
+```
+
+---
+
+## Phase 4: Build Sample Journal Entries
+
+### Single income transaction
+
+```python
+# Example: Event deposit received via M-Pesa
+sample_income = txn_with_cat[txn_with_cat['type'] == 'income'].iloc[0]
+
+print("Sample income transaction:")
+print(f"  Date: {sample_income['transaction_date']}")
+print(f"  Category: {sample_income['name']}")
+print(f"  Amount: {sample_income['amount']}")
+print(f"  Payment: {sample_income['payment_method']}")
+print(f"  Description: {sample_income['description']}")
+
+# Create Journal Entry
+amount = Money(sample_income['amount'], "KES")
+txn_date = datetime.strptime(sample_income['transaction_date'], '%Y-%m-%d').date()
+
+cash_account = payment_method_accounts.get(
+    sample_income['payment_method'],
+    Account("Cash - WC", AccountType.CASH)  # Fallback
+)
+revenue_account = account_mapping.get(
+    sample_income['name'],
+    Account("Other Income - WC", AccountType.INCOME)  # Fallback
+)
+
+entry = create_simple_entry(
+    posting_date=txn_date,
+    debit_account=cash_account,
+    credit_account=revenue_account,
+    amount=amount,
+    remark=sample_income['description']
+)
+
+print(f"\nJournal Entry:")
+print(entry)
+print(f"\nBalanced? {entry.is_balanced()}")
+entry.validate()
+
+print("\nERPNext format:")
+import json
+print(json.dumps(entry.to_erpnext_format(), indent=2, default=str))
+```
+
+### Single expense transaction
+
+```python
+# Example: Expense payment
+sample_expense = txn_with_cat[txn_with_cat['type'] == 'expense'].iloc[0]
+
+print("Sample expense transaction:")
+print(f"  Date: {sample_expense['transaction_date']}")
+print(f"  Category: {sample_expense['name']}")
+print(f"  Amount: {sample_expense['amount']}")
+print(f"  Payment: {sample_expense['payment_method']}")
+print(f"  Description: {sample_expense['description']}")
+
+# Create Journal Entry (expense: debit expense, credit cash)
+amount = Money(sample_expense['amount'], "KES")
+txn_date = datetime.strptime(sample_expense['transaction_date'], '%Y-%m-%d').date()
+
+cash_account = payment_method_accounts.get(
+    sample_expense['payment_method'],
+    Account("Cash - WC", AccountType.CASH)
+)
+expense_account = account_mapping.get(
+    sample_expense['name'],
+    Account("Other Expenses - WC", AccountType.EXPENSE)
+)
+
+entry = create_simple_entry(
+    posting_date=txn_date,
+    debit_account=expense_account,  # Debit expense (increases expense)
+    credit_account=cash_account,    # Credit cash (decreases asset)
+    amount=amount,
+    remark=sample_expense['description']
+)
+
+print(f"\nJournal Entry:")
+print(entry)
+print(f"\nBalanced? {entry.is_balanced()}")
+entry.validate()
+```
+
+### Batch convert transactions
+
+```python
+# Convert first 10 transactions to Journal Entries
+sample_txns = txn_with_cat.head(10)
+entries = []
+
+for idx, row in sample_txns.iterrows():
+    try:
+        amount = Money(row['amount'], "KES")
+        txn_date = datetime.strptime(row['transaction_date'], '%Y-%m-%d').date()
+        
+        # Get accounts
+        payment_account = payment_method_accounts.get(
+            row['payment_method'],
+            Account("Cash - WC", AccountType.CASH)
+        )
+        category_account = account_mapping.get(
+            row['name'],
+            Account("Miscellaneous - WC", AccountType.EXPENSE if row['type'] == 'expense' else AccountType.INCOME)
+        )
+        
+        # Create entry based on type
+        if row['type'] == 'income':
+            entry = create_simple_entry(
+                txn_date,
+                payment_account,      # Debit cash
+                category_account,     # Credit revenue
+                amount,
+                row['description']
+            )
+        elif row['type'] == 'expense':
+            entry = create_simple_entry(
+                txn_date,
+                category_account,     # Debit expense
+                payment_account,      # Credit cash
+                amount,
+                row['description']
+            )
+        else:
+            # Skip other types for now
+            continue
+        
+        entry.validate()
+        entries.append(entry)
+        print(f"✓ Row {idx}: {row['type']:10} {amount:>15} - {row['name'][:30]}")
+        
+    except Exception as e:
+        print(f"✗ Row {idx}: ERROR - {e}")
+
+print(f"\n✓ Successfully created {len(entries)} journal entries")
+```
+
+---
+
+## Phase 5: Data Quality Analysis
+
+### Check for missing categories
+
+```python
+# Find transactions without category mapping
+unmapped = txn_with_cat[~txn_with_cat['name'].isin(account_mapping.keys())]
+
+print(f"Unmapped categories: {len(unmapped)} transactions")
+if len(unmapped) > 0:
+    print("\nUnmapped category breakdown:")
+    print(unmapped['name'].value_counts())
+```
+
+### Check for missing payment methods
+
+```python
+# Find transactions with unknown payment methods
+unknown_payment = txn_with_cat[~txn_with_cat['payment_method'].isin(payment_method_accounts.keys())]
+
+print(f"Unknown payment methods: {len(unknown_payment)} transactions")
+if len(unknown_payment) > 0:
+    print("\nUnknown payment methods:")
+    print(unknown_payment['payment_method'].value_counts())
+```
+
+### Validate fiscal periods
+
+```python
+# Check all transactions fall within fiscal years
+fy_2024 = FiscalPeriod.year(2024)
+fy_2025 = FiscalPeriod.year(2025)
+
+# Parse all transaction dates
+txn_dates = pd.to_datetime(transactions_df['transaction_date']).dt.date
+
+# Check coverage
+in_2024 = sum(fy_2024.contains(d) for d in txn_dates)
+in_2025 = sum(fy_2025.contains(d) for d in txn_dates)
+outside = len(txn_dates) - in_2024 - in_2025
+
+print(f"Transaction fiscal period coverage:")
+print(f"  FY 2024: {in_2024} transactions")
+print(f"  FY 2025: {in_2025} transactions")
+print(f"  Outside: {outside} transactions")
+
+# Find outliers
+if outside > 0:
+    print("\nTransactions outside FY 2024-2025:")
+    for d in txn_dates:
+        if not fy_2024.contains(d) and not fy_2025.contains(d):
+            print(f"  {d}")
+```
+
+### Summary statistics
+
+```python
+# Calculate total amounts by type using Money
+print("="*60)
+print("WELLNESS CENTRE FINANCIAL SUMMARY (Mar 2024 - Feb 2025)")
+print("="*60)
+
+for txn_type in ['income', 'expense', 'capital', 'savings']:
+    subset = txn_with_cat[txn_with_cat['type'] == txn_type]
+    
+    if len(subset) == 0:
+        continue
+    
+    total = sum((Money(amt, "KES") for amt in subset['amount']), Money.zero("KES"))
+    
+    print(f"\n{txn_type.upper()}:")
+    print(f"  Transactions: {len(subset)}")
+    print(f"  Total: {total}")
+    
+    # Top categories
+    if txn_type in ['income', 'expense']:
+        print(f"  Top categories:")
+        top_cats = subset.groupby('name')['amount'].sum().sort_values(ascending=False).head(5)
+        for cat_name, cat_total in top_cats.items():
+            cat_money = Money(cat_total, "KES")
+            print(f"    {cat_name[:40]:40} {cat_money}")
+
+# Calculate P&L
+income_total = sum(
+    (Money(amt, "KES") for amt in txn_with_cat[txn_with_cat['type'] == 'income']['amount']),
+    Money.zero("KES")
+)
+expense_total = sum(
+    (Money(amt, "KES") for amt in txn_with_cat[txn_with_cat['type'] == 'expense']['amount']),
+    Money.zero("KES")
+)
+net_result = income_total - expense_total
+
+print(f"\n{'='*60}")
+print(f"PROFIT & LOSS:")
+print(f"  Total Income:   {income_total}")
+print(f"  Total Expenses: {expense_total}")
+print(f"  Net Result:     {net_result}")
+print(f"{'='*60}")
+```
+
+---
+
+## Summary
+
+**Data validation complete:**
+- ✓ Loaded 947 transactions from CSV
+- ✓ Converted amounts to Money objects
+- ✓ Mapped categories to Account objects
+- ✓ Created sample Journal Entries
+- ✓ Identified unmapped categories
+- ✓ Validated fiscal period coverage
+- ✓ Generated financial summary
+
+**Next steps:**
+1. Fix any unmapped categories
+2. Build full transaction import logic
+3. Move to Layer 3 (Business Documents)

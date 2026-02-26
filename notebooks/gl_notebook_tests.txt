@@ -1,0 +1,488 @@
+# Create new notebook: 02_gl_foundation.ipynb
+
+## Notebook 02: GL Foundation
+
+**Purpose:** Build double-entry bookkeeping on core types
+
+**Contents:**
+- JournalEntryLine (individual debit/credit)
+- JournalEntry (complete transaction)
+- Balance validation
+- Fiscal period validation
+
+**Foundation for:** All GL transactions in ERPNext migration
+
+---
+
+## Setup
+
+```python
+# Add src to path
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path.cwd().parent if 'notebooks' in str(Path.cwd()) else Path.cwd()
+SRC_DIR = REPO_ROOT / 'src'
+
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+print(f"Repository root: {REPO_ROOT}")
+print(f"Source directory: {SRC_DIR}")
+```
+
+```python
+# Imports
+from decimal import Decimal
+from datetime import date
+
+# Core types
+from core import Money, Account, AccountType, FiscalPeriod
+
+# GL types
+from gl.journal_entry_line import JournalEntryLine
+from gl.journal_entry import JournalEntry, create_simple_entry
+
+# Auto-reload
+%load_ext autoreload
+%autoreload 2
+```
+
+---
+
+## JournalEntryLine Class
+
+**Design:** Single account + debit OR credit (not both)
+
+**Why:** In double-entry bookkeeping, each line affects one account in one direction.
+
+---
+
+### Test 1: Create debit line
+
+```python
+# Debit cash (increase asset)
+cash = Account("Cash - WC", AccountType.CASH)
+amount = Money(15000, "KES")
+
+debit_line = JournalEntryLine.debit(cash, amount)
+
+print(f"Line: {debit_line}")
+print(f"Account: {debit_line.account.name}")
+print(f"Debit: {debit_line.debit}")
+print(f"Credit: {debit_line.credit}")
+print(f"Is debit? {debit_line.is_debit}")
+print(f"Amount: {debit_line.amount}")
+
+assert debit_line.is_debit, "Should be debit line"
+assert not debit_line.is_credit, "Should not be credit line"
+assert debit_line.debit == amount, "Debit amount incorrect"
+assert debit_line.credit.is_zero(), "Credit should be zero"
+
+print("\n✓ Debit line creation test passed")
+```
+
+### Test 2: Create credit line
+
+```python
+# Credit revenue (increase income)
+revenue = Account("Event Venue Hire - WC", AccountType.INCOME)
+amount = Money(15000, "KES")
+
+credit_line = JournalEntryLine.credit(revenue, amount)
+
+print(f"Line: {credit_line}")
+print(f"Account: {credit_line.account.name}")
+print(f"Debit: {credit_line.debit}")
+print(f"Credit: {credit_line.credit}")
+print(f"Is credit? {credit_line.is_credit}")
+print(f"Amount: {credit_line.amount}")
+
+assert credit_line.is_credit, "Should be credit line"
+assert not credit_line.is_debit, "Should not be debit line"
+assert credit_line.credit == amount, "Credit amount incorrect"
+assert credit_line.debit.is_zero(), "Debit should be zero"
+
+print("\n✓ Credit line creation test passed")
+```
+
+### Test 3: Line validation - cannot have both debit and credit
+
+```python
+# Should raise: line can't have both debit and credit
+cash = Account("Cash - WC", AccountType.CASH)
+amount = Money(1000, "KES")
+
+try:
+    invalid = JournalEntryLine(
+        account=cash,
+        debit=amount,
+        credit=amount  # ← Both non-zero, invalid
+    )
+    print("✗ Should have raised ValueError")
+    assert False, "Validation failed"
+except ValueError as e:
+    print(f"✓ Correctly rejected: {e}")
+
+print("\n✓ Dual debit/credit validation test passed")
+```
+
+### Test 4: Line validation - must have debit or credit
+
+```python
+# Should raise: line must have at least one non-zero
+cash = Account("Cash - WC", AccountType.CASH)
+zero = Money.zero("KES")
+
+try:
+    invalid = JournalEntryLine(
+        account=cash,
+        debit=zero,
+        credit=zero  # ← Both zero, invalid
+    )
+    print("✗ Should have raised ValueError")
+    assert False, "Validation failed"
+except ValueError as e:
+    print(f"✓ Correctly rejected: {e}")
+
+print("\n✓ Zero amount validation test passed")
+```
+
+### Test 5: Account type validation hint
+
+```python
+# Check if line makes sense for account type
+# (This is informational, not enforced)
+
+# Cash is debit-positive (increases with debits)
+cash = Account("Cash - WC", AccountType.CASH)
+debit_cash = JournalEntryLine.debit(cash, Money(1000, "KES"))
+credit_cash = JournalEntryLine.credit(cash, Money(1000, "KES"))
+
+print("Cash account (Asset - debit-positive):")
+print(f"  Debit cash validates? {debit_cash.validates_against_account_type()} (increases cash)")
+print(f"  Credit cash validates? {credit_cash.validates_against_account_type()} (decreases cash)")
+
+# Revenue is credit-positive (increases with credits)
+revenue = Account("Sales - WC", AccountType.INCOME)
+debit_revenue = JournalEntryLine.debit(revenue, Money(1000, "KES"))
+credit_revenue = JournalEntryLine.credit(revenue, Money(1000, "KES"))
+
+print("\nRevenue account (Income - credit-positive):")
+print(f"  Debit revenue validates? {debit_revenue.validates_against_account_type()} (decreases revenue)")
+print(f"  Credit revenue validates? {credit_revenue.validates_against_account_type()} (increases revenue)")
+
+assert debit_cash.validates_against_account_type(), "Debiting cash should validate"
+assert credit_revenue.validates_against_account_type(), "Crediting revenue should validate"
+
+print("\n✓ Account type validation test passed")
+```
+
+### Test 6: ERPNext format conversion
+
+```python
+cash = Account("Cash - WC", AccountType.CASH)
+line = JournalEntryLine.debit(
+    cash,
+    Money(15000, "KES"),
+    reference_number="MPesa-ABC123",
+    user_remark="Event deposit"
+)
+
+erpnext_payload = line.to_erpnext_format()
+
+print("ERPNext line format:")
+for key, value in erpnext_payload.items():
+    print(f"  {key}: {value}")
+
+assert erpnext_payload["account"] == "Cash - WC"
+assert erpnext_payload["debit_in_account_currency"] == 15000.0
+assert erpnext_payload["credit_in_account_currency"] == 0.0
+assert erpnext_payload["reference_number"] == "MPesa-ABC123"
+
+print("\n✓ ERPNext format test passed")
+```
+
+---
+
+## JournalEntry Class
+
+**Design:** Collection of lines with debit = credit validation
+
+**Core rule:** Sum of debits MUST equal sum of credits
+
+---
+
+### Test 7: Create balanced entry
+
+```python
+# Simple cash receipt
+cash = Account("Cash - WC", AccountType.CASH)
+revenue = Account("Event Venue Hire - WC", AccountType.INCOME)
+amount = Money(15000, "KES")
+
+entry = JournalEntry(
+    posting_date=date(2024, 3, 15),
+    lines=[
+        JournalEntryLine.debit(cash, amount),
+        JournalEntryLine.credit(revenue, amount)
+    ],
+    user_remark="Event deposit received via M-Pesa"
+)
+
+print(f"Entry: {entry}")
+print(f"\nTotal debits:  {entry.total_debit}")
+print(f"Total credits: {entry.total_credit}")
+print(f"Difference:    {entry.difference}")
+print(f"Is balanced?   {entry.is_balanced()}")
+
+assert entry.is_balanced(), "Entry should be balanced"
+assert entry.total_debit == amount, "Total debit incorrect"
+assert entry.total_credit == amount, "Total credit incorrect"
+
+# Validation should pass
+entry.validate()
+
+print("\n✓ Balanced entry creation test passed")
+```
+
+### Test 8: Detect unbalanced entry
+
+```python
+# Create unbalanced entry (should fail validation)
+cash = Account("Cash - WC", AccountType.CASH)
+revenue = Account("Sales - WC", AccountType.INCOME)
+
+unbalanced = JournalEntry(
+    posting_date=date(2024, 3, 15),
+    lines=[
+        JournalEntryLine.debit(cash, Money(15000, "KES")),
+        JournalEntryLine.credit(revenue, Money(10000, "KES"))  # ← Different amount
+    ]
+)
+
+print(f"Unbalanced entry:")
+print(f"  Debits:  {unbalanced.total_debit}")
+print(f"  Credits: {unbalanced.total_credit}")
+print(f"  Diff:    {unbalanced.difference}")
+print(f"  Balanced? {unbalanced.is_balanced()}")
+
+try:
+    unbalanced.validate()
+    print("✗ Should have raised ValueError")
+    assert False, "Unbalanced entry passed validation"
+except ValueError as e:
+    print(f"\n✓ Correctly detected imbalance:")
+    print(f"  {e}")
+
+print("\n✓ Unbalanced detection test passed")
+```
+
+### Test 9: Complex entry with multiple lines
+
+```python
+# Event payment split across multiple expense accounts
+cash = Account("Cash - WC", AccountType.CASH)
+utilities = Account("Utilities - WC", AccountType.EXPENSE)
+supplies = Account("Supplies - WC", AccountType.EXPENSE)
+labour = Account("Casual Labour - WC", AccountType.EXPENSE)
+
+entry = JournalEntry(
+    posting_date=date(2024, 3, 20),
+    lines=[
+        # Credits (payments out)
+        JournalEntryLine.credit(cash, Money(5000, "KES")),
+        # Debits (expenses incurred)
+        JournalEntryLine.debit(utilities, Money(2000, "KES")),
+        JournalEntryLine.debit(supplies, Money(1500, "KES")),
+        JournalEntryLine.debit(labour, Money(1500, "KES")),
+    ],
+    user_remark="Event setup expenses paid"
+)
+
+print(f"Complex entry ({len(entry.lines)} lines):")
+print(f"  Total debits:  {entry.total_debit}")
+print(f"  Total credits: {entry.total_credit}")
+print(f"  Balanced? {entry.is_balanced()}")
+
+print("\nDebit lines:")
+for line in entry.get_debit_lines():
+    print(f"  {line}")
+
+print("\nCredit lines:")
+for line in entry.get_credit_lines():
+    print(f"  {line}")
+
+assert entry.is_balanced(), "Complex entry should balance"
+assert len(entry.get_debit_lines()) == 3, "Should have 3 debit lines"
+assert len(entry.get_credit_lines()) == 1, "Should have 1 credit line"
+
+entry.validate()
+
+print("\n✓ Complex multi-line entry test passed")
+```
+
+### Test 10: Fiscal period validation
+
+```python
+# Create entry and validate against fiscal period
+fy_2024 = FiscalPeriod.year(2024)
+
+entry = create_simple_entry(
+    posting_date=date(2024, 6, 15),
+    debit_account=Account("Cash - WC", AccountType.CASH),
+    credit_account=Account("Sales - WC", AccountType.INCOME),
+    amount=Money(10000, "KES"),
+    remark="Mid-year sale"
+)
+
+# Should pass - date is in FY 2024
+is_valid = entry.validate_fiscal_period(fy_2024)
+print(f"Entry date {entry.posting_date} in {fy_2024.name}? {is_valid}")
+
+# Try with date outside fiscal year
+entry_outside = create_simple_entry(
+    posting_date=date(2025, 6, 15),
+    debit_account=Account("Cash - WC", AccountType.CASH),
+    credit_account=Account("Sales - WC", AccountType.INCOME),
+    amount=Money(10000, "KES")
+)
+
+try:
+    entry_outside.validate_fiscal_period(fy_2024)
+    print("✗ Should have raised ValueError")
+    assert False
+except ValueError as e:
+    print(f"\n✓ Correctly rejected out-of-period date:")
+    print(f"  {e}")
+
+print("\n✓ Fiscal period validation test passed")
+```
+
+### Test 11: ERPNext format conversion
+
+```python
+cash = Account("Cash - WC", AccountType.CASH)
+revenue = Account("Event Venue Hire - WC", AccountType.INCOME)
+
+entry = create_simple_entry(
+    posting_date=date(2024, 3, 15),
+    debit_account=cash,
+    credit_account=revenue,
+    amount=Money(15000, "KES"),
+    remark="Event deposit received"
+)
+
+erpnext_payload = entry.to_erpnext_format()
+
+print("ERPNext Journal Entry format:")
+print(f"  doctype: {erpnext_payload['doctype']}")
+print(f"  posting_date: {erpnext_payload['posting_date']}")
+print(f"  user_remark: {erpnext_payload['user_remark']}")
+print(f"  accounts: {len(erpnext_payload['accounts'])} lines")
+
+print("\nAccount lines:")
+for acc in erpnext_payload['accounts']:
+    print(f"  {acc['account']}: Dr {acc['debit_in_account_currency']}, Cr {acc['credit_in_account_currency']}")
+
+assert erpnext_payload['doctype'] == "Journal Entry"
+assert erpnext_payload['posting_date'] == "2024-03-15"
+assert len(erpnext_payload['accounts']) == 2
+
+print("\n✓ ERPNext format conversion test passed")
+```
+
+### Test 12: Real-world scenario - Event deposit with tax
+
+```python
+# Event deposit: KES 15,000 with 16% VAT withheld
+from core import TaxRate
+
+cash = Account("Mobile Money - WC", AccountType.BANK)
+revenue = Account("Event Venue Hire - WC", AccountType.INCOME)
+vat_payable = Account("VAT - WC", AccountType.LIABILITY)
+
+# Calculate amounts
+gross_amount = Money(15000, "KES")
+vat_rate = TaxRate(Decimal('0.16'), "VAT @ 16%")
+vat_amount = vat_rate.calculate_tax(gross_amount)
+net_amount = gross_amount + vat_amount
+
+entry = JournalEntry(
+    posting_date=date(2024, 3, 15),
+    lines=[
+        # Debit: Cash received (gross + VAT)
+        JournalEntryLine.debit(cash, net_amount, reference_number="MPesa-XYZ789"),
+        # Credit: Revenue earned
+        JournalEntryLine.credit(revenue, gross_amount),
+        # Credit: VAT liability
+        JournalEntryLine.credit(vat_payable, vat_amount),
+    ],
+    user_remark="Event deposit with VAT"
+)
+
+print("Event deposit entry:")
+print(f"  Gross revenue: {gross_amount}")
+print(f"  VAT (16%):     {vat_amount}")
+print(f"  Cash received: {net_amount}")
+print(f"\n  Total debits:  {entry.total_debit}")
+print(f"  Total credits: {entry.total_credit}")
+print(f"  Balanced?      {entry.is_balanced()}")
+
+assert entry.is_balanced(), "Entry should balance"
+entry.validate()
+
+print("\nLines:")
+for line in entry.lines:
+    print(f"  {line}")
+
+print("\n✓ Real-world event deposit test passed")
+```
+
+### Test 13: Helper function - create_simple_entry
+
+```python
+# Convenience function for common two-line entries
+cash = Account("Cash - WC", AccountType.CASH)
+revenue = Account("Sales - WC", AccountType.INCOME)
+
+entry = create_simple_entry(
+    posting_date=date(2024, 4, 1),
+    debit_account=cash,
+    credit_account=revenue,
+    amount=Money(5000, "KES"),
+    remark="Quick sale"
+)
+
+print(f"Simple entry created:")
+print(f"  {entry}")
+print(f"  Balanced? {entry.is_balanced()}")
+
+assert entry.is_balanced()
+assert len(entry.lines) == 2
+
+print("\n✓ Helper function test passed")
+```
+
+---
+
+## Summary - GL Foundation
+
+**JournalEntryLine validated:**
+- ✓ Debit and credit line creation
+- ✓ Validation (no both, no zero)
+- ✓ Account type hints
+- ✓ ERPNext format
+
+**JournalEntry validated:**
+- ✓ Balanced entry creation
+- ✓ Unbalanced detection
+- ✓ Multi-line entries
+- ✓ Fiscal period validation
+- ✓ ERPNext format
+- ✓ Real-world scenarios
+- ✓ Helper functions
+
+**Layer 2 complete!**
+
+**Next:** Layer 3 (Business Documents - Sales Invoice, Payment Entry)

@@ -1,0 +1,544 @@
+# Add these cells to 01_core_types.ipynb after Account tests
+
+## Tax Class
+
+**Design goals:**
+1. Represent tax rates with proper rounding
+2. Calculate tax from base amounts
+3. Extract tax from gross amounts
+4. Support multiple tax types (VAT, withholding, etc.)
+
+**Kenya tax context:**
+- Standard VAT: 16%
+- Withholding tax: 5% (resident contractors)
+- Zero-rated goods: 0% VAT
+
+### Load Tax classes
+
+```python
+from core.tax import TaxRate, TaxType, create_kenya_tax_rates, calculate_tax_breakdown
+```
+
+### Test 1: Create tax rates
+
+```python
+# Standard VAT in Kenya
+vat = TaxRate(Decimal('0.16'), "VAT @ 16%", TaxType.VAT)
+print(f"Tax rate: {vat}")
+print(f"Rate: {vat.rate}")
+print(f"Percentage: {vat.percentage}%")
+print(f"Type: {vat.tax_type.value}")
+
+assert vat.rate == Decimal('0.16'), "Rate should be stored as decimal"
+assert vat.percentage == Decimal('16.00'), "Percentage conversion failed"
+
+print("\n✓ Tax rate creation test passed")
+```
+
+### Test 2: Calculate tax from base
+
+```python
+# Calculate 16% VAT on KES 10,000
+vat = TaxRate(Decimal('0.16'), "VAT @ 16%")
+base = Money(10000, "KES")
+
+tax_amount = vat.calculate_tax(base)
+total = vat.calculate_total(base)
+
+print(f"Base amount: {base}")
+print(f"Tax (16%): {tax_amount}")
+print(f"Total: {total}")
+
+assert tax_amount.amount == Decimal('1600.00'), "Tax calculation incorrect"
+assert total.amount == Decimal('11600.00'), "Total calculation incorrect"
+
+print("\n✓ Tax calculation test passed")
+```
+
+### Test 3: Extract tax from gross amount
+
+```python
+# Extract tax from total when base is unknown
+# Useful for receipts that show only total
+vat = TaxRate(Decimal('0.16'), "VAT @ 16%")
+gross = Money(11600, "KES")
+
+extracted_tax = vat.extract_tax(gross)
+extracted_base = vat.extract_base(gross)
+
+print(f"Gross amount: {gross}")
+print(f"Extracted tax: {extracted_tax}")
+print(f"Extracted base: {extracted_base}")
+
+# Verify extraction is correct
+assert extracted_tax.amount == Decimal('1600.00'), "Tax extraction incorrect"
+assert extracted_base.amount == Decimal('10000.00'), "Base extraction incorrect"
+assert extracted_base + extracted_tax == gross, "Components don't sum to gross"
+
+print("\n✓ Tax extraction test passed")
+```
+
+### Test 4: Create tax rate from percentage
+
+```python
+# Convenience method for percentage input
+vat = TaxRate.from_percentage(16, "VAT @ 16%")
+
+print(f"Created from percentage: {vat}")
+print(f"Rate: {vat.rate}")
+print(f"Percentage: {vat.percentage}%")
+
+assert vat.rate == Decimal('0.16'), "Percentage conversion failed"
+
+print("\n✓ From percentage test passed")
+```
+
+### Test 5: Zero-rated tax
+
+```python
+# Some goods/services are zero-rated (0% tax)
+zero_vat = TaxRate.zero_rated("VAT @ 0% (Zero Rated)")
+
+base = Money(5000, "KES")
+tax = zero_vat.calculate_tax(base)
+total = zero_vat.calculate_total(base)
+
+print(f"Zero-rated tax: {zero_vat}")
+print(f"Base: {base}")
+print(f"Tax: {tax}")
+print(f"Total: {total}")
+
+assert tax.is_zero(), "Zero-rated tax should produce zero tax"
+assert total == base, "Total should equal base for zero-rated"
+assert zero_vat.is_zero_rated(), "Should identify as zero-rated"
+
+print("\n✓ Zero-rated tax test passed")
+```
+
+### Test 6: Multiple taxes (tax breakdown)
+
+```python
+# Calculate multiple taxes on same base
+base = Money(10000, "KES")
+vat = TaxRate(Decimal('0.16'), "VAT @ 16%")
+service_tax = TaxRate(Decimal('0.02'), "Service Tax @ 2%")
+
+breakdown = calculate_tax_breakdown(base, [vat, service_tax])
+
+print(f"Base amount: {breakdown['base']}")
+print("\nTaxes:")
+for desc, amount in breakdown['taxes'].items():
+    print(f"  {desc}: {amount}")
+print(f"\nTotal tax: {breakdown['total_tax']}")
+print(f"Grand total: {breakdown['total']}")
+
+assert breakdown['total_tax'].amount == Decimal('1800.00'), "Multiple tax sum incorrect"
+assert breakdown['total'].amount == Decimal('11800.00'), "Grand total incorrect"
+
+print("\n✓ Multiple taxes test passed")
+```
+
+### Test 7: Kenya standard tax rates
+
+```python
+# Pre-configured Kenya tax rates
+kenya_taxes = create_kenya_tax_rates("WC")
+
+print("Kenya standard tax rates:")
+for purpose, tax_rate in kenya_taxes.items():
+    print(f"  {purpose:25} → {tax_rate}")
+
+# Test VAT calculation
+vat = kenya_taxes["vat_standard"]
+base = Money(15000, "KES")
+total = vat.calculate_total(base)
+
+print(f"\nVAT calculation example:")
+print(f"  Base: {base}")
+print(f"  Total with VAT: {total}")
+
+assert vat.rate == Decimal('0.16'), "Kenya VAT rate incorrect"
+assert total.amount == Decimal('17400.00'), "VAT calculation failed"
+
+print("\n✓ Kenya tax rates test passed")
+```
+
+### Test 8: ERPNext format conversion
+
+```python
+vat = TaxRate(
+    Decimal('0.16'),
+    "VAT @ 16%",
+    TaxType.VAT,
+    "VAT - WC"
+)
+
+erpnext_payload = vat.to_erpnext_format()
+
+print("ERPNext tax format:")
+for key, value in erpnext_payload.items():
+    print(f"  {key}: {value}")
+
+assert erpnext_payload["charge_type"] == "On Net Total"
+assert erpnext_payload["rate"] == 16.0, "Rate should be percentage"
+assert erpnext_payload["account_head"] == "VAT - WC"
+
+print("\n✓ ERPNext format test passed")
+```
+
+### Test 9: Real-world invoice calculation
+
+```python
+# Wellness Centre invoice with VAT
+line_items = [
+    {"description": "Event Venue Hire", "amount": Money(15000, "KES")},
+    {"description": "Room Accommodation", "amount": Money(14000, "KES")},
+]
+
+# Calculate subtotal
+subtotal = sum((item["amount"] for item in line_items), Money.zero("KES"))
+
+# Apply 16% VAT
+vat = TaxRate(Decimal('0.16'), "VAT @ 16%", TaxType.VAT, "VAT - WC")
+tax_amount = vat.calculate_tax(subtotal)
+grand_total = subtotal + tax_amount
+
+print("Invoice calculation:")
+for item in line_items:
+    print(f"  {item['description']:25} {item['amount']}")
+print(f"  {'─' * 50}")
+print(f"  {'Subtotal':25} {subtotal}")
+print(f"  {vat.description:25} {tax_amount}")
+print(f"  {'─' * 50}")
+print(f"  {'Grand Total':25} {grand_total}")
+
+assert subtotal.amount == Decimal('29000.00')
+assert tax_amount.amount == Decimal('4640.00')
+assert grand_total.amount == Decimal('33640.00')
+
+print("\n✓ Real-world invoice test passed")
+```
+
+### Test 10: Rate validation
+
+```python
+# Test error handling
+test_cases = [
+    (Decimal('-0.05'), "Negative rate"),  # Should raise
+    (Decimal('1.5'), "Rate > 1"),         # Should raise (150% entered as 1.5)
+]
+
+print("Validation tests:")
+for rate, description in test_cases:
+    try:
+        invalid = TaxRate(rate, description)
+        print(f"  ✗ {description}: Should have raised ValueError")
+        assert False, f"Validation failed for {description}"
+    except ValueError as e:
+        print(f"  ✓ {description}: Correctly rejected")
+
+print("\n✓ Rate validation test passed")
+```
+
+## Summary - Tax Class
+
+**Tax class validation complete:**
+- ✓ Creates from decimal or percentage
+- ✓ Calculates tax from base amount
+- ✓ Extracts tax from gross amount
+- ✓ Supports zero-rated taxes
+- ✓ Handles multiple taxes
+- ✓ Kenya-specific tax rates
+- ✓ ERPNext format conversion
+- ✓ Real-world invoice calculations
+- ✓ Proper validation
+
+---
+
+## FiscalPeriod Class
+
+**Design goals:**
+1. Represent accounting periods (year, quarter, month)
+2. Validate date ranges
+3. Check if dates fall within periods
+4. Support ERPNext fiscal year setup
+
+**Wellness Centre context:**
+- Migration data: March 2024 - February 2025
+- Requires: FY 2024, FY 2025
+
+### Load FiscalPeriod classes
+
+```python
+from core.fiscal_period import FiscalPeriod, PeriodType, create_fiscal_years, get_period_for_date
+from datetime import date
+```
+
+### Test 1: Create fiscal year
+
+```python
+# Standard calendar year
+fy_2024 = FiscalPeriod.year(2024)
+
+print(f"Fiscal year: {fy_2024}")
+print(f"Name: {fy_2024.name}")
+print(f"Start: {fy_2024.start_date}")
+print(f"End: {fy_2024.end_date}")
+print(f"Duration: {fy_2024.duration_days} days")
+print(f"Type: {fy_2024.period_type.value}")
+
+assert fy_2024.start_date == date(2024, 1, 1)
+assert fy_2024.end_date == date(2024, 12, 31)
+assert fy_2024.duration_days == 366  # 2024 is leap year
+
+print("\n✓ Fiscal year creation test passed")
+```
+
+### Test 2: Check date containment
+
+```python
+fy_2024 = FiscalPeriod.year(2024)
+
+test_dates = [
+    (date(2024, 1, 1), True, "Start date"),
+    (date(2024, 6, 15), True, "Mid-year"),
+    (date(2024, 12, 31), True, "End date"),
+    (date(2023, 12, 31), False, "Before start"),
+    (date(2025, 1, 1), False, "After end"),
+]
+
+print("Date containment tests:")
+for test_date, expected, description in test_dates:
+    result = fy_2024.contains(test_date)
+    status = "✓" if result == expected else "✗"
+    print(f"  {status} {description}: {test_date} → {result}")
+    assert result == expected, f"Containment check failed for {description}"
+
+print("\n✓ Date containment test passed")
+```
+
+### Test 3: Create quarters
+
+```python
+# Q1-Q4 of 2024
+quarters = [FiscalPeriod.quarter(2024, q) for q in range(1, 5)]
+
+print("2024 Quarters:")
+for q in quarters:
+    print(f"  {q.name:10} {q.start_date} to {q.end_date} ({q.duration_days} days)")
+
+# Verify Q1
+q1 = quarters[0]
+assert q1.start_date == date(2024, 1, 1)
+assert q1.end_date == date(2024, 3, 31)
+assert q1.name == "Q1 2024"
+
+# Verify Q4
+q4 = quarters[3]
+assert q4.start_date == date(2024, 10, 1)
+assert q4.end_date == date(2024, 12, 31)
+
+print("\n✓ Quarter creation test passed")
+```
+
+### Test 4: Create months
+
+```python
+# First quarter months
+months = [FiscalPeriod.month(2024, m) for m in range(1, 4)]
+
+print("Q1 2024 Months:")
+for month in months:
+    print(f"  {month.name:15} {month.start_date} to {month.end_date} ({month.duration_days} days)")
+
+# Verify January
+jan = months[0]
+assert jan.start_date == date(2024, 1, 1)
+assert jan.end_date == date(2024, 1, 31)
+assert jan.duration_days == 31
+
+# Verify February (leap year)
+feb = months[1]
+assert feb.duration_days == 29  # 2024 is leap year
+
+print("\n✓ Month creation test passed")
+```
+
+### Test 5: Period overlap detection
+
+```python
+fy_2024 = FiscalPeriod.year(2024)
+fy_2025 = FiscalPeriod.year(2025)
+q4_2024 = FiscalPeriod.quarter(2024, 4)
+q1_2025 = FiscalPeriod.quarter(2025, 1)
+
+print("Overlap tests:")
+print(f"  FY 2024 overlaps FY 2025? {fy_2024.overlaps(fy_2025)} (should be False)")
+print(f"  FY 2024 overlaps Q4 2024? {fy_2024.overlaps(q4_2024)} (should be True)")
+print(f"  Q4 2024 overlaps Q1 2025? {q4_2024.overlaps(q1_2025)} (should be False)")
+
+assert not fy_2024.overlaps(fy_2025), "Non-overlapping years detected as overlapping"
+assert fy_2024.overlaps(q4_2024), "Year should overlap its own quarter"
+assert not q4_2024.overlaps(q1_2025), "Adjacent quarters detected as overlapping"
+
+print("\n✓ Overlap detection test passed")
+```
+
+### Test 6: Current and closed periods
+
+```python
+# Create periods for testing
+fy_2024 = FiscalPeriod.year(2024)
+fy_2025 = FiscalPeriod.year(2025)
+fy_2026 = FiscalPeriod.year(2026)
+
+# Check against a reference date (today in notebook)
+reference = date(2026, 2, 26)
+
+print(f"Reference date: {reference}")
+print(f"\n  FY 2024 is current? {fy_2024.is_current(reference)}")
+print(f"  FY 2024 is closed? {fy_2024.is_closed(reference)}")
+print(f"\n  FY 2025 is current? {fy_2025.is_current(reference)}")
+print(f"  FY 2025 is closed? {fy_2025.is_closed(reference)}")
+print(f"\n  FY 2026 is current? {fy_2026.is_current(reference)}")
+print(f"  FY 2026 is closed? {fy_2026.is_closed(reference)}")
+
+assert fy_2024.is_closed(reference), "FY 2024 should be closed"
+assert fy_2025.is_closed(reference), "FY 2025 should be closed"
+assert fy_2026.is_current(reference), "FY 2026 should be current"
+assert not fy_2026.is_closed(reference), "FY 2026 should not be closed"
+
+print("\n✓ Current/closed period test passed")
+```
+
+### Test 7: Create multiple fiscal years
+
+```python
+# Helper for creating consecutive years
+years = create_fiscal_years(2024, 2026)
+
+print("Created fiscal years:")
+for year in years:
+    print(f"  {year.name:10} {year.start_date} to {year.end_date}")
+
+assert len(years) == 3, "Should create 3 years"
+assert years[0].name == "FY 2024"
+assert years[2].name == "FY 2026"
+
+print("\n✓ Multiple years creation test passed")
+```
+
+### Test 8: Find period for date
+
+```python
+years = create_fiscal_years(2024, 2026)
+
+test_dates = [
+    (date(2024, 6, 15), "FY 2024"),
+    (date(2025, 1, 1), "FY 2025"),
+    (date(2026, 12, 31), "FY 2026"),
+]
+
+print("Period lookup tests:")
+for test_date, expected_name in test_dates:
+    period = get_period_for_date(test_date, years)
+    print(f"  {test_date} → {period.name if period else 'None'}")
+    assert period is not None, f"Should find period for {test_date}"
+    assert period.name == expected_name, f"Wrong period for {test_date}"
+
+# Test date outside all periods
+outside_date = date(2027, 1, 1)
+period = get_period_for_date(outside_date, years)
+print(f"  {outside_date} → {period}")
+assert period is None, "Should return None for date outside all periods"
+
+print("\n✓ Period lookup test passed")
+```
+
+### Test 9: ERPNext format conversion
+
+```python
+fy_2024 = FiscalPeriod.year(2024)
+erpnext_payload = fy_2024.to_erpnext_format()
+
+print("ERPNext fiscal year format:")
+for key, value in erpnext_payload.items():
+    print(f"  {key}: {value}")
+
+assert erpnext_payload["doctype"] == "Fiscal Year"
+assert erpnext_payload["year"] == "FY 2024"
+assert erpnext_payload["year_start_date"] == "2024-01-01"
+assert erpnext_payload["year_end_date"] == "2024-12-31"
+
+print("\n✓ ERPNext format test passed")
+```
+
+### Test 10: Wellness Centre migration periods
+
+```python
+# Migration data spans March 2024 - February 2025
+migration_start = date(2024, 3, 1)
+migration_end = date(2025, 2, 28)
+
+migration_period = FiscalPeriod.custom(
+    migration_start,
+    migration_end,
+    "Migration Period"
+)
+
+print(f"Migration period: {migration_period}")
+print(f"Duration: {migration_period.duration_days} days")
+
+# Check which fiscal years are needed
+fy_2024 = FiscalPeriod.year(2024)
+fy_2025 = FiscalPeriod.year(2025)
+
+print(f"\nFiscal years needed for migration:")
+print(f"  {fy_2024.name}: {fy_2024.overlaps(migration_period)}")
+print(f"  {fy_2025.name}: {fy_2025.overlaps(migration_period)}")
+
+assert fy_2024.overlaps(migration_period), "FY 2024 should overlap migration"
+assert fy_2025.overlaps(migration_period), "FY 2025 should overlap migration"
+
+# Sample transaction dates from wellness data
+sample_dates = [
+    date(2024, 3, 15),   # First month
+    date(2024, 12, 31),  # Year end
+    date(2025, 1, 1),    # New year
+    date(2025, 2, 15),   # Last month
+]
+
+print(f"\nSample transaction date validation:")
+for txn_date in sample_dates:
+    in_migration = migration_period.contains(txn_date)
+    fiscal_year = get_period_for_date(txn_date, [fy_2024, fy_2025])
+    print(f"  {txn_date}: migration={in_migration}, FY={fiscal_year.name}")
+    assert in_migration, f"{txn_date} should be in migration period"
+    assert fiscal_year is not None, f"{txn_date} should have fiscal year"
+
+print("\n✓ Wellness Centre migration periods test passed")
+```
+
+## Summary - FiscalPeriod Class
+
+**FiscalPeriod class validation complete:**
+- ✓ Creates years, quarters, months
+- ✓ Validates date ranges
+- ✓ Checks date containment
+- ✓ Detects period overlaps
+- ✓ Identifies current/closed periods
+- ✓ Finds periods for dates
+- ✓ ERPNext format conversion
+- ✓ Migration period validation
+
+---
+
+## Layer 1 Complete!
+
+**All core types validated:**
+- ✓ Money — Currency amounts with Decimal precision
+- ✓ Account — Chart of Accounts with debit/credit logic
+- ✓ Tax — Tax calculations with proper rounding
+- ✓ FiscalPeriod — Accounting periods with date validation
+
+**Next:** Extract stable code to `src/core/` and move to Layer 2 (GL Foundation)

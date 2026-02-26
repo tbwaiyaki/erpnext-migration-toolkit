@@ -1,0 +1,298 @@
+# Add these cells to 01_core_types.ipynb after the Money class tests
+
+## Account Class
+
+**Design goals:**
+1. Represent Chart of Accounts entries
+2. Validate account types (Asset, Liability, Income, Expense, Equity)
+3. Support ERPNext naming convention (Name - Company)
+4. Determine debit/credit behavior by account type
+
+**ERPNext account naming:**
+```
+"Cash - WC"              ← Full name with company suffix
+"Event Venue Hire - WC"  ← Revenue account
+"Debtors - WC"           ← Accounts Receivable
+```
+
+### Load Account class
+
+```python
+from core.account import Account, AccountType, parse_account_name, create_standard_accounts
+```
+
+### Test 1: Basic creation and formatting
+
+```python
+# Create with full name
+acc1 = Account("Cash - WC", AccountType.CASH)
+print(f"Full name: {acc1.name}")
+print(f"Base name: {acc1.base_name}")
+print(f"Company: {acc1.company_suffix}")
+print(f"Type: {acc1.account_type}")
+
+print("\n" + "="*50 + "\n")
+
+# Create with auto-formatting
+acc2 = Account("Debtors", AccountType.RECEIVABLE, company="WC")
+print(f"Auto-formatted: {acc2.name}")
+print(f"Base name: {acc2.base_name}")
+print(f"Company: {acc2.company_suffix}")
+
+assert acc2.name == "Debtors - WC", "Company suffix should be appended"
+assert acc2.base_name == "Debtors", "Base name extraction failed"
+assert acc2.company_suffix == "WC", "Company suffix extraction failed"
+
+print("\n✓ Account creation and formatting tests passed")
+```
+
+### Test 2: Account types and debit/credit behavior
+
+```python
+# Test debit-positive accounts (Assets, Expenses)
+asset_accounts = [
+    Account("Cash - WC", AccountType.CASH),
+    Account("Bank - WC", AccountType.BANK),
+    Account("Debtors - WC", AccountType.RECEIVABLE),
+    Account("Stock - WC", AccountType.STOCK),
+]
+
+expense_account = Account("Utilities - WC", AccountType.EXPENSE)
+
+print("Debit-positive accounts (debits increase balance):")
+for acc in asset_accounts + [expense_account]:
+    assert acc.is_debit_positive(), f"{acc.name} should be debit-positive"
+    print(f"  ✓ {acc.name} ({acc.account_type.value})")
+
+print("\n" + "="*50 + "\n")
+
+# Test credit-positive accounts (Liabilities, Equity, Income)
+credit_accounts = [
+    Account("Creditors - WC", AccountType.PAYABLE),
+    Account("Capital Stock - WC", AccountType.EQUITY),
+    Account("Event Venue Hire - WC", AccountType.INCOME),
+]
+
+print("Credit-positive accounts (credits increase balance):")
+for acc in credit_accounts:
+    assert not acc.is_debit_positive(), f"{acc.name} should be credit-positive"
+    print(f"  ✓ {acc.name} ({acc.account_type.value})")
+
+print("\n✓ Debit/credit behavior tests passed")
+```
+
+### Test 3: Balance Sheet vs P&L classification
+
+```python
+# Balance Sheet accounts
+balance_sheet = [
+    Account("Cash - WC", AccountType.CASH),
+    Account("Debtors - WC", AccountType.RECEIVABLE),
+    Account("Creditors - WC", AccountType.PAYABLE),
+    Account("Capital Stock - WC", AccountType.EQUITY),
+]
+
+print("Balance Sheet accounts:")
+for acc in balance_sheet:
+    assert acc.is_balance_sheet_account(), f"{acc.name} should be on Balance Sheet"
+    assert not acc.is_profit_and_loss_account(), f"{acc.name} should not be on P&L"
+    print(f"  ✓ {acc.name}")
+
+print("\n" + "="*50 + "\n")
+
+# P&L accounts
+pnl_accounts = [
+    Account("Event Venue Hire - WC", AccountType.INCOME),
+    Account("Utilities - WC", AccountType.EXPENSE),
+    Account("Salaries - WC", AccountType.EXPENSE),
+]
+
+print("Profit & Loss accounts:")
+for acc in pnl_accounts:
+    assert acc.is_profit_and_loss_account(), f"{acc.name} should be on P&L"
+    assert not acc.is_balance_sheet_account(), f"{acc.name} should not be on Balance Sheet"
+    print(f"  ✓ {acc.name}")
+
+print("\n✓ Financial statement classification tests passed")
+```
+
+### Test 4: Account hierarchy
+
+```python
+# Parent-child relationships
+parent = Account("Indirect Expenses - WC", AccountType.EXPENSE)
+child = Account("Utilities - WC", AccountType.EXPENSE, parent_account=parent.name)
+
+print(f"Parent account: {parent.name}")
+print(f"Child account: {child.name}")
+print(f"Child's parent: {child.parent_account}")
+
+assert child.parent_account == parent.name, "Parent reference not stored correctly"
+
+print("\n✓ Account hierarchy test passed")
+```
+
+### Test 5: Account numbers (optional codes)
+
+```python
+# Some organizations use account numbers for sorting
+acc_with_number = Account(
+    "Cash - WC",
+    AccountType.CASH,
+    account_number="1001"
+)
+
+print(f"Account: {acc_with_number}")
+print(f"Number: {acc_with_number.account_number}")
+print(f"String representation: {str(acc_with_number)}")
+
+assert "1001" in str(acc_with_number), "Account number not in string format"
+
+print("\n✓ Account number test passed")
+```
+
+### Test 6: ERPNext format conversion
+
+```python
+acc = Account("Cash - WC", AccountType.CASH, account_number="1001")
+erpnext_payload = acc.to_erpnext_format()
+
+print("ERPNext API payload:")
+for key, value in erpnext_payload.items():
+    print(f"  {key}: {value}")
+
+expected_fields = ["doctype", "account_name", "account_type", "company", "account_number"]
+for field in expected_fields:
+    assert field in erpnext_payload, f"Missing field: {field}"
+
+assert erpnext_payload["account_name"] == "Cash", "Base name not extracted"
+assert erpnext_payload["company"] == "WC", "Company not extracted"
+assert erpnext_payload["account_type"] == "Cash", "Account type not converted"
+
+print("\n✓ ERPNext format conversion test passed")
+```
+
+### Test 7: Standard account creation helper
+
+```python
+# Helper function for creating common accounts
+standard_accounts = create_standard_accounts("WC")
+
+print("Standard accounts created:")
+for purpose, acc in standard_accounts.items():
+    print(f"  {purpose:20} → {acc.name:30} ({acc.account_type.value})")
+
+# Verify key accounts exist
+assert "cash" in standard_accounts
+assert "debtors" in standard_accounts
+assert "revenue" in standard_accounts
+assert "expenses" in standard_accounts
+
+# Verify all have company suffix
+for acc in standard_accounts.values():
+    assert acc.company_suffix == "WC", f"{acc.name} missing company suffix"
+
+print("\n✓ Standard accounts helper test passed")
+```
+
+### Test 8: Parse account name utility
+
+```python
+# Helper for extracting base name and company
+test_cases = [
+    ("Cash - WC", "Cash", "WC"),
+    ("Event Venue Hire - WC", "Event Venue Hire", "WC"),
+    ("Cash", "Cash", None),  # No suffix
+]
+
+print("Account name parsing:")
+for full_name, expected_base, expected_company in test_cases:
+    base, company = parse_account_name(full_name)
+    print(f"  {full_name:30} → base='{base}', company='{company}'")
+    assert base == expected_base, f"Base name mismatch for {full_name}"
+    assert company == expected_company, f"Company mismatch for {full_name}"
+
+print("\n✓ Parse account name test passed")
+```
+
+### Test 9: Real-world scenario - Wellness Centre accounts
+
+```python
+# Create accounts matching wellness centre's Chart of Accounts
+wellness_accounts = {
+    # Assets
+    "mobile_money": Account("Mobile Money - WC", AccountType.BANK),
+    "kcb_bank": Account("KCB - WC", AccountType.BANK),
+    "cash": Account("Cash - WC", AccountType.CASH),
+    "debtors": Account("Debtors - WC", AccountType.RECEIVABLE),
+    
+    # Liabilities
+    "creditors": Account("Creditors - WC", AccountType.PAYABLE),
+    
+    # Equity
+    "capital": Account("Capital Stock - WC", AccountType.EQUITY),
+    
+    # Income
+    "event_venue": Account("Event Venue Hire - WC", AccountType.INCOME),
+    "room_income": Account("Room Accommodation - WC", AccountType.INCOME),
+    "egg_sales": Account("Farm Eggs - WC", AccountType.INCOME),
+    "wellness_services": Account("Wellness Services - WC", AccountType.INCOME),
+    
+    # Expenses
+    "utilities": Account("Utilities - WC", AccountType.EXPENSE, 
+                        parent_account="Indirect Expenses - WC"),
+    "salaries": Account("Salaries - WC", AccountType.EXPENSE,
+                       parent_account="Direct Expenses - WC"),
+    "inventory_purchases": Account("Inventory Purchases - WC", AccountType.EXPENSE,
+                                  parent_account="Direct Expenses - WC"),
+}
+
+print("Wellness Centre Chart of Accounts:")
+print("\nAssets:")
+for name, acc in wellness_accounts.items():
+    if acc.account_type in (AccountType.CASH, AccountType.BANK, AccountType.RECEIVABLE):
+        print(f"  {acc.name}")
+
+print("\nIncome:")
+for name, acc in wellness_accounts.items():
+    if acc.account_type == AccountType.INCOME:
+        print(f"  {acc.name}")
+
+print("\nExpenses:")
+for name, acc in wellness_accounts.items():
+    if acc.account_type == AccountType.EXPENSE:
+        parent_info = f" (parent: {acc.parent_account})" if acc.parent_account else ""
+        print(f"  {acc.name}{parent_info}")
+
+# Verify all accounts have proper company suffix
+for acc in wellness_accounts.values():
+    assert acc.company_suffix == "WC", f"{acc.name} missing suffix"
+
+# Verify debit/credit behavior for sample transaction
+# "Received KES 15,000 event deposit via M-Pesa"
+mobile_money = wellness_accounts["mobile_money"]
+event_venue = wellness_accounts["event_venue"]
+
+print(f"\nSample transaction verification:")
+print(f"  Debit: {mobile_money.name} (increases? {mobile_money.is_debit_positive()})")
+print(f"  Credit: {event_venue.name} (increases? {not event_venue.is_debit_positive()})")
+
+assert mobile_money.is_debit_positive(), "Bank account should increase with debits"
+assert not event_venue.is_debit_positive(), "Income should increase with credits"
+
+print("\n✓ Wellness Centre accounts test passed")
+```
+
+## Summary - Account Class
+
+**Account class validation complete:**
+- ✓ Creates from full or base name
+- ✓ Validates account types
+- ✓ Extracts base name and company suffix
+- ✓ Determines debit/credit behavior
+- ✓ Classifies Balance Sheet vs P&L
+- ✓ Supports account hierarchy
+- ✓ Converts to ERPNext format
+- ✓ Real-world Chart of Accounts tested
+
+**Next:** Tax and FiscalPeriod types
