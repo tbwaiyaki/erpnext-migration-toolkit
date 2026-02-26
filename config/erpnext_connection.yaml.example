@@ -1,0 +1,22 @@
+# ERPNext Connection Configuration
+#
+# Copy this file to erpnext_connection.yaml and fill in your credentials
+# DO NOT commit erpnext_connection.yaml (it's in .gitignore)
+
+# ERPNext instance URL (include https://)
+url: https://your-erpnext-instance.com
+
+# API credentials (generate from: User menu → My Settings → API Access)
+api_key: your_api_key_here
+api_secret: your_api_secret_here
+
+# Optional: Custom headers for reverse proxy setups
+# headers:
+#   Host: your-site-name.com
+
+# Optional: Timeout settings (seconds)
+# timeout: 30
+
+# Optional: Retry configuration
+# retry_count: 3
+# retry_delay: 5
