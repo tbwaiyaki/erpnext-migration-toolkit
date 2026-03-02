@@ -1,0 +1,5 @@
+id,account_name,account_number,provider,contact_id,property_id,account_type,monthly_estimate,payment_method,paybill_number,notes,created_at
+1,Electricity - Main Meter,02948371056,Kenya Power (KPLC),43,1,electricity,8500,M-Pesa,888880,Prepaid meter. Token purchased via M-Pesa paybill 888880. Meter No: 54839201847.,2024-01-15T09:00:00
+2,Water - Nairobi Water,NW/2024/039284,Nairobi City Water & Sewerage,44,1,water,3500,M-Pesa,444400,Municipal water supply. Monthly billing. Supplemented by estate borehole.,2024-01-15T09:00:00
+3,Estate Service Charge,ESC-LOT-047,Estate Management Association,,4,service_charge,12000,Bank Transfer,,"Monthly service charge for gated community. Covers estate security, common area maintenance, garbage collection, road upkeep.",2024-01-15T09:00:00
+4,Estate Borehole Water,BH-LOT-047,Estate Management Association,,1,borehole_water,4000,Bank Transfer,,Shared estate borehole supply. Monthly flat rate. Reliable backup when Nairobi Water has outages.,2024-01-15T09:00:00

@@ -126,3 +126,68 @@ MIT License - See LICENSE file for details
 ## Contact
 
 Project maintained as part of a homelab experimentation and documentation effort.
+
+## Current Status
+
+**Completed Layers:**
+
+### Layer 1: Core Types ✓
+- Money: Decimal-based currency with validation
+- Account: Chart of Accounts references with debit/credit logic
+- TaxRate: Tax calculations with extraction capabilities
+- FiscalPeriod: Date range validation for accounting periods
+
+**Features:**
+- Immutable dataclasses
+- Full arithmetic operations
+- ERPNext format conversion
+- Comprehensive validation
+- 36 test cases passing
+
+### Layer 2: GL Foundation ✓
+- JournalEntryLine: Individual debit/credit lines
+- JournalEntry: Complete double-entry transactions
+- Balance validation (debits = credits)
+- Fiscal period validation
+- Multi-line entry support
+
+**Features:**
+- Automatic balance checking
+- Account type validation hints
+- ERPNext Journal Entry format
+- Helper functions for common entries
+- 13 test cases passing
+
+### Layer 3: Data Validation ✓
+- Successfully loaded 947 wellness centre transactions
+- Converted all amounts to Money objects
+- Mapped 28 transaction categories to Accounts
+- Created sample Journal Entries from real data
+- Validated fiscal period coverage (FY 2024-2025)
+
+**Financial Summary (Mar 2024 - Feb 2025):**
+- Total Income: KES 2,589,840
+- Total Expenses: KES 4,363,477
+- Net Result: KES -1,773,637 (startup loss)
+- Capital Injected: KES 4,000,000
+
+**Architecture Validated:**
+Build-from-primitives approach proven successful. All core types work together seamlessly with real-world data.
+
+**Next:** Layer 3 - Business Documents (Sales Invoice, Payment Entry, Purchase Invoice)
+
+### Layer 3: Business Documents ✓
+- InvoiceItem: Line items with quantity × rate calculations
+- InvoiceTax: Tax lines with automatic calculation
+- SalesInvoice: Complete customer invoices with multi-item and multi-tax support
+
+**Features:**
+- Automatic total calculations (subtotal + taxes = grand total)
+- Multi-item invoice support
+- Multi-tax support (VAT, withholding, etc.)
+- Fiscal period validation
+- ERPNext Sales Invoice format
+- Integration with Layers 1 & 2
+
+**Architecture Status:**
+All 3 layers working seamlessly together. Money + Account + Tax → JournalEntry → SalesInvoice creates complete ERPNext-ready business documents from primitives.

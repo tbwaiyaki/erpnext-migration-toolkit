@@ -1,0 +1,4 @@
+id,type,name,breed,count,status,notes,acquired_date
+1,Dog,Simba,German Shepherd mix,1,active,Guard/pet dog. Lives on the compound.,2024-01-20
+2,Dog,Zuri,Rhodesian Ridgeback mix,1,active,Guard/pet dog. Lives on the compound.,2024-01-20
+3,Chicken,Kuroiler Flock,Kuroiler (hybrid),200,active,"Egg-laying hens. Kuroiler hybrid — hardy, good layers, popular in Kenya. Housed in the poultry area.",2024-02-01

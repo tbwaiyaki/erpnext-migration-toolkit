@@ -1,0 +1,7 @@
+id,name,description,property_type
+1,Main House,5-bed residential house with spacious sitting/dining area and wide veranda,Building
+2,Guest House,2-bed guest house occupied by the live-in manager,Building
+3,Servants Quarters,2-bed servants quarters,Building
+4,Landscaped Grounds,Gardens and outdoor event space with manicured lawns,Grounds
+5,Chicken Coop / Poultry Area,Houses ~200 egg-laying chickens for the egg business,Facility
+6,Veranda / Outdoor Seating,Wide veranda off main house used for outdoor dining and events,Facility

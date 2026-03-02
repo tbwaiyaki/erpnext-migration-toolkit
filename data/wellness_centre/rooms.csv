@@ -1,0 +1,6 @@
+id,room_name,property_id,floor,is_ensuite,nightly_rate,description
+1,Master Bedroom,1,Upper,1,8000,"Ensuite, king bed, garden view, well-decorated and comfortable"
+2,Bedroom 2,1,Upper,0,7000,"Double bed, shared bathroom, garden view, cosy furnishing"
+3,Bedroom 3,1,Upper,0,7000,"Twin beds, shared bathroom, quiet side of house"
+4,Bedroom 4,1,Ground,0,7000,"Double bed, shared bathroom, easy veranda access"
+5,Bedroom 5,1,Ground,0,7000,"Double bed, shared bathroom, near sitting area"

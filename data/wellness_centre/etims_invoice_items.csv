@@ -1,0 +1,221 @@
+id,invoice_id,item_description,quantity,unit,unit_price,total_price,tax_rate,tax_amount
+1,1,Fresh farm eggs (tray of 30),3,tray,345,1035,0,0
+2,2,Fresh farm eggs (tray of 30),8,tray,340,2720,0,0
+3,3,Event venue hire — deposit (50%),1,event,17500,17500,0,0
+4,4,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+5,5,Fresh farm eggs (tray of 30),2,tray,360,720,0,0
+6,6,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+7,7,Fresh farm eggs (tray of 30),2,tray,350,700,0,0
+8,8,Fresh farm eggs (tray of 30),6,tray,350,2100,0,0
+9,9,Event venue hire — balance payment,1,event,17500,17500,0,0
+10,10,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+11,11,Fresh farm eggs (tray of 30),7,tray,355,2485,0,0
+12,12,Event venue hire — deposit (50%),1,event,22500,22500,0,0
+13,13,Fresh farm eggs (tray of 30),2,tray,350,700,0,0
+14,14,Fresh farm eggs (tray of 30),1,tray,350,350,0,0
+15,15,Fresh farm eggs (tray of 30),8,tray,340,2720,0,0
+16,16,Event venue hire — balance payment,1,event,22500,22500,0,0
+17,17,Event venue hire — deposit (50%),1,event,15000,15000,0,0
+18,18,Fresh farm eggs (tray of 30),2,tray,350,700,0,0
+19,19,Fresh farm eggs (tray of 30),1,tray,355,355,0,0
+20,20,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+21,21,Wellness service — yoga session,1,session,15000,15000,0,0
+22,22,Fresh farm eggs (tray of 30),2,tray,350,700,0,0
+23,23,Fresh farm eggs (tray of 30),5,tray,345,1725,0,0
+24,24,Event venue hire — balance payment,1,event,15000,15000,0,0
+25,25,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+26,26,Master Bedroom — nightly rate,1,night,8000,8000,0,0
+27,27,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+28,28,Fresh farm eggs (tray of 30),3,tray,345,1035,0,0
+29,29,Event venue hire — deposit (50%),1,event,30000,30000,0,0
+30,30,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+31,31,Fresh farm eggs (tray of 30),7,tray,350,2450,0,0
+32,32,Fresh farm eggs (tray of 30),4,tray,355,1420,0,0
+33,33,Fresh farm eggs (tray of 30),8,tray,350,2800,0,0
+34,34,Event venue hire — balance payment,1,event,30000,30000,0,0
+35,35,Fresh farm eggs (tray of 30),3,tray,355,1065,0,0
+36,36,Event venue hire — deposit (50%),1,event,50000,50000,0,0
+37,37,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+38,38,Fresh farm eggs (tray of 30),3,tray,345,1035,0,0
+39,39,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+40,40,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+41,41,Fresh farm eggs (tray of 30),2,tray,355,710,0,0
+42,42,Event venue hire — balance payment,1,event,50000,50000,0,0
+43,43,Master Bedroom — nightly rate,1,night,8000,8000,0,0
+44,44,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+45,45,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+46,46,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+47,47,Event venue hire — deposit (50%),1,event,25000,25000,0,0
+48,48,Wellness service — nature therapy walk,1,session,12000,12000,0,0
+49,49,Fresh farm eggs (tray of 30),2,tray,355,710,0,0
+50,50,Fresh farm eggs (tray of 30),8,tray,340,2720,0,0
+51,51,Event venue hire — balance payment,1,event,25000,25000,0,0
+52,52,Fresh farm eggs (tray of 30),1,tray,355,355,0,0
+53,53,Event venue hire — deposit (50%),1,event,17500,17500,0,0
+54,54,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+55,55,Wellness service — meditation class,1,session,5000,5000,0,0
+56,56,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+57,57,Fresh farm eggs (tray of 30),8,tray,340,2720,0,0
+58,58,Event venue hire — deposit (50%),1,event,27500,27500,0,0
+59,59,Event venue hire — balance payment,1,event,17500,17500,0,0
+60,60,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+61,61,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+62,62,Fresh farm eggs (tray of 30),4,tray,345,1380,0,0
+63,63,Fresh farm eggs (tray of 30),2,tray,335,670,0,0
+64,64,Fresh farm eggs (tray of 30),8,tray,345,2760,0,0
+65,65,Fresh farm eggs (tray of 30),3,tray,330,990,0,0
+66,66,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+67,67,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+68,68,Event venue hire — balance payment,1,event,27500,27500,0,0
+69,69,Event venue hire — deposit (50%),1,event,22500,22500,0,0
+70,70,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+71,71,Fresh farm eggs (tray of 30),4,tray,350,1400,0,0
+72,72,Fresh farm eggs (tray of 30),3,tray,335,1005,0,0
+73,73,Wellness service — sound healing,1,session,10000,10000,0,0
+74,74,Fresh farm eggs (tray of 30),7,tray,340,2380,0,0
+75,75,Fresh farm eggs (tray of 30),1,tray,335,335,0,0
+76,76,Event venue hire — balance payment,1,event,22500,22500,0,0
+77,77,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+78,78,Event venue hire — deposit (50%),1,event,30000,30000,0,0
+79,79,Fresh farm eggs (tray of 30),1,tray,350,350,0,0
+80,80,Fresh farm eggs (tray of 30),2,tray,330,660,0,0
+81,81,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+82,82,Wellness service — wellness consultation,1,session,5000,5000,0,0
+83,83,Fresh farm eggs (tray of 30),6,tray,335,2010,0,0
+84,84,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+85,85,Fresh farm eggs (tray of 30),2,tray,340,680,0,0
+86,86,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+87,87,Event venue hire — balance payment,1,event,30000,30000,0,0
+88,88,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+89,89,Fresh farm eggs (tray of 30),2,tray,330,660,0,0
+90,90,Fresh farm eggs (tray of 30),8,tray,335,2680,0,0
+91,91,Event venue hire — deposit (50%),1,event,60000,60000,0,0
+92,92,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+93,93,Fresh farm eggs (tray of 30),3,tray,340,1020,0,0
+94,94,Fresh farm eggs (tray of 30),2,tray,340,680,0,0
+95,95,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+96,96,Fresh farm eggs (tray of 30),4,tray,350,1400,0,0
+97,97,Wellness service — sound healing,1,session,10000,10000,0,0
+98,98,Fresh farm eggs (tray of 30),1,tray,350,350,0,0
+99,99,Fresh farm eggs (tray of 30),1,tray,350,350,0,0
+100,100,Event venue hire — balance payment,1,event,60000,60000,0,0
+101,101,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+102,102,Event venue hire — deposit (50%),1,event,35000,35000,0,0
+103,103,Fresh farm eggs (tray of 30),6,tray,335,2010,0,0
+104,104,Wellness service — meditation class,1,session,15000,15000,0,0
+105,105,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+106,106,Fresh farm eggs (tray of 30),8,tray,345,2760,0,0
+107,107,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+108,108,Fresh farm eggs (tray of 30),7,tray,335,2345,0,0
+109,109,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+110,110,Event venue hire — balance payment,1,event,35000,35000,0,0
+111,111,Fresh farm eggs (tray of 30),3,tray,340,1020,0,0
+112,112,Master Bedroom — nightly rate,1,night,8000,8000,0,0
+113,113,Fresh farm eggs (tray of 30),5,tray,330,1650,0,0
+114,114,Event venue hire — deposit (50%),1,event,20000,20000,0,0
+115,115,Fresh farm eggs (tray of 30),5,tray,330,1650,0,0
+116,116,Fresh farm eggs (tray of 30),8,tray,355,2840,0,0
+117,117,Event venue hire — balance payment,1,event,20000,20000,0,0
+118,118,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+119,119,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+120,120,Fresh farm eggs (tray of 30),1,tray,360,360,0,0
+121,121,Event venue hire — deposit (50%),1,event,22500,22500,0,0
+122,122,Fresh farm eggs (tray of 30),3,tray,355,1065,0,0
+123,123,Wellness service — yoga session,1,session,12000,12000,0,0
+124,124,Master Bedroom — nightly rate,1,night,8000,8000,0,0
+125,125,Fresh farm eggs (tray of 30),4,tray,340,1360,0,0
+126,126,Fresh farm eggs (tray of 30),3,tray,360,1080,0,0
+127,127,Event venue hire — balance payment,1,event,22500,22500,0,0
+128,128,Guest Bedroom — nightly rate,3,night,7000,21000,0,0
+129,129,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+130,130,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+131,131,Fresh farm eggs (tray of 30),5,tray,360,1800,0,0
+132,132,Event venue hire — deposit (50%),1,event,65000,65000,0,0
+133,133,Fresh farm eggs (tray of 30),6,tray,355,2130,0,0
+134,134,Event venue hire — deposit (50%),1,event,32500,32500,0,0
+135,135,Fresh farm eggs (tray of 30),4,tray,350,1400,0,0
+136,136,Fresh farm eggs (tray of 30),8,tray,360,2880,0,0
+137,137,Fresh farm eggs (tray of 30),1,tray,355,355,0,0
+138,138,Event venue hire — balance payment,1,event,65000,65000,0,0
+139,139,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+140,140,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+141,141,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+142,142,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+143,143,Event venue hire — balance payment,1,event,32500,32500,0,0
+144,144,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+145,145,Event venue hire — deposit (50%),1,event,27500,27500,0,0
+146,146,Fresh farm eggs (tray of 30),1,tray,345,345,0,0
+147,147,Guest Bedroom — nightly rate,3,night,7000,21000,0,0
+148,148,Wellness service — meditation class,1,session,10000,10000,0,0
+149,149,Event venue hire — deposit (50%),1,event,60000,60000,0,0
+150,150,Fresh farm eggs (tray of 30),6,tray,345,2070,0,0
+151,151,Event venue hire — balance payment,1,event,27500,27500,0,0
+152,152,Event venue hire — deposit (50%),1,event,14000,14000,0,0
+153,153,Fresh farm eggs (tray of 30),2,tray,355,710,0,0
+154,154,Fresh farm eggs (tray of 30),6,tray,360,2160,0,0
+155,155,Event venue hire — balance payment,1,event,60000,60000,0,0
+156,156,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+157,157,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+158,158,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+159,159,Fresh farm eggs (tray of 30),2,tray,360,720,0,0
+160,160,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+161,161,Fresh farm eggs (tray of 30),8,tray,370,2960,0,0
+162,162,Event venue hire — balance payment,1,event,14000,14000,0,0
+163,163,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+164,164,Fresh farm eggs (tray of 30),6,tray,370,2220,0,0
+165,165,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+166,166,Fresh farm eggs (tray of 30),5,tray,375,1875,0,0
+167,167,Wellness service — wellness consultation,1,session,12000,12000,0,0
+168,168,Event venue hire — deposit (50%),1,event,70000,70000,0,0
+169,169,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+170,170,Fresh farm eggs (tray of 30),1,tray,370,370,0,0
+171,171,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+172,172,Fresh farm eggs (tray of 30),1,tray,365,365,0,0
+173,173,Event venue hire — balance payment,1,event,70000,70000,0,0
+174,174,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+175,175,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+176,176,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+177,177,Event venue hire — deposit (50%),1,event,57500,57500,0,0
+178,178,Fresh farm eggs (tray of 30),4,tray,370,1480,0,0
+179,179,Fresh farm eggs (tray of 30),3,tray,365,1095,0,0
+180,180,Event venue hire — deposit (50%),1,event,30000,30000,0,0
+181,181,Fresh farm eggs (tray of 30),2,tray,375,750,0,0
+182,182,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+183,183,Fresh farm eggs (tray of 30),1,tray,360,360,0,0
+184,184,Event venue hire — balance payment,1,event,57500,57500,0,0
+185,185,Wellness service — meditation class,1,session,12000,12000,0,0
+186,186,Master Bedroom — nightly rate,2,night,8000,16000,0,0
+187,187,Fresh farm eggs (tray of 30),3,tray,365,1095,0,0
+188,188,Event venue hire — balance payment,1,event,30000,30000,0,0
+189,189,Event venue hire — deposit (50%),1,event,25000,25000,0,0
+190,190,Fresh farm eggs (tray of 30),1,tray,375,375,0,0
+191,191,Fresh farm eggs (tray of 30),1,tray,375,375,0,0
+192,192,Fresh farm eggs (tray of 30),2,tray,375,750,0,0
+193,193,Event venue hire — balance payment,1,event,25000,25000,0,0
+194,194,Event venue hire — deposit (50%),1,event,40000,40000,0,0
+195,195,Fresh farm eggs (tray of 30),2,tray,370,740,0,0
+196,196,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+197,197,Fresh farm eggs (tray of 30),8,tray,360,2880,0,0
+198,198,Fresh farm eggs (tray of 30),1,tray,375,375,0,0
+199,199,Event venue hire — balance payment,1,event,40000,40000,0,0
+200,200,Event venue hire — deposit (50%),1,event,32500,32500,0,0
+201,201,Fresh farm eggs (tray of 30),4,tray,370,1480,0,0
+202,202,Wellness service — sound healing,1,session,8000,8000,0,0
+203,203,Fresh farm eggs (tray of 30),4,tray,365,1460,0,0
+204,204,Fresh farm eggs (tray of 30),8,tray,360,2880,0,0
+205,205,Event venue hire — balance payment,1,event,32500,32500,0,0
+206,206,Fresh farm eggs (tray of 30),6,tray,370,2220,0,0
+207,207,Guest Bedroom — nightly rate,1,night,7000,7000,0,0
+208,208,Wellness service — nature therapy walk,1,session,10000,10000,0,0
+209,209,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+210,210,Fresh farm eggs (tray of 30),5,tray,360,1800,0,0
+211,211,Fresh farm eggs (tray of 30),2,tray,365,730,0,0
+212,212,Fresh farm eggs (tray of 30),7,tray,365,2555,0,0
+213,213,Fresh farm eggs (tray of 30),1,tray,370,370,0,0
+214,214,Fresh farm eggs (tray of 30),5,tray,380,1900,0,0
+215,215,Guest Bedroom — nightly rate,2,night,7000,14000,0,0
+216,216,Fresh farm eggs (tray of 30),4,tray,350,1400,0,0
+217,217,Fresh farm eggs (tray of 30),1,tray,340,340,0,0
+218,218,Master Bedroom — nightly rate,1,night,8000,8000,0,0
+219,219,Fresh farm eggs (tray of 30),2,tray,360,720,0,0
+220,220,Guest Bedroom — nightly rate,2,night,7000,14000,0,0

@@ -1,0 +1,948 @@
+id,transaction_date,type,category_id,contact_id,property_id,event_id,egg_sale_id,inventory_movement_id,description,amount,payment_method,reference_number,notes,created_at,etims_invoice_id
+1,2024-01-15,capital_injection,1,1,,,,,Owner capital injection — initial business setup fund,2000000,Bank Transfer,BT5586193,Veronica's personal savings — seed capital,2024-01-15T13:36:00,
+2,2024-01-16,expense,24,,,,,,Business registration — county government,15000,Bank Transfer,BT1266249,Nairobi County business permit,2024-01-16T15:57:00,
+3,2024-01-17,expense,24,,,,,,Food handlers certificate & health inspection,8000,M-Pesa,SUUXLE78JF,Public health compliance,2024-01-17T11:37:00,
+4,2024-01-18,expense,8,10,4,,,,Casual labour — grounds preparation,1500,Cash,,Day hire for landscaping work,2024-01-18T14:06:00,
+5,2024-01-18,expense,15,,4,,,,Landscaping design consultation,25000,M-Pesa,SJDR11687Z,Garden designer walkthrough,2024-01-18T17:29:00,
+6,2024-01-19,expense,6,6,,,,,Casual security — site watch during setup,1500,Cash,,Day hire guard,2024-01-19T09:36:00,
+7,2024-01-20,expense,15,,4,,,,Tree trimming and hedge shaping,18000,Cash,,3 casual workers for 2 days,2024-01-20T12:25:00,
+8,2024-01-20,expense,8,9,4,,,,Casual labour — grounds preparation,1500,Cash,,Day hire for landscaping work,2024-01-20T16:01:00,
+9,2024-01-21,expense,15,,4,,,,Lawn re-seeding and soil preparation,35000,M-Pesa,SRM3K8NFSY,Kikuyu grass seed + topsoil,2024-01-21T16:17:00,
+10,2024-01-22,expense,6,5,,,,,Casual security — site watch during setup,1500,Cash,,Day hire guard,2024-01-22T08:20:00,
+11,2024-01-22,expense,8,12,4,,,,Casual labour — grounds preparation,1500,Cash,,Day hire for landscaping work,2024-01-22T12:21:00,
+12,2024-01-22,capital_injection,1,1,,,,,Owner capital injection — property prep and inventory,1500000,Bank Transfer,BT7133553,Second tranche for renovations and equipment,2024-01-22T16:09:00,
+13,2024-01-22,expense,15,,4,,,,Flower beds and ornamental plants,22000,M-Pesa,SRZD4QYQ94,Plants from Limuru nursery,2024-01-22T16:58:00,
+14,2024-01-23,expense,15,,4,,,,Pathway gravel and stepping stones,28000,Cash,,Delivered from quarry,2024-01-23T13:49:00,
+15,2024-01-24,expense,8,13,4,,,,Casual labour — grounds preparation,1500,Cash,,Day hire for landscaping work,2024-01-24T08:50:00,
+16,2024-01-24,expense,15,,4,,,,Irrigation system installation,45000,M-Pesa,SWAPNC5E7Q,Drip irrigation for gardens,2024-01-24T15:29:00,
+17,2024-01-25,expense,15,,4,,,,Outdoor lighting installation — garden paths,32000,M-Pesa,SMS37M4F9B,Solar path lights + wiring,2024-01-25T11:20:00,
+18,2024-01-25,expense,6,4,,,,,Casual security — site watch during setup,1500,M-Pesa,SBJVETNZQN,Day hire guard,2024-01-25T14:50:00,
+19,2024-01-26,expense,22,17,1,,,,"Cleaning equipment — mops, brooms, buckets, supplies",8500,M-Pesa,SGZUPGYSLY,Bulk purchase from Mama Njeri's,2024-01-26T09:33:00,
+20,2024-01-26,expense,8,13,4,,,,Casual labour — grounds preparation,1500,Cash,,Day hire for landscaping work,2024-01-26T13:42:00,
+21,2024-01-27,expense,22,16,4,,,,"Garden tools — wheelbarrows, hoses, rakes, pangas, mower",55000,M-Pesa,SCX7KJFQPE,Bulk purchase from Eastleigh Hardware,2024-01-27T13:35:00,
+22,2024-01-28,expense,6,6,,,,,Casual security — site watch during setup,1500,Cash,,Day hire guard,2024-01-28T08:23:00,
+23,2024-01-28,expense,22,15,1,,,,"Kitchen equipment — pots, pans, knives, blender, kettle, thermos",52000,M-Pesa,S5MHZTTT7S,Bulk purchase from Nairobi Provisions,2024-01-28T17:57:00,
+24,2024-01-29,expense,22,15,1,,,,"Dining cutlery — plates, bowls, forks, knives, spoons, glasses (120 sets)",95000,Bank Transfer,BT3311123,Large order from Nairobi Provisions,2024-01-29T08:47:00,
+25,2024-01-29,expense,22,15,1,,,,"Serving ware — dishes, trays, jugs, salt & pepper sets",28000,M-Pesa,SU8YA3T0AD,Complement to cutlery order,2024-01-29T11:19:00,
+26,2024-01-29,expense,14,43,,,,,Kenya Power — meter upgrade & deposit,15000,Bank Transfer,BT7792544,Commercial meter installation,2024-01-29T17:42:00,
+27,2024-01-30,expense,6,6,,,,,Casual security — site watch during setup,1500,M-Pesa,STM2ZO4CTJ,Day hire guard,2024-01-30T09:24:00,
+28,2024-01-30,expense,13,44,,,,,Nairobi Water — connection deposit,8000,Bank Transfer,BT6834817,Water meter deposit,2024-01-30T14:48:00,
+29,2024-01-31,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — January (pro-rata),12000,Bank Transfer,BT3131377,Pro-rata for last 4 days of January,2024-01-31T16:25:00,
+30,2024-02-01,expense,8,9,,,,,Casual labour — renovation/setup assistance,1500,M-Pesa,SDWLSLWT0U,Day hire fundi/helper,2024-02-01T12:14:00,
+31,2024-02-01,expense,16,,1,,,,Main house veranda renovation — new flooring,180000,Bank Transfer,BT4221145,Contractor — veranda tiling and railing,2024-02-01T12:54:00,
+32,2024-02-01,expense,22,16,1,,,,"Electrical accessories — extensions, bulbs, adapters, power strips",32000,M-Pesa,SG7SFH8J77,Eastleigh Hardware,2024-02-01T15:08:00,
+33,2024-02-02,expense,8,10,,,,,Casual labour — renovation/setup assistance,1500,M-Pesa,SO5F4U3D7K,Day hire fundi/helper,2024-02-02T11:01:00,
+34,2024-02-02,expense,25,20,1,,,,"Furniture — veranda lounge chairs, coffee tables",60000,Bank Transfer,BT8522073,Westlands Furniture,2024-02-02T13:48:00,
+35,2024-02-02,expense,25,20,1,,,,"Furniture — bookshelves, side tables, display stands",30000,M-Pesa,SUOUIQA709,Westlands Furniture,2024-02-02T15:12:00,
+36,2024-02-02,expense,6,4,,,,,Casual security — property watch,1500,Cash,,Day hire guard,2024-02-02T17:39:00,
+37,2024-02-03,expense,22,18,4,,,,Event equipment — 120 plastic chairs,96000,Bank Transfer,BT9048147,Safari Event Rentals,2024-02-03T09:32:00,
+38,2024-02-03,expense,9,11,,,,,Casual transport — furniture and equipment delivery,1500,Cash,,Pickup truck hire for deliveries,2024-02-03T10:14:00,
+39,2024-02-03,expense,16,,1,,,,Kitchen renovation — countertops and sink upgrade,95000,Bank Transfer,BT6081843,Contractor — kitchen refurbishment,2024-02-03T14:00:00,
+40,2024-02-03,expense,8,10,,,,,Casual labour — renovation/setup assistance,1500,Cash,,Day hire fundi/helper,2024-02-03T15:18:00,
+41,2024-02-03,expense,22,18,4,,,,Event equipment — 13 round tables + 4 rectangular,96000,Bank Transfer,BT3013894,Safari Event Rentals,2024-02-03T15:53:00,
+42,2024-02-04,expense,8,9,,,,,Casual labour — renovation/setup assistance,1500,M-Pesa,SVQQ4NT7S3,Day hire fundi/helper,2024-02-04T12:25:00,
+43,2024-02-04,expense,22,18,4,,,,"Event equipment — tents, table covers, ribbons, vases, banners",45000,M-Pesa,S4QE5KULUQ,Safari Event Rentals,2024-02-04T13:34:00,
+44,2024-02-05,expense,22,22,2,,,,"Linens — bedsheets, towels, kitchen towels, curtains",55000,M-Pesa,S34J3KBNDY,Ngong Road Linen Centre — guest house supplies,2024-02-05T08:23:00,
+45,2024-02-05,expense,22,22,1,,,,"Linens — tablecloths, napkins, chair covers, sashes (bulk)",115000,Bank Transfer,BT4116886,Ngong Road Linen Centre,2024-02-05T09:26:00,
+46,2024-02-05,expense,16,,1,,,,Sitting/dining area repaint and ceiling repair,45000,M-Pesa,SNQXL1SGWE,Painter + materials,2024-02-05T13:15:00,
+47,2024-02-05,expense,6,6,,,,,Casual security — property watch,1500,M-Pesa,SZVMJRBDPE,Day hire guard,2024-02-05T14:40:00,
+48,2024-02-05,expense,9,11,,,,,Casual transport — linen delivery from Ngong Road,1500,M-Pesa,SZUE697PJE,Delivery run,2024-02-05T17:18:00,
+49,2024-02-06,expense,22,16,4,,,,Fairy lights — string and curtain lights (14 sets),22000,M-Pesa,S6JCN4SZ9E,Eastleigh Hardware,2024-02-06T08:01:00,
+50,2024-02-06,expense,22,16,1,,,,"Sound equipment — 2 JBL speakers, 2 wireless mics",45500,M-Pesa,S4G5ATYI2K,Eastleigh Hardware — electronics section,2024-02-06T16:44:00,
+51,2024-02-06,expense,8,10,,,,,Casual labour — renovation/setup assistance,1500,M-Pesa,SPTCCJQOQC,Day hire fundi/helper,2024-02-06T16:56:00,
+52,2024-02-07,expense,16,,2,,,,Guest house maintenance — plumbing and paint,35000,M-Pesa,SF84BCSCYS,Manager's accommodation prep,2024-02-07T09:21:00,
+53,2024-02-07,expense,8,9,,,,,Casual labour — renovation/setup assistance,1500,Cash,,Day hire fundi/helper,2024-02-07T09:58:00,
+54,2024-02-08,expense,6,4,,,,,Casual security — property watch,1500,M-Pesa,SOEMZLJZI4,Day hire guard,2024-02-08T10:32:00,
+55,2024-02-08,expense,16,,3,,,,Servants quarters refurbishment,25000,Cash,,Minor repairs and repaint,2024-02-08T12:39:00,
+56,2024-02-08,expense,8,9,,,,,Casual labour — renovation/setup assistance,1500,Cash,,Day hire fundi/helper,2024-02-08T14:55:00,
+57,2024-02-08,expense,16,,5,,,,"Poultry area construction — coops, feeders, waterers",85000,Bank Transfer,BT4170719,Custom chicken coop build,2024-02-08T16:48:00,
+58,2024-02-09,expense,7,8,1,,,,Casual cleaning — post-renovation deep clean,1500,Cash,,Main house deep clean,2024-02-09T08:15:00,
+59,2024-02-10,expense,8,9,,,,,Casual labour — renovation/setup assistance,1500,Cash,,Day hire fundi/helper,2024-02-10T09:37:00,
+60,2024-02-10,expense,23,14,5,,,,Purchase of 200 Kuroiler hens,100000,Bank Transfer,BT9444750,Nthiwa Kamore — livestock supplier. 200 hens @ KES 500 each,2024-02-10T10:26:00,
+61,2024-02-10,expense,12,23,5,,,,Veterinary consultation — initial flock assessment,8000,M-Pesa,STWVR343DN,Dr. Odhiambo — vaccination schedule set,2024-02-10T12:14:00,
+62,2024-02-10,expense,9,11,,,,,Casual transport — chicken flock delivery,2500,Cash,,Special trip — livestock transport,2024-02-10T13:40:00,
+63,2024-02-10,expense,11,14,5,,,,Initial chicken feed stock — layers mash (500kg),25000,M-Pesa,SV0J1X19PP,2-week supply,2024-02-10T15:33:00,
+64,2024-02-10,expense,7,7,1,,,,Casual cleaning — post-renovation deep clean,1500,Cash,,Continued cleaning,2024-02-10T16:09:00,
+65,2024-02-11,expense,7,8,1,,,,Casual cleaning — final setup clean,1500,M-Pesa,SZIWXDCXXX,Final walkthrough clean,2024-02-11T11:43:00,
+66,2024-02-11,expense,20,,4,,,,Dog acquisition — Simba & Zuri (2 dogs),12000,Cash,,Guard dogs for property security,2024-02-11T12:12:00,
+67,2024-02-11,expense,20,23,,,,,Vet checkup and vaccinations — Simba & Zuri,5000,M-Pesa,S35LRGPAXT,"Initial health check + rabies, distemper",2024-02-11T13:05:00,
+68,2024-02-12,expense,17,25,,,,,Event planner consultation — venue setup advice,15000,M-Pesa,SZG3FQTMHH,Pauline Omweri — initial walkthrough and recommendations,2024-02-12T10:58:00,
+69,2024-02-12,expense,6,6,,,,,Casual security — property watch,1500,Cash,,Day hire guard,2024-02-12T16:00:00,
+70,2024-02-14,expense,17,24,,,,,Accountant — business books setup and tax registration,20000,M-Pesa,S9GQ7Q2908,Veronica Njagi — initial accounting setup,2024-02-14T08:25:00,
+71,2024-02-15,expense,13,44,,,,,Nairobi Water — February water bill,4500,M-Pesa,SNIH1SHI0G,Landscaping irrigation usage,2024-02-15T10:39:00,
+72,2024-02-15,expense,14,43,,,,,Kenya Power — February electricity bill,8500,M-Pesa,SLFEC41AHS,Higher usage due to renovations,2024-02-15T13:56:00,
+73,2024-02-15,expense,6,4,,,,,Casual security — property watch,1500,Cash,,Day hire guard,2024-02-15T15:21:00,
+74,2024-02-16,expense,19,15,,,,,"Supplies & provisions — cleaning chemicals, detergent, bin bags",6500,M-Pesa,SSPC5MBPO6,Opening stock of supplies,2024-02-16T09:42:00,
+75,2024-02-19,expense,6,4,,,,,Casual security — property watch,1500,Cash,,Day hire guard,2024-02-19T11:49:00,
+76,2024-02-20,capital_injection,1,1,,,,,Owner capital injection — renovation cost overrun,500000,Bank Transfer,BT7551877,Additional funds for renovation completion,2024-02-20T08:37:00,
+77,2024-02-22,expense,6,5,,,,,Casual security — property watch,1500,Cash,,Day hire guard,2024-02-22T12:00:00,
+78,2024-02-26,expense,6,5,,,,,Casual security — property watch,1500,M-Pesa,S28L46T89H,Day hire guard,2024-02-26T10:41:00,
+79,2024-02-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — February,12000,Bank Transfer,BT6690219,Part-time monthly pay — started mid-Feb,2024-02-28T14:15:00,
+80,2024-02-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — February,35000,Bank Transfer,BT4482413,Monthly salary,2024-02-28T14:40:00,
+81,2024-03-01,income,4,39,5,,1,,Egg sales — 3 trays,1035,M-Pesa,SOC2AMUECF,,2024-03-01T09:48:00,1
+82,2024-03-02,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-03-02T12:30:00,
+83,2024-03-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SFQ3GIK4ZH,Weekly clean,2024-03-03T08:29:00,
+84,2024-03-03,expense,15,3,4,,,,Garden weeding and mulching,5000,M-Pesa,SDUPJRWDJA,Groundskeeper + occasional casual help,2024-03-03T10:15:00,
+85,2024-03-05,income,4,41,5,,2,,Egg sales — 8 trays,2720,M-Pesa,SKPTTUOR4W,,2024-03-05T11:41:00,2
+86,2024-03-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),16624,M-Pesa,SPTUPK52LE,Biweekly feed purchase,2024-03-05T16:39:00,
+87,2024-03-06,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S0GTRT7UFP,Day hire guard,2024-03-06T08:51:00,
+88,2024-03-06,income,2,31,,1,,,Event deposit — Birthday Party (2024-03-16),17500,Bank Transfer,BT5878155,50% deposit received,2024-03-06T13:19:00,3
+89,2024-03-06,expense,8,10,,,,,Plumbing repair — kitchen sink,5000,M-Pesa,S4HRCPDM60,Day hire fundi,2024-03-06T13:46:00,
+90,2024-03-06,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-03-06T15:51:00,
+91,2024-03-08,income,4,41,5,,4,,Egg sales — 6 trays,2070,M-Pesa,SXLILU49QI,,2024-03-08T11:21:00,4
+92,2024-03-08,income,4,40,5,,3,,Egg sales — 2 trays,720,M-Pesa,SHU7KJWFVJ,,2024-03-08T13:02:00,5
+93,2024-03-08,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3500,M-Pesa,S5POIYEFLK,,2024-03-08T14:45:00,
+94,2024-03-08,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SVW3566310,Day hire guard,2024-03-08T16:23:00,
+95,2024-03-09,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-03-09T10:23:00,
+96,2024-03-12,income,4,41,5,,5,,Egg sales — 6 trays,2070,M-Pesa,SAS8MVUT5A,,2024-03-12T09:26:00,6
+97,2024-03-12,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S669N96QA2,Weekly clean,2024-03-12T14:01:00,
+98,2024-03-12,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SALP38Z1T6,Day hire guard,2024-03-12T14:58:00,
+99,2024-03-13,expense,20,23,,,,,Dog grooming and vet checkup — Simba & Zuri,3000,M-Pesa,S7ZK8EPF8P,Quarterly checkup,2024-03-13T08:27:00,
+100,2024-03-14,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-03-14T13:48:00,
+101,2024-03-15,expense,7,8,,1,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-03-15T09:11:00,
+102,2024-03-15,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",3500,Cash,,,2024-03-15T10:39:00,
+103,2024-03-15,income,4,40,5,,6,,Egg sales — 2 trays,700,M-Pesa,SZ2XX88OQA,,2024-03-15T11:28:00,7
+104,2024-03-15,expense,21,,,1,,,"Event supplies — Birthday Party (flowers, decor, consumables)",5194,Cash,,,2024-03-15T12:19:00,
+105,2024-03-15,expense,6,6,,1,,,Casual security — event eve setup watch,1500,Cash,,,2024-03-15T13:51:00,
+106,2024-03-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-03,7994,M-Pesa,S2VWSQB4ZY,,2024-03-15T17:10:00,
+107,2024-03-16,expense,13,44,,,,,Nairobi Water — water bill 2024-03,2683,M-Pesa,S3B4Z9FFQV,,2024-03-16T08:28:00,
+108,2024-03-16,expense,12,23,5,,,,Deworming treatment — poultry,10000,M-Pesa,SUTR2MIXX2,Dr. Odhiambo,2024-03-16T10:01:00,
+109,2024-03-16,income,4,42,5,,7,,Egg sales — 6 trays,2100,M-Pesa,SR5DWZG1U5,,2024-03-16T11:48:00,8
+110,2024-03-16,expense,19,19,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",2500,M-Pesa,S61I086QYT,,2024-03-16T11:55:00,
+111,2024-03-16,income,2,31,,1,,,Event balance — Birthday Party,17500,Bank Transfer,BT6429492,Balance payment on event day,2024-03-16T12:52:00,9
+112,2024-03-16,expense,10,13,,1,,,Casual labour — event setup & assistance,1500,M-Pesa,SQD7N9LNRE,,2024-03-16T14:00:00,
+113,2024-03-16,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S6JQ6QXEH0,Weekly clean,2024-03-16T14:46:00,
+114,2024-03-16,expense,6,5,,1,,,Casual security — event day,1500,Cash,,,2024-03-16T14:54:00,
+115,2024-03-17,expense,7,7,,1,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SBHUADIN02,,2024-03-17T16:23:00,
+116,2024-03-18,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-03-18T13:52:00,
+117,2024-03-19,income,4,42,5,,8,,Egg sales — 7 trays,2485,M-Pesa,SR7XKSZ49R,,2024-03-19T11:49:00,11
+118,2024-03-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),14777,M-Pesa,SWDY3NTXRV,Biweekly feed purchase,2024-03-19T13:34:00,
+119,2024-03-21,income,2,32,,2,,,Event deposit — Garden Party (2024-03-30),22500,M-Pesa,SKZK61NZ9O,50% deposit received,2024-03-21T08:15:00,12
+120,2024-03-21,expense,26,,,,,,Padlocks and keys,500,M-Pesa,SGKQTC0HYP,,2024-03-21T13:44:00,
+121,2024-03-21,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-03-21T14:09:00,
+122,2024-03-21,expense,9,11,,,,,Transport — egg delivery to buyer,1500,M-Pesa,SQ81PRQHB0,,2024-03-21T16:50:00,
+123,2024-03-22,income,4,39,5,,9,,Egg sales — 2 trays,700,M-Pesa,SMQ62SCM9K,,2024-03-22T10:30:00,13
+124,2024-03-22,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-03-22T15:36:00,
+125,2024-03-23,income,4,39,5,,10,,Egg sales — 1 trays,350,M-Pesa,S78VLZWEFL,,2024-03-23T09:23:00,14
+126,2024-03-25,expense,15,3,4,,,,Hedge trimming,3500,M-Pesa,S9JYEULROG,Groundskeeper + occasional casual help,2024-03-25T08:07:00,
+127,2024-03-25,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SE2N4NWSO7,Day hire guard,2024-03-25T14:52:00,
+128,2024-03-26,income,4,42,5,,11,,Egg sales — 8 trays,2720,Cash,,,2024-03-26T15:32:00,15
+129,2024-03-27,expense,21,,,2,,,"Event supplies — Garden Party (flowers, decor, consumables)",3371,Cash,,,2024-03-27T14:13:00,
+130,2024-03-28,expense,19,15,,,,,"Cleaning supplies — detergent, bleach, floor polish",3500,M-Pesa,S31H0PVSOS,,2024-03-28T09:00:00,
+131,2024-03-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-03,35000,Bank Transfer,BT6972165,Monthly salary,2024-03-28T14:06:00,
+132,2024-03-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-03,12000,Bank Transfer,BT3355258,Part-time monthly pay,2024-03-28T14:07:00,
+133,2024-03-28,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SRAKDAIOG4,Day hire guard,2024-03-28T17:41:00,
+134,2024-03-29,expense,7,7,,2,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-03-29T09:18:00,
+135,2024-03-29,expense,10,12,,2,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-03-29T10:01:00,
+136,2024-03-29,expense,6,4,,2,,,Casual security — event eve setup watch,1500,M-Pesa,S2YC2EAC3C,,2024-03-29T11:18:00,
+137,2024-03-30,income,2,32,,2,,,Event balance — Garden Party,22500,Bank Transfer,BT5754516,Balance payment on event day,2024-03-30T12:29:00,16
+138,2024-03-30,expense,10,13,,2,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-03-30T12:42:00,
+139,2024-03-30,expense,6,6,,2,,,Casual security — event day,1500,Cash,,,2024-03-30T15:13:00,
+140,2024-03-31,income,2,33,,3,,,Event deposit — Baby Shower (2024-04-13),15000,Bank Transfer,BT3061346,50% deposit received,2024-03-31T15:53:00,17
+141,2024-03-31,expense,7,8,,2,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-03-31T17:52:00,
+142,2024-04-01,expense,18,27,,2,,,Agent commission — Garden Party (2024-03-30),4500,M-Pesa,SE2AIOELD4,10% commission on hire fee,2024-04-01T12:32:00,
+143,2024-04-02,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SYQFOSMYFQ,Day hire guard,2024-04-02T12:06:00,
+144,2024-04-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-04-03T09:05:00,
+145,2024-04-04,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-04T10:41:00,
+146,2024-04-05,income,4,39,5,,12,,Egg sales — 2 trays,700,M-Pesa,SXT4BWR0WO,,2024-04-05T11:39:00,18
+147,2024-04-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),13640,M-Pesa,SH789R4FOT,Biweekly feed purchase,2024-04-05T15:46:00,
+148,2024-04-05,income,4,39,5,,13,,Egg sales — 1 trays,355,M-Pesa,SPLO8744P1,,2024-04-05T16:14:00,19
+149,2024-04-06,income,3,37,1,,,,Wellness service — yoga session,15000,Bank Transfer,BT4653951,,2024-04-06T14:18:00,21
+150,2024-04-06,expense,15,3,4,,,,Garden weeding and mulching,3500,M-Pesa,SQ4657CWFV,Groundskeeper + occasional casual help,2024-04-06T17:11:00,
+151,2024-04-06,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3500,M-Pesa,SVJ2D6DIGR,,2024-04-06T17:27:00,
+152,2024-04-07,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-04-07T13:13:00,
+153,2024-04-08,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-08T08:36:00,
+154,2024-04-09,income,4,40,5,,14,,Egg sales — 2 trays,700,M-Pesa,SXYLSF9Y34,,2024-04-09T09:27:00,22
+155,2024-04-11,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SAUBUKZCR8,Weekly clean,2024-04-11T13:36:00,
+156,2024-04-11,expense,21,,,3,,,"Event supplies — Baby Shower (flowers, decor, consumables)",3128,Cash,,,2024-04-11T14:53:00,
+157,2024-04-12,expense,6,6,,3,,,Casual security — event eve setup watch,1500,M-Pesa,SVUSSBSN8T,,2024-04-12T13:54:00,
+158,2024-04-12,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-12T14:46:00,
+159,2024-04-12,income,4,42,5,,15,,Egg sales — 5 trays,1725,Cash,,,2024-04-12T15:43:00,23
+160,2024-04-12,expense,7,8,,3,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S4TLYXW38E,,2024-04-12T15:52:00,
+161,2024-04-12,expense,15,3,4,,,,Flower bed maintenance,5000,Cash,,Groundskeeper + occasional casual help,2024-04-12T16:39:00,
+162,2024-04-13,income,2,33,,3,,,Event balance — Baby Shower,15000,M-Pesa,SLW12DBNF8,Balance payment on event day,2024-04-13T12:07:00,24
+163,2024-04-13,expense,10,12,,3,,,Casual labour — event setup & assistance,1500,Cash,,,2024-04-13T12:21:00,
+164,2024-04-13,expense,6,4,,3,,,Casual security — event day,1500,M-Pesa,S8OY6BNQ3U,,2024-04-13T15:09:00,
+165,2024-04-14,expense,26,,,,,,Printing and stationery,800,M-Pesa,SA8G4IFZHQ,,2024-04-14T12:52:00,
+166,2024-04-14,expense,7,7,,3,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-04-14T14:51:00,
+167,2024-04-14,expense,8,9,,,,,Electrical repair — faulty socket,3000,Cash,,Day hire fundi,2024-04-14T15:48:00,
+168,2024-04-15,expense,22,17,,,,85,Inventory restock — Mops (Cotton),1750,Cash,,Replacing broken/worn stock,2024-04-15T10:42:00,
+169,2024-04-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-04,5673,M-Pesa,S5KLYO3LMQ,,2024-04-15T12:52:00,
+170,2024-04-15,expense,22,18,,,,86,Inventory restock — Flower Vases (Glass),2450,M-Pesa,SCDOO8R7YL,Replacing broken/worn stock,2024-04-15T14:50:00,
+171,2024-04-15,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-15T15:01:00,
+172,2024-04-16,income,4,39,5,,16,,Egg sales — 3 trays,1035,M-Pesa,S6YB0LKJW2,,2024-04-16T08:06:00,28
+173,2024-04-16,expense,13,44,,,,,Nairobi Water — water bill 2024-04,4480,M-Pesa,SNXXNZFQ11,,2024-04-16T15:40:00,
+174,2024-04-16,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SK429XK9EL,Weekly clean,2024-04-16T16:15:00,
+175,2024-04-18,income,2,34,,4,,,Event deposit — Wellness Retreat (2024-04-27),30000,M-Pesa,SBA5ONKZ2S,50% deposit received,2024-04-18T16:50:00,29
+176,2024-04-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),17216,M-Pesa,SQZDCIXNNC,Biweekly feed purchase,2024-04-19T13:53:00,
+177,2024-04-19,income,4,40,5,,17,,Egg sales — 1 trays,345,Cash,,,2024-04-19T14:02:00,30
+178,2024-04-19,income,4,41,5,,18,,Egg sales — 7 trays,2450,Cash,,,2024-04-19T15:53:00,31
+179,2024-04-19,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-19T16:01:00,
+180,2024-04-20,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SRL1NYA8F4,Weekly clean,2024-04-20T14:52:00,
+181,2024-04-22,expense,15,3,4,,,,Garden weeding and mulching,3500,M-Pesa,SFXZH86NR5,Groundskeeper + occasional casual help,2024-04-22T08:48:00,
+182,2024-04-22,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SIYLB11SJ1,Day hire guard,2024-04-22T10:39:00,
+183,2024-04-23,income,4,42,5,,19,,Egg sales — 4 trays,1420,M-Pesa,SSTEYPXFKJ,,2024-04-23T09:47:00,32
+184,2024-04-23,expense,19,15,,,,,"General provisions — toilet paper, bin bags, soap",4000,M-Pesa,SUEL0TXXOK,,2024-04-23T11:10:00,
+185,2024-04-23,expense,15,3,4,,,,Hedge trimming,5000,Cash,,Groundskeeper + occasional casual help,2024-04-23T16:59:00,
+186,2024-04-23,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-04-23T17:16:00,
+187,2024-04-24,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-24T12:31:00,
+188,2024-04-25,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-04-25T11:37:00,
+189,2024-04-26,expense,6,6,,4,,,Casual security — event eve setup watch,1500,Cash,,,2024-04-26T10:35:00,
+190,2024-04-26,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",6000,M-Pesa,SVP5GH5W23,,2024-04-26T11:12:00,
+191,2024-04-26,expense,7,8,,4,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-04-26T12:31:00,
+192,2024-04-26,expense,21,,,4,,,"Event supplies — Wellness Retreat (flowers, decor, consumables)",8161,Cash,,,2024-04-26T13:15:00,
+193,2024-04-26,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-04),15000,Bank Transfer,BT4898527,Monthly contribution to generator fund,2024-04-26T15:39:00,
+194,2024-04-26,income,4,42,5,,20,,Egg sales — 8 trays,2800,M-Pesa,SAHREHH12G,,2024-04-26T17:32:00,33
+195,2024-04-26,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-04-26T17:40:00,
+196,2024-04-27,expense,6,5,,4,,,Casual security — event day,1500,Cash,,,2024-04-27T10:11:00,
+197,2024-04-27,expense,10,12,,4,,,Casual labour — event setup & assistance,1500,Cash,,,2024-04-27T10:37:00,
+198,2024-04-27,expense,17,26,,,,,Wellness consultant — programme planning,10000,M-Pesa,SZE33MNIHZ,Ochieng Kiptanui,2024-04-27T12:07:00,
+199,2024-04-27,income,2,34,,4,,,Event balance — Wellness Retreat,30000,Bank Transfer,BT3944418,Balance payment on event day,2024-04-27T16:53:00,34
+200,2024-04-28,expense,7,8,,4,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SFRKZPV7B1,,2024-04-28T11:40:00,
+201,2024-04-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-04,12000,Bank Transfer,BT9401266,Part-time monthly pay,2024-04-28T12:46:00,
+202,2024-04-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-04,35000,Bank Transfer,BT7286849,Monthly salary,2024-04-28T13:41:00,
+203,2024-04-30,income,4,40,5,,21,,Egg sales — 3 trays,1065,M-Pesa,SBOVY5DHOA,,2024-04-30T12:51:00,35
+204,2024-04-30,income,2,35,,5,,,Event deposit — Wedding (2024-05-11),50000,Bank Transfer,BT3102797,50% deposit received,2024-04-30T16:11:00,36
+205,2024-05-02,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-02T16:00:00,
+206,2024-05-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-05-03T08:24:00,
+207,2024-05-03,income,4,41,5,,22,,Egg sales — 6 trays,2070,M-Pesa,S3M7PWUE3J,,2024-05-03T09:01:00,37
+208,2024-05-03,expense,15,3,4,,,,Garden weeding and mulching,3000,M-Pesa,SYEP2IBEL9,Groundskeeper + occasional casual help,2024-05-03T12:49:00,
+209,2024-05-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),12204,M-Pesa,SRM9M53YZH,Biweekly feed purchase,2024-05-05T17:02:00,
+210,2024-05-06,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SGNBP42INH,Day hire guard,2024-05-06T10:47:00,
+211,2024-05-06,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-05-06T12:33:00,
+212,2024-05-06,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3500,M-Pesa,SLCKNHLJCT,,2024-05-06T17:01:00,
+213,2024-05-07,income,4,39,5,,24,,Egg sales — 3 trays,1035,M-Pesa,SSJTXFJBES,,2024-05-07T11:20:00,38
+214,2024-05-07,income,4,39,5,,23,,Egg sales — 1 trays,345,M-Pesa,S2X622P3M1,,2024-05-07T16:37:00,39
+215,2024-05-08,expense,21,,,5,,,"Event supplies — Wedding (flowers, decor, consumables)",8521,Cash,,,2024-05-08T13:16:00,
+216,2024-05-09,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S5QUTU02R1,Weekly clean,2024-05-09T11:22:00,
+217,2024-05-10,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SDPHXX9VR9,Day hire guard,2024-05-10T09:25:00,
+218,2024-05-10,expense,9,11,,5,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,S9EJS479Q5,,2024-05-10T09:53:00,
+219,2024-05-10,expense,7,7,,5,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-05-10T12:43:00,
+220,2024-05-10,expense,6,6,,5,,,Casual security — event eve setup watch,1500,Cash,,,2024-05-10T13:17:00,
+221,2024-05-10,income,4,40,5,,25,,Egg sales — 2 trays,710,M-Pesa,SLVOFOKHP9,,2024-05-10T13:32:00,41
+222,2024-05-10,expense,10,13,,5,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-05-10T13:38:00,
+223,2024-05-10,expense,10,12,,5,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-05-10T15:21:00,
+224,2024-05-11,expense,10,13,,5,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-05-11T08:03:00,
+225,2024-05-11,expense,10,12,,5,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-05-11T08:15:00,
+226,2024-05-11,expense,15,3,4,,,,Lawn mowing and trimming,2000,Cash,,Groundskeeper + occasional casual help,2024-05-11T14:14:00,
+227,2024-05-11,income,2,35,,5,,,Event balance — Wedding,50000,M-Pesa,SW8UN9H2QS,Balance payment on event day,2024-05-11T14:55:00,42
+228,2024-05-11,expense,6,5,,5,,,Casual security — event day,1500,M-Pesa,SPM3D1V6PS,,2024-05-11T17:25:00,
+229,2024-05-12,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,S2M2X10NQ3,Day hire guard,2024-05-12T10:56:00,
+230,2024-05-12,expense,7,7,,5,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SRQ0P57T1Y,,2024-05-12T11:00:00,
+231,2024-05-12,expense,18,28,,5,,,Agent commission — Wedding (2024-05-11),10000,M-Pesa,SD4MZ9JAV1,10% commission on hire fee,2024-05-12T12:13:00,
+232,2024-05-12,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SKY4SIBJNA,Weekly clean,2024-05-12T17:02:00,
+233,2024-05-14,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-14T14:25:00,
+234,2024-05-15,expense,8,9,,,,,Plumbing repair — kitchen sink,1500,Cash,,Day hire fundi,2024-05-15T08:29:00,
+235,2024-05-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-05,7292,M-Pesa,SI580BJ5QF,,2024-05-15T16:58:00,
+236,2024-05-16,expense,13,44,,,,,Nairobi Water — water bill 2024-05,4555,M-Pesa,SOYLDISZY2,,2024-05-16T11:52:00,
+237,2024-05-16,expense,9,11,,,,,Transport — egg delivery to buyer,1500,Cash,,,2024-05-16T14:52:00,
+238,2024-05-16,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SFMXAF9P9D,Weekly clean,2024-05-16T15:18:00,
+239,2024-05-17,income,4,42,5,,26,,Egg sales — 6 trays,2070,M-Pesa,SA8MX8CEKS,,2024-05-17T12:07:00,46
+240,2024-05-17,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-17T14:07:00,
+241,2024-05-18,income,2,36,,6,,,Event deposit — Garden Party (2024-05-25),25000,M-Pesa,S41Y96OKM8,50% deposit received,2024-05-18T08:42:00,47
+242,2024-05-18,expense,9,11,,,,,Transport — feed delivery from supplier,1500,M-Pesa,SYMC2HPBXM,,2024-05-18T09:37:00,
+243,2024-05-18,income,3,40,1,,,,Wellness service — nature therapy walk,12000,Bank Transfer,BT9973406,,2024-05-18T12:00:00,48
+244,2024-05-18,expense,12,23,5,,,,Deworming treatment — poultry,6000,M-Pesa,SIAEB58LB9,Dr. Odhiambo,2024-05-18T12:56:00,
+245,2024-05-19,expense,19,17,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",4000,Cash,,,2024-05-19T08:25:00,
+246,2024-05-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),16198,M-Pesa,SOUOOQA9YH,Biweekly feed purchase,2024-05-19T08:29:00,
+247,2024-05-20,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-20T10:33:00,
+248,2024-05-20,expense,22,15,,,,97,Inventory restock — Serving Dishes (Medium),3500,M-Pesa,SO80F3S0RO,Replacing broken/worn stock,2024-05-20T12:33:00,
+249,2024-05-20,expense,22,15,,,,96,Inventory restock — Wine Glasses,2000,M-Pesa,SGWQFDK19J,Replacing broken/worn stock,2024-05-20T13:20:00,
+250,2024-05-20,expense,22,17,,,,94,Inventory restock — Brooms,1250,M-Pesa,SQZK1KZB9M,Replacing broken/worn stock,2024-05-20T13:37:00,
+251,2024-05-20,expense,22,18,,,,95,Inventory restock — Flower Vases (Glass),2100,Cash,,Replacing broken/worn stock,2024-05-20T15:08:00,
+252,2024-05-20,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-05-20T16:45:00,
+253,2024-05-20,expense,22,17,,,,98,Inventory restock — Brooms,1500,Cash,,Replacing broken/worn stock,2024-05-20T16:47:00,
+254,2024-05-21,income,4,40,5,,27,,Egg sales — 2 trays,710,M-Pesa,SPBH8T9Y4F,,2024-05-21T09:29:00,49
+255,2024-05-21,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SL1L3DQ9X5,Weekly clean,2024-05-21T13:09:00,
+256,2024-05-22,expense,17,24,,,,,Accountant — quarterly books review,12000,M-Pesa,S83RZ9T2L7,Veronica Njagi,2024-05-22T11:17:00,
+257,2024-05-22,expense,21,,,6,,,"Event supplies — Garden Party (flowers, decor, consumables)",5291,M-Pesa,SF3SE65LTJ,,2024-05-22T16:22:00,
+258,2024-05-23,expense,26,,,,,,M-Pesa transaction charges,2000,M-Pesa,S4NBXA0F9K,,2024-05-23T15:39:00,
+259,2024-05-23,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S8C37N2DR0,Day hire guard,2024-05-23T16:16:00,
+260,2024-05-24,income,4,41,5,,28,,Egg sales — 8 trays,2720,M-Pesa,SBGZGRHOCK,,2024-05-24T12:17:00,50
+261,2024-05-24,expense,10,12,,6,,,Casual labour — event setup,1500,M-Pesa,S8TQD6HEU6,"Setting up chairs, tables, decor",2024-05-24T12:59:00,
+262,2024-05-24,expense,9,11,,6,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,S8XJZSMQF8,,2024-05-24T13:06:00,
+263,2024-05-24,expense,7,7,,6,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,SSICAPVQZX,,2024-05-24T15:15:00,
+264,2024-05-24,expense,6,4,,6,,,Casual security — event eve setup watch,1500,Cash,,,2024-05-24T15:32:00,
+265,2024-05-25,expense,10,12,,6,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-05-25T08:02:00,
+266,2024-05-25,expense,6,5,,6,,,Casual security — event day,1500,M-Pesa,SOUC3LJQKP,,2024-05-25T08:34:00,
+267,2024-05-25,income,2,36,,6,,,Event balance — Garden Party,25000,M-Pesa,SVUGVACPOL,Balance payment on event day,2024-05-25T09:00:00,51
+268,2024-05-26,expense,7,8,,6,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SJCB3I6W5B,,2024-05-26T17:35:00,
+269,2024-05-27,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-27T16:42:00,
+270,2024-05-28,income,4,39,5,,29,,Egg sales — 1 trays,355,M-Pesa,SID4FNA9MA,,2024-05-28T09:42:00,52
+271,2024-05-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-05,35000,Bank Transfer,BT7283819,Monthly salary,2024-05-28T12:04:00,
+272,2024-05-28,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-05),10000,Bank Transfer,BT9944208,Monthly contribution to generator fund,2024-05-28T14:35:00,
+273,2024-05-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-05,12000,Bank Transfer,BT1805564,Part-time monthly pay,2024-05-28T14:49:00,
+274,2024-05-28,income,2,37,,7,,,Event deposit — Bridal Shower (2024-06-08),17500,Bank Transfer,BT4059255,50% deposit received,2024-05-28T15:08:00,53
+275,2024-05-29,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-05-29T12:26:00,
+276,2024-05-29,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",2500,Cash,,,2024-05-29T15:03:00,
+277,2024-05-31,income,4,42,5,,30,,Egg sales — 6 trays,2070,Cash,,,2024-05-31T16:08:00,54
+278,2024-06-01,income,3,34,1,,,,Wellness service — meditation class,5000,M-Pesa,SQ06YWEBKV,,2024-06-01T17:03:00,55
+279,2024-06-02,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-06-02T13:18:00,
+280,2024-06-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-06-03T13:13:00,
+281,2024-06-04,income,4,40,5,,31,,Egg sales — 1 trays,345,M-Pesa,SIM4946AEJ,,2024-06-04T11:28:00,56
+282,2024-06-05,expense,21,,,7,,,"Event supplies — Bridal Shower (flowers, decor, consumables)",3374,M-Pesa,SHNSH97K5L,,2024-06-05T09:13:00,
+283,2024-06-05,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,S1QSKFMACM,Day hire guard,2024-06-05T13:33:00,
+284,2024-06-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),12097,M-Pesa,SVB1Q1W653,Biweekly feed purchase,2024-06-05T17:50:00,
+285,2024-06-07,expense,6,4,,7,,,Casual security — event eve setup watch,1500,Cash,,,2024-06-07T09:22:00,
+286,2024-06-07,income,4,41,5,,32,,Egg sales — 8 trays,2720,M-Pesa,SOW7CSDRHQ,,2024-06-07T10:11:00,57
+287,2024-06-07,expense,7,8,,7,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-06-07T12:19:00,
+288,2024-06-08,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SGA5MUP0K8,Weekly clean,2024-06-08T08:49:00,
+289,2024-06-08,expense,8,9,,,,,Gutter cleaning,5000,M-Pesa,SXTWQVFPYB,Day hire fundi,2024-06-08T09:10:00,
+290,2024-06-08,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3000,M-Pesa,S4GM4JEI31,,2024-06-08T09:40:00,
+291,2024-06-08,expense,10,13,,7,,,Casual labour — event setup & assistance,1500,Cash,,,2024-06-08T11:26:00,
+292,2024-06-08,income,2,38,,8,,,Event deposit — Birthday Party (2024-06-22),27500,Bank Transfer,BT5683931,50% deposit received,2024-06-08T13:31:00,58
+293,2024-06-08,income,2,37,,7,,,Event balance — Bridal Shower,17500,M-Pesa,SPCDF5KFGV,Balance payment on event day,2024-06-08T13:46:00,59
+294,2024-06-08,expense,6,5,,7,,,Casual security — event day,1500,Cash,,,2024-06-08T16:04:00,
+295,2024-06-09,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SOF3D6FR9A,Day hire guard,2024-06-09T11:31:00,
+296,2024-06-09,expense,7,7,,7,,,Casual cleaning — post-event cleanup,1500,M-Pesa,S84WMUZOLN,,2024-06-09T13:48:00,
+297,2024-06-10,expense,18,27,,7,,,Agent commission — Bridal Shower (2024-06-08),3500,M-Pesa,SDZ097DYFE,10% commission on hire fee,2024-06-10T14:21:00,
+298,2024-06-11,expense,15,3,4,,,,Garden weeding and mulching,3500,M-Pesa,SDF4XV6KOR,Groundskeeper + occasional casual help,2024-06-11T11:13:00,
+299,2024-06-11,income,4,41,5,,34,,Egg sales — 4 trays,1380,Cash,,,2024-06-11T11:25:00,62
+300,2024-06-11,income,4,39,5,,33,,Egg sales — 2 trays,670,M-Pesa,SYI3445FCZ,,2024-06-11T16:27:00,63
+301,2024-06-12,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-06-12T12:47:00,
+302,2024-06-12,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-06-12T14:27:00,
+303,2024-06-12,expense,20,23,,,,,Dog grooming and vet checkup — Simba & Zuri,3000,M-Pesa,SR4WHGW723,Quarterly checkup,2024-06-12T15:09:00,
+304,2024-06-12,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-06-12T16:19:00,
+305,2024-06-14,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S0MP63D5C2,Day hire guard,2024-06-14T14:40:00,
+306,2024-06-14,income,4,42,5,,35,,Egg sales — 8 trays,2760,M-Pesa,SNJ2RYETGG,,2024-06-14T17:05:00,64
+307,2024-06-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-06,4652,M-Pesa,SVP1L89UZL,,2024-06-15T14:56:00,
+308,2024-06-16,expense,13,44,,,,,Nairobi Water — water bill 2024-06,3213,M-Pesa,S4DVKULVG3,,2024-06-16T10:30:00,
+309,2024-06-16,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-06-16T12:00:00,
+310,2024-06-17,expense,19,17,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",2500,Cash,,,2024-06-17T09:21:00,
+311,2024-06-17,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S0U740N635,Weekly clean,2024-06-17T17:17:00,
+312,2024-06-18,expense,22,15,,,,103,Inventory restock — Wine Glasses,2000,M-Pesa,SS84XSCMY3,Replacing broken/worn stock,2024-06-18T11:14:00,
+313,2024-06-18,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-06-18T14:14:00,
+314,2024-06-18,expense,15,3,4,,,,Garden weeding and mulching,3500,M-Pesa,SD2WR1APR4,Groundskeeper + occasional casual help,2024-06-18T14:21:00,
+315,2024-06-18,income,4,40,5,,36,,Egg sales — 3 trays,990,Cash,,,2024-06-18T15:39:00,65
+316,2024-06-18,expense,22,15,,,,105,Inventory restock — Drinking Glasses,360,Cash,,Replacing broken/worn stock,2024-06-18T16:01:00,
+317,2024-06-18,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-06-18T16:12:00,
+318,2024-06-18,expense,22,22,,,,104,Inventory restock — Kitchen Towels,2000,M-Pesa,SGXBJOKMKA,Replacing broken/worn stock,2024-06-18T17:00:00,
+319,2024-06-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15248,M-Pesa,SJ512KWCEW,Biweekly feed purchase,2024-06-19T13:12:00,
+320,2024-06-19,expense,26,,,,,,Batteries and small items,800,M-Pesa,SSOX8SWPR1,,2024-06-19T17:43:00,
+321,2024-06-20,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SET1NGU4I7,Day hire guard,2024-06-20T15:47:00,
+322,2024-06-20,expense,19,19,,,,,"General provisions — toilet paper, bin bags, soap",2500,M-Pesa,SXJ3LCNTNV,,2024-06-20T17:15:00,
+323,2024-06-21,expense,7,8,,8,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-06-21T08:49:00,
+324,2024-06-21,expense,21,,,8,,,"Event supplies — Birthday Party (flowers, decor, consumables)",5835,Cash,,,2024-06-21T08:51:00,
+325,2024-06-21,expense,10,13,,8,,,Casual labour — event setup,1500,M-Pesa,SQZAEIAJJH,"Setting up chairs, tables, decor",2024-06-21T10:04:00,
+326,2024-06-21,expense,9,11,,8,,,Casual transport — event equipment/supply delivery,1500,Cash,,,2024-06-21T11:41:00,
+327,2024-06-21,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-06-21T15:22:00,
+328,2024-06-21,expense,6,6,,8,,,Casual security — event eve setup watch,1500,M-Pesa,SMYLD8T4WL,,2024-06-21T15:54:00,
+329,2024-06-22,expense,10,13,,8,,,Casual labour — event day assistance,1500,M-Pesa,S4OFWX0SXY,"Serving, logistics, teardown",2024-06-22T09:27:00,
+330,2024-06-22,income,2,38,,8,,,Event balance — Birthday Party,27500,M-Pesa,SSK3JIHADL,Balance payment on event day,2024-06-22T09:43:00,68
+331,2024-06-22,expense,6,6,,8,,,Casual security — event day,1500,M-Pesa,SMH1FROV15,,2024-06-22T17:54:00,
+332,2024-06-23,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SJMISRFB1K,Day hire guard,2024-06-23T11:27:00,
+333,2024-06-23,expense,7,8,,8,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SVDPCIWUCZ,,2024-06-23T11:52:00,
+334,2024-06-24,income,2,39,,9,,,Event deposit — Garden Party (2024-07-06),22500,Bank Transfer,BT3035438,50% deposit received,2024-06-24T09:59:00,69
+335,2024-06-25,income,4,42,5,,37,,Egg sales — 4 trays,1400,Cash,,,2024-06-25T14:50:00,71
+336,2024-06-25,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-06-25T15:05:00,
+337,2024-06-27,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-06),12000,Bank Transfer,BT2140394,Monthly contribution to tent fund,2024-06-27T11:33:00,
+338,2024-06-27,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SX7S7FYKBJ,Day hire guard,2024-06-27T14:03:00,
+339,2024-06-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-06,12000,Bank Transfer,BT6888658,Part-time monthly pay,2024-06-28T10:58:00,
+340,2024-06-28,income,4,40,5,,38,,Egg sales — 3 trays,1005,M-Pesa,SUMDUO9BF0,,2024-06-28T17:07:00,72
+341,2024-06-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-06,35000,Bank Transfer,BT6188630,Monthly salary,2024-06-28T17:59:00,
+342,2024-06-29,income,3,34,1,,,,Wellness service — sound healing,10000,Bank Transfer,BT1895309,,2024-06-29T15:35:00,73
+343,2024-07-02,income,4,42,5,,39,,Egg sales — 7 trays,2380,Cash,,,2024-07-02T14:20:00,74
+344,2024-07-02,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SMVOLA3UT1,Day hire guard,2024-07-02T17:20:00,
+345,2024-07-03,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,STOXJKLHJG,Weekly clean,2024-07-03T09:43:00,
+346,2024-07-04,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,STZ1IPMPAV,Day hire guard,2024-07-04T11:00:00,
+347,2024-07-05,expense,21,,,9,,,"Event supplies — Garden Party (flowers, decor, consumables)",2304,M-Pesa,SMT80BYLFJ,,2024-07-05T08:36:00,
+348,2024-07-05,expense,6,6,,9,,,Casual security — event eve setup watch,1500,Cash,,,2024-07-05T11:32:00,
+349,2024-07-05,expense,7,8,,9,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-07-05T12:58:00,
+350,2024-07-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),14824,M-Pesa,S9RUYXXWP1,Biweekly feed purchase,2024-07-05T13:15:00,
+351,2024-07-05,income,4,39,5,,40,,Egg sales — 1 trays,335,Cash,,,2024-07-05T13:19:00,75
+352,2024-07-05,expense,10,12,,9,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-07-05T14:37:00,
+353,2024-07-06,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SDRFWLPFOV,Day hire guard,2024-07-06T11:03:00,
+354,2024-07-06,expense,6,4,,9,,,Casual security — event day,1500,Cash,,,2024-07-06T12:10:00,
+355,2024-07-06,expense,10,12,,9,,,Casual labour — event day assistance,1500,M-Pesa,SNJYFX5KC4,"Serving, logistics, teardown",2024-07-06T15:26:00,
+356,2024-07-06,income,2,39,,9,,,Event balance — Garden Party,22500,Bank Transfer,BT4664282,Balance payment on event day,2024-07-06T17:58:00,76
+357,2024-07-07,expense,18,29,,9,,,Agent commission — Garden Party (2024-07-06),4500,M-Pesa,SRQV5Q1NIB,10% commission on hire fee,2024-07-07T09:08:00,
+358,2024-07-07,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3000,M-Pesa,SGTKI069Y1,,2024-07-07T13:02:00,
+359,2024-07-07,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-07-07T13:18:00,
+360,2024-07-07,expense,7,7,,9,,,Casual cleaning — post-event cleanup,1500,M-Pesa,S29V4XU5H3,,2024-07-07T16:57:00,
+361,2024-07-09,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-07-09T08:18:00,
+362,2024-07-09,income,2,40,,10,,,Event deposit — Memorial Service (2024-07-20),30000,M-Pesa,SZ02OTCYDZ,50% deposit received,2024-07-09T09:48:00,78
+363,2024-07-09,income,4,40,5,,41,,Egg sales — 1 trays,350,M-Pesa,SAO9PXS6BB,,2024-07-09T15:35:00,79
+364,2024-07-10,expense,26,,,,,,Padlocks and keys,2500,M-Pesa,SLGGFQJUCH,,2024-07-10T17:51:00,
+365,2024-07-11,expense,19,15,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",2500,Cash,,,2024-07-11T09:23:00,
+366,2024-07-11,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SSGP046OK1,Day hire guard,2024-07-11T14:02:00,
+367,2024-07-12,income,4,40,5,,42,,Egg sales — 2 trays,660,Cash,,,2024-07-12T09:47:00,80
+368,2024-07-12,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-07-12T13:09:00,
+369,2024-07-13,income,3,40,1,,,,Wellness service — wellness consultation,5000,M-Pesa,S43M8N8U41,,2024-07-13T09:35:00,82
+370,2024-07-13,expense,12,23,5,,,,Deworming treatment — poultry,8000,M-Pesa,SL3AIROGPI,Dr. Odhiambo,2024-07-13T11:48:00,
+371,2024-07-15,expense,22,15,,,,113,Inventory restock — Dinner Plates,1000,Cash,,Replacing broken/worn stock,2024-07-15T08:02:00,
+372,2024-07-15,expense,22,18,,,,112,Inventory restock — Flower Vases (Glass),1050,M-Pesa,S3ST293QUS,Replacing broken/worn stock,2024-07-15T10:06:00,
+373,2024-07-15,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-07-15T11:48:00,
+374,2024-07-15,expense,22,15,,,,114,Inventory restock — Serving Dishes (Medium),3500,Cash,,Replacing broken/worn stock,2024-07-15T13:35:00,
+375,2024-07-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-07,5321,M-Pesa,SRTD6PJIXZ,,2024-07-15T15:56:00,
+376,2024-07-16,expense,13,44,,,,,Nairobi Water — water bill 2024-07,3363,M-Pesa,SZHPNAPA9P,,2024-07-16T13:46:00,
+377,2024-07-16,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-07-16T14:43:00,
+378,2024-07-16,income,4,42,5,,43,,Egg sales — 6 trays,2010,Cash,,,2024-07-16T16:38:00,83
+379,2024-07-17,expense,21,,,10,,,"Event supplies — Memorial Service (flowers, decor, consumables)",3665,Cash,,,2024-07-17T11:31:00,
+380,2024-07-19,income,4,40,5,,44,,Egg sales — 2 trays,680,Cash,,,2024-07-19T08:38:00,85
+381,2024-07-19,expense,10,13,,10,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-07-19T10:24:00,
+382,2024-07-19,expense,6,5,,10,,,Casual security — event eve setup watch,1500,M-Pesa,S0IL80CE87,,2024-07-19T10:49:00,
+383,2024-07-19,expense,10,12,,10,,,Casual labour — event setup,1500,M-Pesa,STYWRORDP1,"Setting up chairs, tables, decor",2024-07-19T11:52:00,
+384,2024-07-19,expense,9,11,,10,,,Casual transport — event equipment/supply delivery,1500,Cash,,,2024-07-19T15:17:00,
+385,2024-07-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),14112,M-Pesa,S0SS4ZYAC2,Biweekly feed purchase,2024-07-19T15:51:00,
+386,2024-07-19,expense,7,7,,10,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S5SGVIYCTE,,2024-07-19T15:58:00,
+387,2024-07-19,expense,9,11,,,,,Transport — supply run to town,1500,Cash,,,2024-07-19T17:36:00,
+388,2024-07-19,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-07-19T17:37:00,
+389,2024-07-20,expense,6,5,,10,,,Casual security — event day,1500,Cash,,,2024-07-20T08:27:00,
+390,2024-07-20,expense,8,9,,,,,Gutter cleaning,3000,Cash,,Day hire fundi,2024-07-20T09:55:00,
+391,2024-07-20,expense,10,12,,10,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-07-20T12:08:00,
+392,2024-07-20,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-07-20T13:43:00,
+393,2024-07-20,expense,10,12,,10,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-07-20T16:01:00,
+394,2024-07-20,income,2,40,,10,,,Event balance — Memorial Service,30000,M-Pesa,S4PRDCAO4K,Balance payment on event day,2024-07-20T16:35:00,87
+395,2024-07-21,expense,7,7,,10,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SLSIWGQP95,,2024-07-21T11:14:00,
+396,2024-07-21,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",4000,M-Pesa,SJ6L1SFPHN,,2024-07-21T15:33:00,
+397,2024-07-22,expense,15,3,4,,,,Flower bed maintenance,3000,M-Pesa,SFH3W1P6HS,Groundskeeper + occasional casual help,2024-07-22T12:41:00,
+398,2024-07-23,income,4,40,5,,45,,Egg sales — 2 trays,660,M-Pesa,SQ1TX7DZ44,,2024-07-23T09:13:00,89
+399,2024-07-23,expense,15,3,4,,,,Hedge trimming,3500,M-Pesa,S4JPBW4PD7,Groundskeeper + occasional casual help,2024-07-23T11:35:00,
+400,2024-07-23,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-07-23T14:40:00,
+401,2024-07-24,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S9KWOV1E1X,Weekly clean,2024-07-24T11:59:00,
+402,2024-07-25,expense,15,3,4,,,,Garden weeding and mulching,4000,Cash,,Groundskeeper + occasional casual help,2024-07-25T09:17:00,
+403,2024-07-25,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-07),10000,Bank Transfer,BT5450949,Monthly contribution to tent fund,2024-07-25T11:15:00,
+404,2024-07-25,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SHIVV2V4XA,Day hire guard,2024-07-25T11:28:00,
+405,2024-07-26,income,4,41,5,,46,,Egg sales — 8 trays,2680,M-Pesa,SRLC6PLPKG,,2024-07-26T10:53:00,90
+406,2024-07-26,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",2500,M-Pesa,SG1WRA8NSC,,2024-07-26T15:44:00,
+407,2024-07-27,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-07),15000,Bank Transfer,BT3536382,Monthly contribution to generator fund,2024-07-27T14:22:00,
+408,2024-07-28,expense,9,11,,,,,Transport — egg delivery to buyer,1500,M-Pesa,SRK19IGQCM,,2024-07-28T08:05:00,
+409,2024-07-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-07,35000,Bank Transfer,BT5985204,Monthly salary,2024-07-28T12:34:00,
+410,2024-07-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-07,12000,Bank Transfer,BT4060282,Part-time monthly pay,2024-07-28T13:53:00,
+411,2024-07-28,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SKA8S2WCML,Day hire guard,2024-07-28T16:51:00,
+412,2024-07-29,expense,15,3,4,,,,Flower bed maintenance,4000,Cash,,Groundskeeper + occasional casual help,2024-07-29T09:48:00,
+413,2024-07-29,income,2,41,,11,,,Event deposit — Wedding (2024-08-10),60000,Bank Transfer,BT5575587,50% deposit received,2024-07-29T14:26:00,91
+414,2024-07-30,income,4,40,5,,47,,Egg sales — 1 trays,345,M-Pesa,SA1D3KN1CO,,2024-07-30T15:51:00,92
+415,2024-08-02,income,4,40,5,,48,,Egg sales — 3 trays,1020,M-Pesa,SUJMAU92R6,,2024-08-02T09:45:00,93
+416,2024-08-02,income,4,39,5,,49,,Egg sales — 2 trays,680,M-Pesa,SV16R4ZAMD,,2024-08-02T13:02:00,94
+417,2024-08-02,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-02T13:24:00,
+418,2024-08-02,expense,15,3,4,,,,Garden weeding and mulching,5000,Cash,,Groundskeeper + occasional casual help,2024-08-02T16:51:00,
+419,2024-08-03,income,4,41,5,,50,,Egg sales — 4 trays,1400,M-Pesa,ST22AS4XPT,,2024-08-03T13:43:00,96
+420,2024-08-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-08-03T14:36:00,
+421,2024-08-03,income,3,35,1,,,,Wellness service — sound healing,10000,Bank Transfer,BT8446433,,2024-08-03T17:28:00,97
+422,2024-08-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15526,M-Pesa,SA7HE15CRP,Biweekly feed purchase,2024-08-05T08:23:00,
+423,2024-08-05,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3500,M-Pesa,S2HYKWW7UG,,2024-08-05T10:17:00,
+424,2024-08-06,income,4,40,5,,51,,Egg sales — 1 trays,350,Cash,,,2024-08-06T08:21:00,98
+425,2024-08-06,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-06T14:44:00,
+426,2024-08-07,expense,21,,,11,,,"Event supplies — Wedding (flowers, decor, consumables)",16552,Cash,,,2024-08-07T14:04:00,
+427,2024-08-07,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SO0DY4S7QI,Weekly clean,2024-08-07T16:34:00,
+428,2024-08-09,expense,9,11,,11,,,Casual transport — event equipment/supply delivery,1500,Cash,,,2024-08-09T09:13:00,
+429,2024-08-09,expense,10,12,,11,,,Casual labour — event setup,1500,M-Pesa,SJ3OG9W9F7,"Setting up chairs, tables, decor",2024-08-09T09:27:00,
+430,2024-08-09,income,4,39,5,,52,,Egg sales — 1 trays,350,M-Pesa,SL9UPWKY2V,,2024-08-09T10:57:00,99
+431,2024-08-09,expense,6,6,,11,,,Casual security — event eve setup watch,1500,M-Pesa,S2ZVXQO5U1,,2024-08-09T11:39:00,
+432,2024-08-09,expense,10,13,,11,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-08-09T16:41:00,
+433,2024-08-09,expense,7,7,,11,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-08-09T17:05:00,
+434,2024-08-10,expense,10,13,,11,,,Casual labour — event day assistance,1500,M-Pesa,SVP78E1CF1,"Serving, logistics, teardown",2024-08-10T11:10:00,
+435,2024-08-10,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-10T11:52:00,
+436,2024-08-10,expense,10,13,,11,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-08-10T13:47:00,
+437,2024-08-10,income,2,41,,11,,,Event balance — Wedding,60000,Bank Transfer,BT9138561,Balance payment on event day,2024-08-10T14:01:00,100
+438,2024-08-10,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SVANOBWO9T,Weekly clean,2024-08-10T15:54:00,
+439,2024-08-10,expense,6,4,,11,,,Casual security — event day,1500,M-Pesa,SWFYSAILJQ,,2024-08-10T17:33:00,
+440,2024-08-11,expense,7,8,,11,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-08-11T08:37:00,
+441,2024-08-12,expense,22,15,,,,125,Inventory restock — Cups & Saucers,1000,M-Pesa,S338JQVWC5,Replacing broken/worn stock,2024-08-12T12:38:00,
+442,2024-08-12,expense,22,15,,,,126,Inventory restock — Drinking Glasses,840,M-Pesa,SHP3EETK05,Replacing broken/worn stock,2024-08-12T17:14:00,
+443,2024-08-13,expense,18,28,,11,,,Agent commission — Wedding (2024-08-10),12000,M-Pesa,S9C4NVAXU0,10% commission on hire fee,2024-08-13T09:03:00,
+444,2024-08-13,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SD1K9BO7VS,Day hire guard,2024-08-13T11:31:00,
+445,2024-08-13,income,4,39,5,,53,,Egg sales — 1 trays,345,M-Pesa,SZEJA20R9J,,2024-08-13T13:35:00,101
+446,2024-08-13,expense,19,19,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",6000,M-Pesa,S5LFE47IW2,,2024-08-13T13:40:00,
+447,2024-08-14,income,2,34,,12,,,Event deposit — Wellness Retreat (2024-08-24),35000,M-Pesa,S1SA6BXYEQ,50% deposit received,2024-08-14T17:27:00,102
+448,2024-08-14,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-08-14T17:44:00,
+449,2024-08-15,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SJPG1E8KP4,Day hire guard,2024-08-15T13:27:00,
+450,2024-08-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-08,8552,M-Pesa,S6SIRFAJTQ,,2024-08-15T15:48:00,
+451,2024-08-15,expense,9,11,,,,,Transport — supply run to town,1500,M-Pesa,SDE5A33892,,2024-08-15T16:44:00,
+452,2024-08-16,income,4,41,5,,54,,Egg sales — 6 trays,2010,M-Pesa,S98JIYRHJK,,2024-08-16T09:27:00,103
+453,2024-08-16,expense,13,44,,,,,Nairobi Water — water bill 2024-08,4612,M-Pesa,SFN85ELEOU,,2024-08-16T17:39:00,
+454,2024-08-17,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-17T12:10:00,
+455,2024-08-17,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-08-17T13:54:00,
+456,2024-08-17,income,3,40,1,,,,Wellness service — meditation class,15000,Bank Transfer,BT6528420,,2024-08-17T15:42:00,104
+457,2024-08-19,expense,26,,,,,,M-Pesa transaction charges,2500,Cash,,,2024-08-19T08:48:00,
+458,2024-08-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15889,M-Pesa,S8LUDARTN7,Biweekly feed purchase,2024-08-19T13:02:00,
+459,2024-08-20,income,4,42,5,,55,,Egg sales — 8 trays,2760,M-Pesa,SBPWSKPRBB,,2024-08-20T12:52:00,106
+460,2024-08-21,expense,15,3,4,,,,Hedge trimming,3500,M-Pesa,SAY9W5TSZE,Groundskeeper + occasional casual help,2024-08-21T11:05:00,
+461,2024-08-21,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SWECHFJEKP,Day hire guard,2024-08-21T15:48:00,
+462,2024-08-21,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",3500,M-Pesa,SDDD0ES95P,,2024-08-21T16:25:00,
+463,2024-08-22,expense,21,,,12,,,"Event supplies — Wellness Retreat (flowers, decor, consumables)",5205,Cash,,,2024-08-22T15:50:00,
+464,2024-08-22,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SYED6IREW9,Weekly clean,2024-08-22T17:51:00,
+465,2024-08-23,expense,7,7,,12,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,SVUJBFNN47,,2024-08-23T10:17:00,
+466,2024-08-23,income,4,42,5,,56,,Egg sales — 7 trays,2345,M-Pesa,SVYPQFJOZO,,2024-08-23T15:27:00,108
+467,2024-08-23,expense,6,6,,12,,,Casual security — event eve setup watch,1500,M-Pesa,SA499PYVEY,,2024-08-23T16:18:00,
+468,2024-08-23,income,4,39,5,,57,,Egg sales — 1 trays,345,M-Pesa,SMBKAT0GV7,,2024-08-23T16:43:00,109
+469,2024-08-24,income,2,34,,12,,,Event balance — Wellness Retreat,35000,M-Pesa,SBM5YM1O0N,Balance payment on event day,2024-08-24T08:22:00,110
+470,2024-08-24,income,4,40,5,,58,,Egg sales — 3 trays,1020,M-Pesa,STMNV7XXWK,,2024-08-24T09:18:00,111
+471,2024-08-24,expense,10,12,,12,,,Casual labour — event setup & assistance,1500,M-Pesa,SZN060AVA2,,2024-08-24T09:47:00,
+472,2024-08-24,expense,15,3,4,,,,Garden weeding and mulching,3500,Cash,,Groundskeeper + occasional casual help,2024-08-24T11:01:00,
+473,2024-08-24,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-24T12:09:00,
+474,2024-08-24,expense,6,5,,12,,,Casual security — event day,1500,M-Pesa,SK0WF70KR0,,2024-08-24T13:20:00,
+475,2024-08-25,expense,7,8,,12,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-08-25T13:11:00,
+476,2024-08-25,expense,17,24,,,,,Accountant — quarterly books review,10000,M-Pesa,SCCLQPOURT,Veronica Njagi,2024-08-25T15:37:00,
+477,2024-08-26,expense,17,26,,,,,Wellness consultant — programme planning,12000,M-Pesa,SRVQRGM3QP,Ochieng Kiptanui,2024-08-26T12:10:00,
+478,2024-08-26,expense,15,3,4,,,,Garden weeding and mulching,5000,M-Pesa,S3TYPG6QTF,Groundskeeper + occasional casual help,2024-08-26T16:18:00,
+479,2024-08-26,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-08),10000,Bank Transfer,BT2240473,Monthly contribution to tent fund,2024-08-26T16:32:00,
+480,2024-08-27,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-08-27T11:14:00,
+481,2024-08-27,income,4,42,5,,59,,Egg sales — 5 trays,1650,M-Pesa,SOSN8FCXT2,,2024-08-27T14:59:00,113
+482,2024-08-27,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-08),12000,Bank Transfer,BT1750417,Monthly contribution to generator fund,2024-08-27T16:41:00,
+483,2024-08-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-08,12000,Bank Transfer,BT6417449,Part-time monthly pay,2024-08-28T11:39:00,
+484,2024-08-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-08,35000,Bank Transfer,BT4762809,Monthly salary,2024-08-28T11:54:00,
+485,2024-08-28,income,2,42,,13,,,Event deposit — Garden Party (2024-09-07),20000,M-Pesa,SSV0AHR34C,50% deposit received,2024-08-28T14:57:00,114
+486,2024-08-28,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-08-28T16:01:00,
+487,2024-08-30,income,4,42,5,,60,,Egg sales — 5 trays,1650,M-Pesa,SMZWZZUJ05,,2024-08-30T10:35:00,115
+488,2024-09-02,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-09-02T10:03:00,
+489,2024-09-02,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3000,M-Pesa,S8GZHMDL1Q,,2024-09-02T17:25:00,
+490,2024-09-03,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-09-03T12:29:00,
+491,2024-09-05,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SYIKDGSNMA,Day hire guard,2024-09-05T12:48:00,
+492,2024-09-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),13064,M-Pesa,S5POH8D1WG,Biweekly feed purchase,2024-09-05T14:57:00,
+493,2024-09-05,expense,21,,,13,,,"Event supplies — Garden Party (flowers, decor, consumables)",4083,M-Pesa,S8M9RRASQA,,2024-09-05T15:14:00,
+494,2024-09-06,income,4,41,5,,61,,Egg sales — 8 trays,2840,M-Pesa,SD04NVTWI4,,2024-09-06T08:05:00,116
+495,2024-09-06,expense,7,7,,13,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-09-06T13:10:00,
+496,2024-09-06,expense,6,4,,13,,,Casual security — event eve setup watch,1500,Cash,,,2024-09-06T14:59:00,
+497,2024-09-06,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SH4FWI9ESS,Weekly clean,2024-09-06T16:05:00,
+498,2024-09-07,expense,10,12,,13,,,Casual labour — event setup & assistance,1500,Cash,,,2024-09-07T09:14:00,
+499,2024-09-07,expense,6,5,,13,,,Casual security — event day,1500,Cash,,,2024-09-07T11:44:00,
+500,2024-09-07,income,2,42,,13,,,Event balance — Garden Party,20000,M-Pesa,S4TSW3A99A,Balance payment on event day,2024-09-07T12:05:00,117
+501,2024-09-08,expense,7,8,,13,,,Casual cleaning — post-event cleanup,1500,M-Pesa,STOU2EMKIF,,2024-09-08T11:23:00,
+502,2024-09-08,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SD8XFM7NCH,Day hire guard,2024-09-08T15:16:00,
+503,2024-09-09,expense,9,11,,,,,Transport — egg delivery to buyer,1500,Cash,,,2024-09-09T10:47:00,
+504,2024-09-10,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-09-10T08:08:00,
+505,2024-09-10,income,4,40,5,,62,,Egg sales — 1 trays,360,Cash,,,2024-09-10T14:02:00,120
+506,2024-09-10,expense,22,15,,,,133,Inventory restock — Serving Dishes (Large),6400,Cash,,Replacing broken/worn stock,2024-09-10T16:11:00,
+507,2024-09-11,expense,19,15,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",6000,Cash,,,2024-09-11T08:58:00,
+508,2024-09-11,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S551XG2HNR,Weekly clean,2024-09-11T09:03:00,
+509,2024-09-12,income,2,31,,14,,,Event deposit — Birthday Party (2024-09-21),22500,M-Pesa,S8DA1OC8U7,50% deposit received,2024-09-12T16:08:00,121
+510,2024-09-13,income,4,39,5,,63,,Egg sales — 3 trays,1065,Cash,,,2024-09-13T08:32:00,122
+511,2024-09-13,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",2500,Cash,,,2024-09-13T08:55:00,
+512,2024-09-14,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SZBE1RPDTK,Day hire guard,2024-09-14T11:06:00,
+513,2024-09-14,income,3,40,1,,,,Wellness service — yoga session,12000,Bank Transfer,BT3496219,,2024-09-14T11:35:00,123
+514,2024-09-14,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-09-14T12:15:00,
+515,2024-09-15,expense,12,23,5,,,,Vet visit — flock health check,10000,M-Pesa,SVP13QPBE0,Dr. Odhiambo,2024-09-15T15:30:00,
+516,2024-09-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-09,7244,M-Pesa,S35TUUHK91,,2024-09-15T16:53:00,
+517,2024-09-16,expense,13,44,,,,,Nairobi Water — water bill 2024-09,2980,M-Pesa,S30NCDQDKX,,2024-09-16T13:19:00,
+518,2024-09-16,expense,26,,,,,,Printing and stationery,800,M-Pesa,ST3DUV6S3O,,2024-09-16T14:37:00,
+519,2024-09-17,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-09-17T08:28:00,
+520,2024-09-17,income,4,42,5,,64,,Egg sales — 4 trays,1360,Cash,,,2024-09-17T14:05:00,125
+521,2024-09-17,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SJFUONSHKC,Weekly clean,2024-09-17T17:15:00,
+522,2024-09-18,expense,21,,,14,,,"Event supplies — Birthday Party (flowers, decor, consumables)",5867,M-Pesa,S6EWC7TGYF,,2024-09-18T12:53:00,
+523,2024-09-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15442,M-Pesa,SZ00H44VBS,Biweekly feed purchase,2024-09-19T14:50:00,
+524,2024-09-20,income,4,40,5,,65,,Egg sales — 3 trays,1080,Cash,,,2024-09-20T08:03:00,126
+525,2024-09-20,expense,7,7,,14,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S9FMDC97ZD,,2024-09-20T08:53:00,
+526,2024-09-20,expense,20,23,,,,,Dog grooming and vet checkup — Simba & Zuri,3000,M-Pesa,SFFNH7ZNU4,Quarterly checkup,2024-09-20T09:34:00,
+527,2024-09-20,expense,6,5,,14,,,Casual security — event eve setup watch,1500,Cash,,,2024-09-20T09:37:00,
+528,2024-09-20,expense,10,12,,14,,,Casual labour — event setup,1500,M-Pesa,SV77NTF116,"Setting up chairs, tables, decor",2024-09-20T16:54:00,
+529,2024-09-21,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SGPJZOH8JV,Weekly clean,2024-09-21T08:48:00,
+530,2024-09-21,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,S02KU758MN,Day hire guard,2024-09-21T10:04:00,
+531,2024-09-21,income,2,31,,14,,,Event balance — Birthday Party,22500,Bank Transfer,BT9948135,Balance payment on event day,2024-09-21T10:33:00,127
+532,2024-09-21,expense,6,5,,14,,,Casual security — event day,1500,Cash,,,2024-09-21T11:11:00,
+533,2024-09-21,expense,10,13,,14,,,Casual labour — event day assistance,1500,M-Pesa,SD5CANIJN8,"Serving, logistics, teardown",2024-09-21T14:58:00,
+534,2024-09-22,expense,7,7,,14,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-09-22T13:54:00,
+535,2024-09-23,expense,9,11,,,,,Transport — egg delivery to buyer,1500,M-Pesa,SFWW8I7327,,2024-09-23T10:06:00,
+536,2024-09-23,expense,15,3,4,,,,Hedge trimming,2000,Cash,,Groundskeeper + occasional casual help,2024-09-23T15:23:00,
+537,2024-09-24,income,4,42,5,,66,,Egg sales — 5 trays,1800,M-Pesa,S9HZA7W0YC,,2024-09-24T13:07:00,131
+538,2024-09-25,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-09),12000,Bank Transfer,BT5722040,Monthly contribution to generator fund,2024-09-25T13:46:00,
+539,2024-09-25,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-09-25T15:59:00,
+540,2024-09-25,income,2,36,,15,,,Event deposit — Wedding (2024-10-05),65000,M-Pesa,SINBKH8B0W,50% deposit received,2024-09-25T16:04:00,132
+541,2024-09-26,expense,15,3,4,,,,Lawn mowing and trimming,2000,M-Pesa,S84K0SPUPD,Groundskeeper + occasional casual help,2024-09-26T08:11:00,
+542,2024-09-27,income,4,41,5,,67,,Egg sales — 6 trays,2130,M-Pesa,SY62ZH1EU8,,2024-09-27T08:13:00,133
+543,2024-09-27,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-09),12000,Bank Transfer,BT4099734,Monthly contribution to tent fund,2024-09-27T10:38:00,
+544,2024-09-28,expense,22,15,,,,141,Inventory restock — Drinking Glasses,840,Cash,,Replacing broken/worn stock,2024-09-28T08:41:00,
+545,2024-09-28,income,2,37,,16,,,Event deposit — Corporate Retreat (2024-10-12),32500,Bank Transfer,BT9579632,50% deposit received,2024-09-28T11:45:00,134
+546,2024-09-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-09,12000,Bank Transfer,BT9766462,Part-time monthly pay,2024-09-28T14:29:00,
+547,2024-09-28,expense,22,22,,,,138,Inventory restock — Cloth Napkins (White),600,M-Pesa,SYI6DT08LU,Replacing broken/worn stock,2024-09-28T15:33:00,
+548,2024-09-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-09,35000,Bank Transfer,BT8179128,Monthly salary,2024-09-28T16:17:00,
+549,2024-09-28,expense,22,17,,,,139,Inventory restock — Mops (Cotton),1050,M-Pesa,S21XTIZ432,Replacing broken/worn stock,2024-09-28T16:48:00,
+550,2024-09-28,expense,22,17,,,,140,Inventory restock — Spray Bottles,750,Cash,,Replacing broken/worn stock,2024-09-28T17:08:00,
+551,2024-10-01,income,4,42,5,,69,,Egg sales — 4 trays,1400,M-Pesa,SC5CWWXHYX,,2024-10-01T11:14:00,135
+552,2024-10-01,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3500,M-Pesa,S3XOO8FTXP,,2024-10-01T13:59:00,
+553,2024-10-01,income,4,42,5,,68,,Egg sales — 8 trays,2880,M-Pesa,SIOYCI1NWV,,2024-10-01T14:34:00,136
+554,2024-10-02,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-10-02T16:51:00,
+555,2024-10-03,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-10-03T10:34:00,
+556,2024-10-04,expense,9,11,,15,,,Casual transport — event equipment/supply delivery,1500,Cash,,,2024-10-04T08:31:00,
+557,2024-10-04,income,4,39,5,,70,,Egg sales — 1 trays,355,M-Pesa,S4A06AOKQX,,2024-10-04T11:22:00,137
+558,2024-10-04,expense,21,,,15,,,"Event supplies — Wedding (flowers, decor, consumables)",17813,M-Pesa,SLRDLC8PUE,,2024-10-04T12:19:00,
+559,2024-10-04,expense,10,12,,15,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-10-04T12:38:00,
+560,2024-10-04,expense,7,7,,15,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S3FFVPM08C,,2024-10-04T14:56:00,
+561,2024-10-04,expense,6,4,,15,,,Casual security — event eve setup watch,1500,Cash,,,2024-10-04T15:05:00,
+562,2024-10-04,expense,10,12,,15,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-10-04T16:33:00,
+563,2024-10-05,expense,10,13,,15,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-10-05T09:14:00,
+564,2024-10-05,income,2,36,,15,,,Event balance — Wedding,65000,Bank Transfer,BT9028228,Balance payment on event day,2024-10-05T09:44:00,138
+565,2024-10-05,expense,10,12,,15,,,Casual labour — event day assistance,1500,M-Pesa,S9KNNCTM5P,"Serving, logistics, teardown",2024-10-05T11:58:00,
+566,2024-10-05,expense,6,6,,15,,,Casual security — event day,1500,M-Pesa,S808QXPPVV,,2024-10-05T13:13:00,
+567,2024-10-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15862,M-Pesa,SY9F8CB1PA,Biweekly feed purchase,2024-10-05T17:32:00,
+568,2024-10-06,expense,7,8,,15,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SHHAFFFI9E,,2024-10-06T10:43:00,
+569,2024-10-06,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-10-06T13:38:00,
+570,2024-10-06,expense,26,,,,,,M-Pesa transaction charges,800,Cash,,,2024-10-06T14:31:00,
+571,2024-10-06,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SRCNA1DG2L,Weekly clean,2024-10-06T16:43:00,
+572,2024-10-06,expense,18,29,,15,,,Agent commission — Wedding (2024-10-05),13000,M-Pesa,SSHZ43Q66B,10% commission on hire fee,2024-10-06T16:56:00,
+573,2024-10-07,expense,9,11,,,,,Transport — egg delivery to buyer,1500,Cash,,,2024-10-07T10:44:00,
+574,2024-10-08,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SREX5NRGPL,Day hire guard,2024-10-08T13:17:00,
+575,2024-10-09,expense,21,,,16,,,"Event supplies — Corporate Retreat (flowers, decor, consumables)",6208,Cash,,,2024-10-09T15:19:00,
+576,2024-10-10,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-10-10T12:28:00,
+577,2024-10-11,expense,9,11,,,,,Transport — egg delivery to buyer,1500,Cash,,,2024-10-11T09:32:00,
+578,2024-10-11,expense,7,8,,16,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-10-11T10:48:00,
+579,2024-10-11,expense,6,5,,16,,,Casual security — event eve setup watch,1500,M-Pesa,SV1KH75TM1,,2024-10-11T15:15:00,
+580,2024-10-11,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SQ8GU1DGMH,Weekly clean,2024-10-11T15:15:00,
+581,2024-10-12,income,2,37,,16,,,Event balance — Corporate Retreat,32500,Bank Transfer,BT6842568,Balance payment on event day,2024-10-12T09:26:00,143
+582,2024-10-12,expense,6,4,,16,,,Casual security — event day,1500,M-Pesa,SO188KNEXJ,,2024-10-12T12:08:00,
+583,2024-10-12,expense,10,13,,16,,,Casual labour — event setup & assistance,1500,M-Pesa,SDLNK7VLMJ,,2024-10-12T14:54:00,
+584,2024-10-13,income,2,38,,17,,,Event deposit — Garden Party (2024-10-26),27500,Bank Transfer,BT1733810,50% deposit received,2024-10-13T10:54:00,145
+585,2024-10-13,expense,7,7,,16,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SDSU0BH7I1,,2024-10-13T16:21:00,
+586,2024-10-14,expense,18,30,,16,,,Agent commission — Corporate Retreat (2024-10-12),6500,M-Pesa,S5U0KI3UZV,10% commission on hire fee,2024-10-14T14:08:00,
+587,2024-10-14,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SJYJ1QLBUR,Day hire guard,2024-10-14T15:03:00,
+588,2024-10-15,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SCE7AMRM3G,Weekly clean,2024-10-15T09:00:00,
+589,2024-10-15,expense,19,15,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",4000,Cash,,,2024-10-15T09:41:00,
+590,2024-10-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-10,5976,M-Pesa,SY6THZI7GA,,2024-10-15T11:32:00,
+591,2024-10-15,income,4,39,5,,71,,Egg sales — 1 trays,345,M-Pesa,SPFEQC1J9P,,2024-10-15T15:38:00,146
+592,2024-10-16,expense,13,44,,,,,Nairobi Water — water bill 2024-10,4057,M-Pesa,S6GQHSTWGB,,2024-10-16T10:01:00,
+593,2024-10-16,expense,8,10,,,,,Tap washer replacement,4000,M-Pesa,SUYHAUQLOM,Day hire fundi,2024-10-16T15:15:00,
+594,2024-10-18,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SLWN8QEVO3,Day hire guard,2024-10-18T11:16:00,
+595,2024-10-18,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SV0IKMHNO5,Weekly clean,2024-10-18T11:26:00,
+596,2024-10-19,income,3,34,1,,,,Wellness service — meditation class,10000,M-Pesa,SDL8REKY8G,,2024-10-19T13:22:00,148
+597,2024-10-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15304,M-Pesa,S7JMJGC0QC,Biweekly feed purchase,2024-10-19T14:37:00,
+598,2024-10-19,income,2,39,,18,,,Event deposit — Wedding (2024-11-02),60000,M-Pesa,SF66QKZYN1,50% deposit received,2024-10-19T15:53:00,149
+599,2024-10-20,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SQ9BWJ9GHT,Day hire guard,2024-10-20T14:08:00,
+600,2024-10-20,expense,19,15,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",3500,Cash,,,2024-10-20T17:39:00,
+601,2024-10-22,income,4,41,5,,72,,Egg sales — 6 trays,2070,M-Pesa,SCLBGNAN01,,2024-10-22T16:27:00,150
+602,2024-10-23,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,ST5AJIJOWP,Weekly clean,2024-10-23T13:13:00,
+603,2024-10-24,expense,21,,,17,,,"Event supplies — Garden Party (flowers, decor, consumables)",7310,M-Pesa,SJHQ8DVV3T,,2024-10-24T12:37:00,
+604,2024-10-24,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-10-24T14:14:00,
+605,2024-10-25,expense,7,8,,17,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,SR4BNZKY3W,,2024-10-25T11:45:00,
+606,2024-10-25,expense,6,5,,17,,,Casual security — event eve setup watch,1500,Cash,,,2024-10-25T11:54:00,
+607,2024-10-25,expense,9,11,,17,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,SQI67NHU0U,,2024-10-25T16:19:00,
+608,2024-10-25,expense,10,13,,17,,,Casual labour — event setup,1500,M-Pesa,SR90ZQOWVZ,"Setting up chairs, tables, decor",2024-10-25T17:25:00,
+609,2024-10-25,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-10),25000,Bank Transfer,BT9955869,Monthly contribution to tent fund,2024-10-25T17:50:00,
+610,2024-10-26,expense,10,13,,17,,,Casual labour — event day assistance,1500,M-Pesa,ST00PVL4EU,"Serving, logistics, teardown",2024-10-26T08:41:00,
+611,2024-10-26,expense,6,6,,17,,,Casual security — event day,1500,Cash,,,2024-10-26T13:05:00,
+612,2024-10-26,income,2,38,,17,,,Event balance — Garden Party,27500,Bank Transfer,BT4522393,Balance payment on event day,2024-10-26T15:11:00,151
+613,2024-10-27,expense,7,7,,17,,,Casual cleaning — post-event cleanup,1500,M-Pesa,SMSCHDJ92V,,2024-10-27T12:19:00,
+614,2024-10-27,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SQA2DFN8Z8,Day hire guard,2024-10-27T15:00:00,
+615,2024-10-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-10,12000,Bank Transfer,BT3032569,Part-time monthly pay,2024-10-28T09:03:00,
+616,2024-10-28,expense,15,3,4,,,,Hedge trimming,5000,M-Pesa,SHVSM99O5A,Groundskeeper + occasional casual help,2024-10-28T14:50:00,
+617,2024-10-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-10,35000,Bank Transfer,BT7679200,Monthly salary,2024-10-28T14:51:00,
+618,2024-10-28,expense,15,3,4,,,,Flower bed maintenance,3000,Cash,,Groundskeeper + occasional casual help,2024-10-28T15:18:00,
+619,2024-10-29,income,2,40,,19,,,Event deposit — Baby Shower (2024-11-09),14000,Bank Transfer,BT9404018,50% deposit received,2024-10-29T08:39:00,152
+620,2024-10-29,income,4,40,5,,73,,Egg sales — 2 trays,710,M-Pesa,SKLB9JBMZT,,2024-10-29T14:40:00,153
+621,2024-10-29,expense,19,17,,,,,"Cleaning supplies — detergent, bleach, floor polish",4000,M-Pesa,S4FL9Q1U5E,,2024-10-29T15:05:00,
+622,2024-10-29,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-10-29T16:27:00,
+623,2024-10-30,expense,22,17,,,,151,Inventory restock — Spray Bottles,600,Cash,,Replacing broken/worn stock,2024-10-30T09:35:00,
+624,2024-10-30,expense,22,17,,,,152,Inventory restock — Rubber Gloves,960,Cash,,Replacing broken/worn stock,2024-10-30T15:03:00,
+625,2024-10-30,expense,22,15,,,,153,Inventory restock — Serving Dishes (Large),1600,Cash,,Replacing broken/worn stock,2024-10-30T15:45:00,
+626,2024-11-01,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3000,M-Pesa,SF5VC1XZ6S,,2024-11-01T08:17:00,
+627,2024-11-01,expense,7,7,,18,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S6W2DHWF60,,2024-11-01T08:22:00,
+628,2024-11-01,expense,9,11,,18,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,S71UB04DX6,,2024-11-01T08:43:00,
+629,2024-11-01,expense,10,12,,18,,,Casual labour — event setup,1500,M-Pesa,S319JYBWLC,"Setting up chairs, tables, decor",2024-11-01T10:25:00,
+630,2024-11-01,expense,6,5,,18,,,Casual security — event eve setup watch,1500,M-Pesa,SO60E3R4U0,,2024-11-01T11:47:00,
+631,2024-11-01,expense,10,13,,18,,,Casual labour — event setup,1500,M-Pesa,SMO6AWVU67,"Setting up chairs, tables, decor",2024-11-01T12:27:00,
+632,2024-11-01,expense,21,,,18,,,"Event supplies — Wedding (flowers, decor, consumables)",7879,M-Pesa,SXI3M7XSIW,,2024-11-01T12:48:00,
+633,2024-11-01,income,4,42,5,,74,,Egg sales — 6 trays,2160,M-Pesa,SZRLMYXWVN,,2024-11-01T16:03:00,154
+634,2024-11-02,expense,6,5,,18,,,Casual security — event day,1500,Cash,,,2024-11-02T08:24:00,
+635,2024-11-02,income,2,39,,18,,,Event balance — Wedding,60000,M-Pesa,SWIA5RAXR9,Balance payment on event day,2024-11-02T10:25:00,155
+636,2024-11-02,expense,10,13,,18,,,Casual labour — event day assistance,1500,M-Pesa,SFHZI468H3,"Serving, logistics, teardown",2024-11-02T11:11:00,
+637,2024-11-02,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-11-02T12:23:00,
+638,2024-11-02,expense,10,13,,18,,,Casual labour — event day assistance,1500,M-Pesa,SRWGJJGJ6G,"Serving, logistics, teardown",2024-11-02T16:49:00,
+639,2024-11-03,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-11-03T08:38:00,
+640,2024-11-03,expense,7,8,,18,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-11-03T09:28:00,
+641,2024-11-04,expense,19,19,,,,,"Kitchen provisions — tea, sugar, cooking oil, water",2500,M-Pesa,S1KGUZK481,,2024-11-04T13:03:00,
+642,2024-11-04,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SSR35TMLA5,Day hire guard,2024-11-04T17:35:00,
+643,2024-11-05,expense,18,27,,18,,,Agent commission — Wedding (2024-11-02),12000,M-Pesa,SBB9NYABJA,10% commission on hire fee,2024-11-05T14:14:00,
+644,2024-11-05,income,4,40,5,,75,,Egg sales — 2 trays,720,M-Pesa,S5HOWIQDQ9,,2024-11-05T16:17:00,159
+645,2024-11-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),17471,M-Pesa,SGSTXM0MF4,Biweekly feed purchase,2024-11-05T16:54:00,
+646,2024-11-06,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-11-06T09:30:00,
+647,2024-11-07,expense,21,,,19,,,"Event supplies — Baby Shower (flowers, decor, consumables)",3921,M-Pesa,S572IKOLWF,,2024-11-07T12:01:00,
+648,2024-11-08,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,S8VXWL5DDF,Day hire guard,2024-11-08T09:07:00,
+649,2024-11-08,income,4,42,5,,76,,Egg sales — 8 trays,2960,Cash,,,2024-11-08T09:44:00,161
+650,2024-11-08,expense,6,6,,19,,,Casual security — event eve setup watch,1500,M-Pesa,S8NRR1LW85,,2024-11-08T09:58:00,
+651,2024-11-08,expense,7,8,,19,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S52KHT1H7G,,2024-11-08T15:35:00,
+652,2024-11-09,income,2,40,,19,,,Event balance — Baby Shower,14000,M-Pesa,SY4SR6HL1J,Balance payment on event day,2024-11-09T09:18:00,162
+653,2024-11-09,expense,6,5,,19,,,Casual security — event day,1500,M-Pesa,SV1TWH48J5,,2024-11-09T14:40:00,
+654,2024-11-09,expense,10,13,,19,,,Casual labour — event setup & assistance,1500,Cash,,,2024-11-09T16:47:00,
+655,2024-11-10,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-11-10T15:30:00,
+656,2024-11-10,expense,7,7,,19,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-11-10T17:50:00,
+657,2024-11-11,expense,22,15,,,,156,Inventory restock — Serving Dishes (Large),5600,Cash,,Replacing broken/worn stock,2024-11-11T11:07:00,
+658,2024-11-11,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-11-11T14:43:00,
+659,2024-11-11,expense,22,22,,,,158,Inventory restock — Cloth Napkins (White),400,M-Pesa,SGVEVL4FTY,Replacing broken/worn stock,2024-11-11T15:47:00,
+660,2024-11-11,expense,22,15,,,,157,Inventory restock — Serving Dishes (Large),1600,Cash,,Replacing broken/worn stock,2024-11-11T15:48:00,
+661,2024-11-12,income,4,42,5,,77,,Egg sales — 6 trays,2220,M-Pesa,S77EE5FXU5,,2024-11-12T13:00:00,164
+662,2024-11-12,expense,9,11,,,,,Transport — feed delivery from supplier,1500,Cash,,,2024-11-12T14:01:00,
+663,2024-11-14,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-11-14T12:51:00,
+664,2024-11-14,expense,15,3,4,,,,Flower bed maintenance,2000,M-Pesa,SF1FAGHCXE,Groundskeeper + occasional casual help,2024-11-14T14:41:00,
+665,2024-11-14,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S8RZZPJGPX,Day hire guard,2024-11-14T16:33:00,
+666,2024-11-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-11,8308,M-Pesa,S3ZFHK9MLB,,2024-11-15T13:26:00,
+667,2024-11-15,income,4,41,5,,78,,Egg sales — 5 trays,1875,Cash,,,2024-11-15T17:01:00,166
+668,2024-11-16,income,3,37,1,,,,Wellness service — wellness consultation,12000,M-Pesa,SI6I7BUKVH,,2024-11-16T10:23:00,167
+669,2024-11-16,expense,13,44,,,,,Nairobi Water — water bill 2024-11,4551,M-Pesa,SK7DDL55IO,,2024-11-16T14:42:00,
+670,2024-11-16,income,2,42,,20,,,Event deposit — Wedding (2024-11-23),70000,M-Pesa,SK9GGTF2EQ,50% deposit received,2024-11-16T14:44:00,168
+671,2024-11-16,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-11-16T14:59:00,
+672,2024-11-18,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,STJ82C2F9O,Day hire guard,2024-11-18T09:29:00,
+673,2024-11-18,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SUPCEXBZKW,Weekly clean,2024-11-18T13:22:00,
+674,2024-11-19,income,4,39,5,,79,,Egg sales — 1 trays,370,M-Pesa,S93SVNYGR5,,2024-11-19T08:18:00,170
+675,2024-11-19,expense,12,23,5,,,,Poultry vaccination — flock,8000,M-Pesa,SLE7M8OM4U,Dr. Odhiambo,2024-11-19T12:47:00,
+676,2024-11-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),13994,M-Pesa,SEZQPXBO4E,Biweekly feed purchase,2024-11-19T15:32:00,
+677,2024-11-20,expense,8,9,,,,,Door hinge replacement,2000,Cash,,Day hire fundi,2024-11-20T16:09:00,
+678,2024-11-21,expense,17,24,,,,,Accountant — quarterly books review,12000,M-Pesa,SQ5TB6FN5A,Veronica Njagi,2024-11-21T09:29:00,
+679,2024-11-22,expense,21,,,20,,,"Event supplies — Wedding (flowers, decor, consumables)",18417,M-Pesa,SPPNK86JB8,,2024-11-22T09:50:00,
+680,2024-11-22,expense,15,3,4,,,,Garden weeding and mulching,4000,M-Pesa,SNT1DFMPC8,Groundskeeper + occasional casual help,2024-11-22T10:11:00,
+681,2024-11-22,expense,10,12,,20,,,Casual labour — event setup,1500,M-Pesa,SJVH4HQB6W,"Setting up chairs, tables, decor",2024-11-22T10:37:00,
+682,2024-11-22,expense,9,11,,20,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,S96MO92RGS,,2024-11-22T10:52:00,
+683,2024-11-22,income,4,39,5,,80,,Egg sales — 1 trays,365,M-Pesa,SLM3RLAM42,,2024-11-22T12:57:00,172
+684,2024-11-22,expense,6,5,,20,,,Casual security — event eve setup watch,1500,M-Pesa,SEM3HEGAI0,,2024-11-22T13:27:00,
+685,2024-11-22,expense,10,12,,20,,,Casual labour — event setup,1500,M-Pesa,SN9JHELMWE,"Setting up chairs, tables, decor",2024-11-22T13:49:00,
+686,2024-11-22,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SKB3D6LJXF,Day hire guard,2024-11-22T15:17:00,
+687,2024-11-22,expense,7,8,,20,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-11-22T17:02:00,
+688,2024-11-23,expense,10,12,,20,,,Casual labour — event day assistance,1500,M-Pesa,S6E85C2FGY,"Serving, logistics, teardown",2024-11-23T08:52:00,
+689,2024-11-23,income,2,42,,20,,,Event balance — Wedding,70000,Bank Transfer,BT3413504,Balance payment on event day,2024-11-23T09:12:00,173
+690,2024-11-23,expense,26,,,,,,Batteries and small items,1500,M-Pesa,SN160RSCT8,,2024-11-23T10:27:00,
+691,2024-11-23,expense,6,4,,20,,,Casual security — event day,1500,M-Pesa,SUHTC10DHN,,2024-11-23T10:58:00,
+692,2024-11-23,expense,10,13,,20,,,Casual labour — event day assistance,1500,M-Pesa,SQQ4PQG87T,"Serving, logistics, teardown",2024-11-23T11:05:00,
+693,2024-11-23,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SCNVYHMA0D,Weekly clean,2024-11-23T14:50:00,
+694,2024-11-24,expense,18,28,,20,,,Agent commission — Wedding (2024-11-23),14000,M-Pesa,SCR3LE0HCN,10% commission on hire fee,2024-11-24T08:22:00,
+695,2024-11-24,expense,19,15,,,,,"Cleaning supplies — detergent, bleach, floor polish",4000,Cash,,,2024-11-24T09:35:00,
+696,2024-11-24,income,2,33,,21,,,Event deposit — Wedding (2024-12-07),57500,M-Pesa,SRZUE50044,50% deposit received,2024-11-24T13:00:00,177
+697,2024-11-24,expense,7,8,,20,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-11-24T14:10:00,
+698,2024-11-25,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-11),20000,Bank Transfer,BT9278619,Monthly contribution to tent fund,2024-11-25T09:50:00,
+699,2024-11-25,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-11-25T11:51:00,
+700,2024-11-25,expense,15,3,4,,,,Hedge trimming,3000,M-Pesa,S03CDFVRF7,Groundskeeper + occasional casual help,2024-11-25T14:39:00,
+701,2024-11-25,expense,22,17,,,,164,Inventory restock — Brooms,1000,Cash,,Replacing broken/worn stock,2024-11-25T16:01:00,
+702,2024-11-25,expense,22,15,,,,165,Inventory restock — Dinner Plates,500,M-Pesa,S0Y389Q89H,Replacing broken/worn stock,2024-11-25T16:34:00,
+703,2024-11-26,income,4,41,5,,81,,Egg sales — 4 trays,1480,M-Pesa,SOZSGEQOU9,,2024-11-26T11:12:00,178
+704,2024-11-26,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-11),18000,Bank Transfer,BT1100283,Monthly contribution to generator fund,2024-11-26T14:40:00,
+705,2024-11-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-11,12000,Bank Transfer,BT6462166,Part-time monthly pay,2024-11-28T08:52:00,
+706,2024-11-28,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S9F2VIL3SH,Day hire guard,2024-11-28T12:16:00,
+707,2024-11-28,expense,15,3,4,,,,Flower bed maintenance,5000,Cash,,Groundskeeper + occasional casual help,2024-11-28T14:50:00,
+708,2024-11-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-11,35000,Bank Transfer,BT2121642,Monthly salary,2024-11-28T15:31:00,
+709,2024-11-29,income,4,39,5,,82,,Egg sales — 3 trays,1095,M-Pesa,SCZTJGL5TV,,2024-11-29T15:30:00,179
+710,2024-12-01,expense,15,3,4,,,,Flower bed maintenance,5000,M-Pesa,SSMK08AXP2,Groundskeeper + occasional casual help,2024-12-01T09:22:00,
+711,2024-12-02,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-12-02T16:30:00,
+712,2024-12-02,income,2,35,,22,,,Event deposit — Garden Party (2024-12-14),30000,Bank Transfer,BT5585291,50% deposit received,2024-12-02T17:45:00,180
+713,2024-12-03,income,4,40,5,,83,,Egg sales — 2 trays,750,M-Pesa,SGP77GI828,,2024-12-03T08:19:00,181
+714,2024-12-03,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S3RF2HQES9,Weekly clean,2024-12-03T15:49:00,
+715,2024-12-05,expense,22,15,,,,170,Inventory restock — Drinking Glasses,720,M-Pesa,SWZ6H3B956,Replacing broken/worn stock,2024-12-05T08:13:00,
+716,2024-12-05,expense,21,,,21,,,"Event supplies — Wedding (flowers, decor, consumables)",12256,Cash,,,2024-12-05T08:26:00,
+717,2024-12-05,expense,9,11,,,,,Transport — supply run to town,1500,Cash,,,2024-12-05T11:36:00,
+718,2024-12-05,expense,22,15,,,,168,Inventory restock — Soup Bowls,600,Cash,,Replacing broken/worn stock,2024-12-05T13:34:00,
+719,2024-12-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),17456,M-Pesa,SIHUNGGY47,Biweekly feed purchase,2024-12-05T13:54:00,
+720,2024-12-05,expense,22,15,,,,169,Inventory restock — Side Plates,1080,M-Pesa,SFTSQTR24G,Replacing broken/worn stock,2024-12-05T14:01:00,
+721,2024-12-06,income,4,40,5,,84,,Egg sales — 1 trays,360,Cash,,,2024-12-06T08:59:00,183
+722,2024-12-06,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S8HOLA2W9U,Weekly clean,2024-12-06T10:42:00,
+723,2024-12-06,expense,10,12,,21,,,Casual labour — event setup,1500,M-Pesa,S5SKKTR199,"Setting up chairs, tables, decor",2024-12-06T11:16:00,
+724,2024-12-06,expense,7,8,,21,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-12-06T11:59:00,
+725,2024-12-06,expense,10,12,,21,,,Casual labour — event setup,1500,M-Pesa,SGTLM5F7FW,"Setting up chairs, tables, decor",2024-12-06T13:25:00,
+726,2024-12-06,expense,9,11,,21,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,S25PM9OMDP,,2024-12-06T15:27:00,
+727,2024-12-06,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SP2ZZOGZTT,Day hire guard,2024-12-06T15:58:00,
+728,2024-12-06,expense,6,6,,21,,,Casual security — event eve setup watch,1500,Cash,,,2024-12-06T17:44:00,
+729,2024-12-07,income,2,33,,21,,,Event balance — Wedding,57500,Bank Transfer,BT7387816,Balance payment on event day,2024-12-07T11:01:00,184
+730,2024-12-07,expense,10,13,,21,,,Casual labour — event day assistance,1500,M-Pesa,SHH3YBKPR3,"Serving, logistics, teardown",2024-12-07T11:40:00,
+731,2024-12-07,expense,10,12,,21,,,Casual labour — event day assistance,1500,M-Pesa,SUJW4NH7VY,"Serving, logistics, teardown",2024-12-07T14:33:00,
+732,2024-12-07,expense,6,6,,21,,,Casual security — event day,1500,Cash,,,2024-12-07T17:04:00,
+733,2024-12-07,income,3,40,1,,,,Wellness service — meditation class,12000,M-Pesa,SE23LDUSW9,,2024-12-07T17:36:00,185
+734,2024-12-08,expense,7,7,,21,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-12-08T10:08:00,
+735,2024-12-08,expense,18,29,,21,,,Agent commission — Wedding (2024-12-07),11500,M-Pesa,S8EARN3SAV,10% commission on hire fee,2024-12-08T10:09:00,
+736,2024-12-08,expense,15,3,4,,,,Garden weeding and mulching,5000,M-Pesa,SN28EW40IE,Groundskeeper + occasional casual help,2024-12-08T10:20:00,
+737,2024-12-10,expense,20,,,,,,Dog food — Simba & Zuri (monthly),4000,M-Pesa,SZ8CSCIH6C,,2024-12-10T12:06:00,
+738,2024-12-10,expense,6,5,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-12-10T12:19:00,
+739,2024-12-11,expense,21,,,22,,,"Event supplies — Garden Party (flowers, decor, consumables)",5326,Cash,,,2024-12-11T09:22:00,
+740,2024-12-11,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-12-11T17:15:00,
+741,2024-12-12,expense,26,,,,,,Airtime and data bundles,800,M-Pesa,SCDZO2MRYQ,,2024-12-12T09:20:00,
+742,2024-12-13,expense,10,13,,22,,,Casual labour — event setup,1500,Cash,,"Setting up chairs, tables, decor",2024-12-13T08:06:00,
+743,2024-12-13,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-12-13T08:43:00,
+744,2024-12-13,expense,6,5,,22,,,Casual security — event eve setup watch,1500,Cash,,,2024-12-13T11:27:00,
+745,2024-12-13,income,4,40,5,,85,,Egg sales — 3 trays,1095,M-Pesa,STI2BHBEZ9,,2024-12-13T13:14:00,187
+746,2024-12-13,expense,19,19,,,,,"General provisions — toilet paper, bin bags, soap",3500,M-Pesa,SSL681CQX6,,2024-12-13T14:38:00,
+747,2024-12-13,expense,7,7,,22,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,SOBY1UIX0H,,2024-12-13T16:30:00,
+748,2024-12-13,expense,9,11,,22,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,SX13V4X48X,,2024-12-13T16:41:00,
+749,2024-12-14,income,2,35,,22,,,Event balance — Garden Party,30000,M-Pesa,SO8DRF8PR3,Balance payment on event day,2024-12-14T08:39:00,188
+750,2024-12-14,expense,6,5,,22,,,Casual security — event day,1500,M-Pesa,SQG4KRDK9S,,2024-12-14T11:12:00,
+751,2024-12-14,expense,10,13,,22,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-12-14T12:23:00,
+752,2024-12-14,income,2,41,,23,,,Event deposit — Birthday Party (2024-12-21),25000,M-Pesa,S324F3T9UW,50% deposit received,2024-12-14T15:21:00,189
+753,2024-12-15,expense,14,43,,,,,Kenya Power — electricity bill 2024-12,5176,M-Pesa,SPSA79DSM6,,2024-12-15T11:54:00,
+754,2024-12-15,expense,7,7,,22,,,Casual cleaning — post-event cleanup,1500,M-Pesa,S93V1VTETE,,2024-12-15T17:34:00,
+755,2024-12-16,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-12-16T08:55:00,
+756,2024-12-16,expense,13,44,,,,,Nairobi Water — water bill 2024-12,3336,M-Pesa,SZU0PO2P9D,,2024-12-16T08:57:00,
+757,2024-12-16,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-12-16T15:14:00,
+758,2024-12-17,income,4,39,5,,86,,Egg sales — 1 trays,375,M-Pesa,SBK1G0BDPC,,2024-12-17T16:08:00,190
+759,2024-12-18,expense,22,15,,,,176,Inventory restock — Side Plates,900,Cash,,Replacing broken/worn stock,2024-12-18T10:14:00,
+760,2024-12-18,expense,22,17,,,,173,Inventory restock — Mops (Cotton),2800,M-Pesa,SI3QBP5EY0,Replacing broken/worn stock,2024-12-18T11:19:00,
+761,2024-12-18,expense,22,18,,,,175,Inventory restock — Flower Vases (Glass),2100,M-Pesa,SEPXIO5NPD,Replacing broken/worn stock,2024-12-18T12:15:00,
+762,2024-12-18,expense,22,17,,,,174,Inventory restock — Brooms,2000,M-Pesa,SHJLJQ719Q,Replacing broken/worn stock,2024-12-18T12:57:00,
+763,2024-12-18,expense,22,17,,,,177,Inventory restock — Spray Bottles,300,Cash,,Replacing broken/worn stock,2024-12-18T13:46:00,
+764,2024-12-18,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S84GQQTMJQ,Day hire guard,2024-12-18T17:17:00,
+765,2024-12-19,expense,21,,,23,,,"Event supplies — Birthday Party (flowers, decor, consumables)",7318,M-Pesa,SJTAMP2IRA,,2024-12-19T11:50:00,
+766,2024-12-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),17238,M-Pesa,STUSVTUYVY,Biweekly feed purchase,2024-12-19T12:04:00,
+767,2024-12-19,expense,20,23,,,,,Dog grooming and vet checkup — Simba & Zuri,3000,M-Pesa,SKFYG2Y3W7,Quarterly checkup,2024-12-19T16:21:00,
+768,2024-12-20,expense,7,8,,23,,,Casual cleaning — pre-event deep clean,1500,Cash,,,2024-12-20T08:57:00,
+769,2024-12-20,expense,6,6,,23,,,Casual security — event eve setup watch,1500,M-Pesa,ST8PRU4U4O,,2024-12-20T09:05:00,
+770,2024-12-20,income,4,40,5,,87,,Egg sales — 1 trays,375,Cash,,,2024-12-20T12:48:00,191
+771,2024-12-20,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,S0O62OOCH5,Day hire guard,2024-12-20T13:17:00,
+772,2024-12-20,expense,10,12,,23,,,Casual labour — event setup,1500,M-Pesa,SXW6Z4AVXL,"Setting up chairs, tables, decor",2024-12-20T14:46:00,
+773,2024-12-20,expense,9,11,,23,,,Casual transport — event equipment/supply delivery,1500,M-Pesa,SK20T2JROM,,2024-12-20T17:18:00,
+774,2024-12-21,expense,10,12,,23,,,Casual labour — event day assistance,1500,Cash,,"Serving, logistics, teardown",2024-12-21T09:29:00,
+775,2024-12-21,income,4,40,5,,88,,Egg sales — 2 trays,750,M-Pesa,SUD0CEPQZP,,2024-12-21T12:26:00,192
+776,2024-12-21,expense,6,4,,23,,,Casual security — event day,1500,Cash,,,2024-12-21T13:05:00,
+777,2024-12-21,income,2,41,,23,,,Event balance — Birthday Party,25000,Bank Transfer,BT5396916,Balance payment on event day,2024-12-21T15:30:00,193
+778,2024-12-21,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-12-21T17:26:00,
+779,2024-12-22,expense,19,17,,,,,"General provisions — toilet paper, bin bags, soap",2500,Cash,,,2024-12-22T12:27:00,
+780,2024-12-22,income,2,32,,24,,,Event deposit — Garden Party (2024-12-31),40000,Bank Transfer,BT9972110,50% deposit received,2024-12-22T16:31:00,194
+781,2024-12-22,expense,7,8,,23,,,Casual cleaning — post-event cleanup,1500,Cash,,,2024-12-22T17:50:00,
+782,2024-12-23,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SDR6LSKWGW,Day hire guard,2024-12-23T08:46:00,
+783,2024-12-24,income,4,40,5,,89,,Egg sales — 2 trays,740,M-Pesa,SD1VKJ2ELW,,2024-12-24T14:37:00,195
+784,2024-12-24,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2024-12-24T15:20:00,
+785,2024-12-25,expense,6,4,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2024-12-25T08:50:00,
+786,2024-12-25,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2024-12),20000,Bank Transfer,BT2970756,Monthly contribution to tent fund,2024-12-25T13:23:00,
+787,2024-12-27,expense,6,6,,,,,Casual security — routine property watch,1500,M-Pesa,SN098V6FZH,Day hire guard,2024-12-27T12:38:00,
+788,2024-12-27,income,4,41,5,,90,,Egg sales — 8 trays,2880,M-Pesa,ST24D2X14H,,2024-12-27T15:13:00,197
+789,2024-12-28,expense,15,3,4,,,,Flower bed maintenance,5000,Cash,,Groundskeeper + occasional casual help,2024-12-28T08:36:00,
+790,2024-12-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2024-12,35000,Bank Transfer,BT2394194,Monthly salary,2024-12-28T10:06:00,
+791,2024-12-28,savings,27,1,,,,,Savings — Generator Fund set-aside (2024-12),18000,Bank Transfer,BT3642227,Monthly contribution to generator fund,2024-12-28T12:22:00,
+792,2024-12-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2024-12,12000,Bank Transfer,BT8766184,Part-time monthly pay,2024-12-28T17:03:00,
+793,2024-12-28,expense,21,,,24,,,"Event supplies — Garden Party (flowers, decor, consumables)",11135,Cash,,,2024-12-28T17:41:00,
+794,2024-12-30,expense,6,4,,24,,,Casual security — event eve setup watch,1500,M-Pesa,SPN11K0JOQ,,2024-12-30T08:13:00,
+795,2024-12-30,expense,7,7,,24,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,S8IQY5J9LU,,2024-12-30T11:13:00,
+796,2024-12-30,expense,10,12,,24,,,Casual labour — event setup,1500,M-Pesa,S4E8FY7IWN,"Setting up chairs, tables, decor",2024-12-30T12:25:00,
+797,2024-12-30,expense,10,12,,24,,,Casual labour — event setup,1500,M-Pesa,SB2E2JRMHY,"Setting up chairs, tables, decor",2024-12-30T14:27:00,
+798,2024-12-30,expense,9,11,,24,,,Casual transport — event equipment/supply delivery,1500,Cash,,,2024-12-30T15:59:00,
+799,2024-12-31,income,4,40,5,,91,,Egg sales — 1 trays,375,M-Pesa,S9JAE9M4MW,,2024-12-31T08:06:00,198
+800,2024-12-31,expense,6,4,,24,,,Casual security — event day,1500,Cash,,,2024-12-31T11:22:00,
+801,2024-12-31,expense,10,13,,24,,,Casual labour — event day assistance,1500,M-Pesa,SEHBXBCFK4,"Serving, logistics, teardown",2024-12-31T11:22:00,
+802,2024-12-31,income,2,32,,24,,,Event balance — Garden Party,40000,M-Pesa,SCI9RB56SQ,Balance payment on event day,2024-12-31T12:16:00,199
+803,2024-12-31,expense,10,13,,24,,,Casual labour — event day assistance,1500,M-Pesa,SCIWYI4ENF,"Serving, logistics, teardown",2024-12-31T13:55:00,
+804,2025-01-01,income,2,34,,25,,,Event deposit — Wellness Retreat (2025-01-11),32500,Bank Transfer,BT8137590,50% deposit received,2025-01-01T09:29:00,200
+805,2025-01-01,expense,7,7,,24,,,Casual cleaning — post-event cleanup,1500,Cash,,,2025-01-01T14:09:00,
+806,2025-01-02,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2025-01-02T15:09:00,
+807,2025-01-03,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2025-01-03T12:56:00,
+808,2025-01-03,income,4,41,5,,92,,Egg sales — 4 trays,1480,Cash,,,2025-01-03T14:56:00,201
+809,2025-01-03,expense,18,30,,24,,,Agent commission — Garden Party (2024-12-31),8000,M-Pesa,SIYSF0EO4S,10% commission on hire fee,2025-01-03T15:25:00,
+810,2025-01-04,income,3,35,1,,,,Wellness service — sound healing,8000,Bank Transfer,BT1769403,,2025-01-04T14:08:00,202
+811,2025-01-05,expense,20,,,,,,Dog food — Simba & Zuri (monthly),3000,M-Pesa,SMFBCNKYXO,,2025-01-05T08:34:00,
+812,2025-01-05,expense,11,14,5,,,,Chicken feed — layers mash (250kg),13913,M-Pesa,S162TRTPQU,Biweekly feed purchase,2025-01-05T14:19:00,
+813,2025-01-05,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SUEQWI376W,Day hire guard,2025-01-05T15:06:00,
+814,2025-01-06,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,S0S2B4NY8P,Weekly clean,2025-01-06T13:06:00,
+815,2025-01-06,expense,19,19,,,,,"Cleaning supplies — detergent, bleach, floor polish",5000,Cash,,,2025-01-06T17:51:00,
+816,2025-01-07,expense,9,11,,,,,Transport — egg delivery to buyer,1500,Cash,,,2025-01-07T08:27:00,
+817,2025-01-07,income,4,41,5,,93,,Egg sales — 4 trays,1460,Cash,,,2025-01-07T16:05:00,203
+818,2025-01-08,expense,22,22,,,,187,Inventory restock — Kitchen Towels,2000,Cash,,Replacing broken/worn stock,2025-01-08T10:09:00,
+819,2025-01-08,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2025-01-08T11:44:00,
+820,2025-01-08,expense,22,17,,,,186,Inventory restock — Mops (Cotton),700,M-Pesa,SLURVQRN90,Replacing broken/worn stock,2025-01-08T12:12:00,
+821,2025-01-08,expense,22,18,,,,185,Inventory restock — Flower Vases (Glass),2100,M-Pesa,SRDKTNWJWL,Replacing broken/worn stock,2025-01-08T16:53:00,
+822,2025-01-09,expense,21,,,25,,,"Event supplies — Wellness Retreat (flowers, decor, consumables)",6262,Cash,,,2025-01-09T08:45:00,
+823,2025-01-09,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,M-Pesa,SGROURVDZU,Weekly clean,2025-01-09T16:58:00,
+824,2025-01-10,expense,7,7,,25,,,Casual cleaning — pre-event deep clean,1500,M-Pesa,SLEBHLPU7Y,,2025-01-10T11:26:00,
+825,2025-01-10,expense,6,5,,25,,,Casual security — event eve setup watch,1500,M-Pesa,SCMDP5O08L,,2025-01-10T11:53:00,
+826,2025-01-10,income,4,41,5,,94,,Egg sales — 8 trays,2880,M-Pesa,SBNBKTUMOF,,2025-01-10T16:33:00,204
+827,2025-01-11,income,2,34,,25,,,Event balance — Wellness Retreat,32500,M-Pesa,SBM5RFM1U6,Balance payment on event day,2025-01-11T12:15:00,205
+828,2025-01-11,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SNSMPS4DJ7,Day hire guard,2025-01-11T13:34:00,
+829,2025-01-11,expense,6,5,,25,,,Casual security — event day,1500,Cash,,,2025-01-11T13:46:00,
+830,2025-01-11,expense,10,12,,25,,,Casual labour — event setup & assistance,1500,M-Pesa,SHB7PQC62H,,2025-01-11T13:55:00,
+831,2025-01-12,expense,7,7,,25,,,Casual cleaning — post-event cleanup,1500,Cash,,,2025-01-12T16:27:00,
+832,2025-01-13,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,S68577A16F,Day hire guard,2025-01-13T10:02:00,
+833,2025-01-13,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2025-01-13T15:22:00,
+834,2025-01-14,income,4,42,5,,95,,Egg sales — 6 trays,2220,M-Pesa,S41ORCG9SV,,2025-01-14T11:01:00,206
+835,2025-01-15,expense,26,,,,,,Batteries and small items,2000,M-Pesa,SJTMYYHRCD,,2025-01-15T08:30:00,
+836,2025-01-15,expense,14,43,,,,,Kenya Power — electricity bill 2025-01,7676,M-Pesa,S7I3TE3VFQ,,2025-01-15T10:30:00,
+837,2025-01-15,expense,19,19,,,,,"Cleaning supplies — detergent, bleach, floor polish",6000,Cash,,,2025-01-15T11:07:00,
+838,2025-01-16,expense,13,44,,,,,Nairobi Water — water bill 2025-01,4834,M-Pesa,SFP98H9MID,,2025-01-16T15:38:00,
+839,2025-01-17,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SH56M4A6OJ,Day hire guard,2025-01-17T17:47:00,
+840,2025-01-18,income,3,34,1,,,,Wellness service — nature therapy walk,10000,Bank Transfer,BT4157696,,2025-01-18T10:31:00,208
+841,2025-01-18,expense,19,15,,,,,"Cleaning supplies — detergent, bleach, floor polish",6000,M-Pesa,S7V6XEEIZ4,,2025-01-18T11:06:00,
+842,2025-01-18,expense,7,8,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2025-01-18T15:58:00,
+843,2025-01-18,expense,15,3,4,,,,Hedge trimming,5000,Cash,,Groundskeeper + occasional casual help,2025-01-18T16:05:00,
+844,2025-01-19,expense,11,14,5,,,,Chicken feed — layers mash (250kg),15528,M-Pesa,SXUJKCQD4G,Biweekly feed purchase,2025-01-19T14:46:00,
+845,2025-01-19,expense,12,23,5,,,,Poultry vaccination — flock,6000,M-Pesa,SVYG4I1DXW,Dr. Odhiambo,2025-01-19T16:42:00,
+846,2025-01-20,expense,17,26,,,,,Wellness consultant — programme planning,8000,M-Pesa,S7KFZH0CZL,Ochieng Kiptanui,2025-01-20T15:24:00,
+847,2025-01-20,expense,22,17,,,,191,Inventory restock — Spray Bottles,750,Cash,,Replacing broken/worn stock,2025-01-20T17:59:00,
+848,2025-01-21,expense,6,5,,,,,Casual security — routine property watch,1500,M-Pesa,SE53BSMRE7,Day hire guard,2025-01-21T08:05:00,
+849,2025-01-21,income,4,41,5,,96,,Egg sales — 5 trays,1800,M-Pesa,SH7XB4AOZV,,2025-01-21T10:39:00,210
+850,2025-01-22,expense,15,3,4,,,,Flower bed maintenance,2000,M-Pesa,S24NSBQ8IM,Groundskeeper + occasional casual help,2025-01-22T08:19:00,
+851,2025-01-23,expense,7,7,,,,,Casual cleaning — routine housekeeping,1500,Cash,,Weekly clean,2025-01-23T09:31:00,
+852,2025-01-23,expense,15,3,4,,,,Flower bed maintenance,3000,Cash,,Groundskeeper + occasional casual help,2025-01-23T10:02:00,
+853,2025-01-24,income,4,39,5,,97,,Egg sales — 2 trays,730,M-Pesa,S5EPA3LV99,,2025-01-24T13:26:00,211
+854,2025-01-24,expense,15,3,4,,,,Flower bed maintenance,5000,Cash,,Groundskeeper + occasional casual help,2025-01-24T13:55:00,
+855,2025-01-25,income,4,42,5,,98,,Egg sales — 7 trays,2555,M-Pesa,S5EPUQQSCQ,,2025-01-25T13:56:00,212
+856,2025-01-25,expense,6,6,,,,,Casual security — routine property watch,1500,Cash,,Day hire guard,2025-01-25T17:10:00,
+857,2025-01-27,expense,6,4,,,,,Casual security — routine property watch,1500,M-Pesa,SP2ZKPPZR4,Day hire guard,2025-01-27T11:31:00,
+858,2025-01-28,savings,28,1,,,,,Savings — Large Events Tent Fund set-aside (2025-01),20000,Bank Transfer,BT3282928,Monthly contribution to tent fund,2025-01-28T11:39:00,
+859,2025-01-28,income,4,40,5,,99,,Egg sales — 1 trays,370,M-Pesa,SYDU53QF3H,,2025-01-28T12:08:00,213
+860,2025-01-28,expense,5,3,4,,,,Salary — Ogola Muriuki (Groundskeeper) — 2025-01,12000,Bank Transfer,BT8557916,Part-time monthly pay,2025-01-28T15:33:00,
+861,2025-01-28,expense,5,2,2,,,,Salary — Njoki Gachanja (Manager) — 2025-01,35000,Bank Transfer,BT7771587,Monthly salary,2025-01-28T17:05:00,
+862,2025-01-31,income,4,42,5,,100,,Egg sales — 5 trays,1900,M-Pesa,SW2XNG6I7Y,,2025-01-31T10:25:00,214
+863,2025-02-04,income,4,42,5,,102,,Egg sales — 4 trays,1400,M-Pesa,S83GG0M9GL,,2025-02-04T09:24:00,216
+864,2025-02-04,income,4,40,5,,101,,Egg sales — 1 trays,340,Cash,,,2025-02-04T11:59:00,217
+865,2025-02-07,income,4,40,5,,103,,Egg sales — 2 trays,720,M-Pesa,S6VCSG9EWC,,2025-02-07T11:03:00,219
+866,2024-04-05,income,29,,1,,,,Room rental — Bedroom 3 (2 nights) — Rose Adhiambo,14000,Bank Transfer,BT5541717,"Guest: Rose Adhiambo, 2024-04-05 to 2024-04-07",2024-04-05T13:00:00,20
+867,2024-04-13,income,29,,1,,,,Room rental — Bedroom 2 (2 nights) — Rose Adhiambo,14000,M-Pesa,SCUWQZEIOX,"Guest: Rose Adhiambo, 2024-04-13 to 2024-04-15",2024-04-13T13:00:00,25
+868,2024-05-13,income,29,,1,,,,Room rental — Master Bedroom (2 nights) — Peter Omondi,16000,M-Pesa,SNNSAPKIJN,"Guest: Peter Omondi, 2024-05-13 to 2024-05-15",2024-05-13T16:00:00,45
+869,2024-05-08,income,29,,1,,,,Room rental — Bedroom 4 (2 nights) — Robert Kipchoge,14000,M-Pesa,SV3W8KVS04,"Guest: Robert Kipchoge, 2024-05-08 to 2024-05-10",2024-05-08T10:00:00,40
+870,2024-06-18,income,29,,1,,,,Room rental — Bedroom 5 (2 nights) — Faith Chebet,14000,M-Pesa,S5JJWXU6AT,"Guest: Faith Chebet, 2024-06-18 to 2024-06-20",2024-06-18T10:00:00,66
+871,2024-06-24,income,29,,1,,,,Room rental — Bedroom 2 (2 nights) — Janet Mukami,14000,M-Pesa,SB5EREPUCU,"Guest: Janet Mukami, 2024-06-24 to 2024-06-26",2024-06-24T14:00:00,70
+872,2024-06-19,income,29,34,1,,,,Room rental — Bedroom 3 (1 night) — Patrick Kimani,7000,M-Pesa,SERTILHJU3,"Guest: Patrick Kimani, 2024-06-19 to 2024-06-20",2024-06-19T12:00:00,67
+873,2024-07-17,income,29,,1,,,,Room rental — Bedroom 3 (2 nights) — Patrick Kimani,14000,M-Pesa,S0LXC6NEU6,"Guest: Patrick Kimani, 2024-07-17 to 2024-07-19",2024-07-17T14:00:00,84
+874,2024-07-19,income,29,,1,,,,Room rental — Bedroom 4 (2 nights) — Charles Ogutu,14000,M-Pesa,S92O0R4XQA,"Guest: Charles Ogutu, 2024-07-19 to 2024-07-21",2024-07-19T11:00:00,86
+875,2024-07-12,income,29,,1,,,,Room rental — Bedroom 3 (2 nights) — Mercy Auma,14000,M-Pesa,SLQY5R4W7W,"Guest: Mercy Auma, 2024-07-12 to 2024-07-14",2024-07-12T13:00:00,81
+876,2024-07-21,income,29,,1,,,,Room rental — Bedroom 2 (2 nights) — Rose Adhiambo,14000,Bank Transfer,BT3499868,"Guest: Rose Adhiambo, 2024-07-21 to 2024-07-23",2024-07-21T12:00:00,88
+877,2024-08-02,income,29,,1,,,,Room rental — Bedroom 2 (2 nights) — Mercy Auma,14000,M-Pesa,SQHJ7OKBYM,"Guest: Mercy Auma, 2024-08-02 to 2024-08-04",2024-08-02T12:00:00,95
+878,2024-08-21,income,29,,1,,,,Room rental — Bedroom 5 (1 night) — Mercy Auma,7000,Bank Transfer,BT7345225,"Guest: Mercy Auma, 2024-08-21 to 2024-08-22",2024-08-21T12:00:00,107
+879,2024-08-19,income,29,,1,,,,Room rental — Master Bedroom (2 nights) — Diana Cherop,16000,M-Pesa,SVJTV6V0F1,"Guest: Diana Cherop, 2024-08-19 to 2024-08-21",2024-08-19T13:00:00,105
+880,2024-09-21,income,29,,1,,,,Room rental — Bedroom 4 (3 nights) — David Mutua,21000,Bank Transfer,BT8255254,"Guest: David Mutua, 2024-09-21 to 2024-09-24",2024-09-21T16:00:00,128
+881,2024-09-15,income,29,,1,,,,Room rental — Master Bedroom (1 night) — Robert Kipchoge,8000,Bank Transfer,BT1184559,"Guest: Robert Kipchoge, 2024-09-15 to 2024-09-16",2024-09-15T11:00:00,124
+882,2024-10-09,income,29,,1,,,,Room rental — Bedroom 4 (2 nights) — Patrick Kimani,14000,M-Pesa,SKMXIIWAZX,"Guest: Patrick Kimani, 2024-10-09 to 2024-10-11",2024-10-09T11:00:00,142
+883,2024-10-16,income,29,36,1,,,,Room rental — Bedroom 5 (3 nights) — Brian Wekesa,21000,M-Pesa,S1K7T8BFIU,"Guest: Brian Wekesa, 2024-10-16 to 2024-10-19",2024-10-16T15:00:00,147
+884,2024-11-06,income,29,,1,,,,Room rental — Bedroom 5 (1 night) — Beatrice Mwende,7000,M-Pesa,S6V5MRUR7N,"Guest: Beatrice Mwende, 2024-11-06 to 2024-11-07",2024-11-06T14:00:00,160
+885,2024-11-12,income,29,,1,,,,Room rental — Bedroom 5 (1 night) — George Mwangi,7000,Bank Transfer,BT8812501,"Guest: George Mwangi, 2024-11-12 to 2024-11-13",2024-11-12T10:00:00,165
+886,2024-11-20,income,29,40,1,,,,Room rental — Bedroom 5 (1 night) — Diana Cherop,7000,M-Pesa,S8QDINLH1Y,"Guest: Diana Cherop, 2024-11-20 to 2024-11-21",2024-11-20T14:00:00,171
+887,2024-11-17,income,29,31,1,,,,Room rental — Bedroom 4 (1 night) — Edward Kibet,7000,M-Pesa,SLYEV4Z4JT,"Guest: Edward Kibet, 2024-11-17 to 2024-11-18",2024-11-17T11:00:00,169
+888,2024-12-09,income,29,36,1,,,,Room rental — Master Bedroom (2 nights) — Brian Wekesa,16000,M-Pesa,SAUGJ6MB3M,"Guest: Brian Wekesa, 2024-12-09 to 2024-12-11",2024-12-09T15:00:00,186
+889,2024-12-04,income,29,,1,,,,Room rental — Bedroom 3 (2 nights) — David Mutua,14000,Bank Transfer,BT1193553,"Guest: David Mutua, 2024-12-04 to 2024-12-06",2024-12-04T10:00:00,182
+890,2024-12-24,income,29,,1,,,,Room rental — Bedroom 5 (1 night) — Charles Ogutu,7000,M-Pesa,SBFXV6DSF1,"Guest: Charles Ogutu, 2024-12-24 to 2024-12-25",2024-12-24T14:00:00,196
+891,2025-01-18,income,29,31,1,,,,Room rental — Bedroom 3 (2 nights) — Faith Chebet,14000,M-Pesa,S2AUKC5IYW,"Guest: Faith Chebet, 2025-01-18 to 2025-01-20",2025-01-18T11:00:00,209
+892,2025-01-16,income,29,,1,,,,Room rental — Bedroom 4 (1 night) — Beatrice Mwende,7000,M-Pesa,SUJLQDZDGU,"Guest: Beatrice Mwende, 2025-01-16 to 2025-01-17",2025-01-16T16:00:00,207
+893,2025-02-06,income,29,,1,,,,Room rental — Master Bedroom (1 night) — Sarah Wambui,8000,Bank Transfer,BT6451967,"Guest: Sarah Wambui, 2025-02-06 to 2025-02-07",2025-02-06T10:00:00,218
+894,2025-02-11,income,29,,1,,,,Room rental — Bedroom 4 (2 nights) — James Karanja,14000,M-Pesa,SP3DLYPC3K,"Guest: James Karanja, 2025-02-11 to 2025-02-13",2025-02-11T10:00:00,220
+895,2025-02-01,income,29,,1,,,,Room rental — Bedroom 2 (2 nights) — Peter Omondi,14000,Bank Transfer,BT1051755,"Guest: Peter Omondi, 2025-02-01 to 2025-02-03",2025-02-01T15:00:00,215
+896,2024-03-16,income,29,,1,1,,,Room rental — Bedroom 4 (1 night) — Birthday Party guest,7000,Bank Transfer,BT7837267,"Guest: Samuel Kirui, event overnight",2024-03-16T18:00:00,10
+897,2024-04-13,income,29,,1,3,,,Room rental — Master Bedroom (1 night) — Baby Shower guest,8000,M-Pesa,BT2698734,"Guest: Robert Kipchoge, event overnight",2024-04-13T14:00:00,26
+898,2024-04-13,income,29,,1,3,,,Room rental — Bedroom 4 (1 night) — Baby Shower guest,7000,Bank Transfer,BT5220462,"Guest: Rose Adhiambo, event overnight",2024-04-13T15:00:00,27
+899,2024-05-11,income,29,,1,5,,,Room rental — Master Bedroom (1 night) — Wedding guest,8000,Bank Transfer,BT8544873,"Guest: Beatrice Mwende, event overnight",2024-05-11T17:00:00,43
+900,2024-05-11,income,29,,1,5,,,Room rental — Bedroom 5 (1 night) — Wedding guest,7000,Bank Transfer,SLS0F7BCLP,"Guest: Henry Odhiambo, event overnight",2024-05-11T18:00:00,44
+901,2024-06-08,income,29,,1,7,,,Room rental — Bedroom 2 (2 nights) — Bridal Shower guest,14000,M-Pesa,BT5826925,"Guest: Esther Nyokabi, event overnight",2024-06-08T17:00:00,60
+902,2024-06-08,income,29,,1,7,,,Room rental — Bedroom 5 (2 nights) — Bridal Shower guest,14000,Bank Transfer,S5I9HMLOJJ,"Guest: Faith Chebet, event overnight",2024-06-08T15:00:00,61
+903,2024-07-06,income,29,,1,9,,,Room rental — Bedroom 5 (1 night) — Garden Party guest,7000,Bank Transfer,ST5DT1C24Q,"Guest: Sarah Wambui, event overnight",2024-07-06T15:00:00,77
+904,2024-08-24,income,29,,1,12,,,Room rental — Master Bedroom (1 night) — Wellness Retreat guest,8000,M-Pesa,SW3RLS9BAD,"Guest: Lucy Wanjiku, event overnight",2024-08-24T14:00:00,112
+905,2024-09-07,income,29,,1,13,,,Room rental — Bedroom 2 (1 night) — Garden Party guest,7000,M-Pesa,SYN5CI5MH7,"Guest: Sarah Wambui, event overnight",2024-09-07T18:00:00,118
+906,2024-09-07,income,29,,1,13,,,Room rental — Bedroom 3 (1 night) — Garden Party guest,7000,Bank Transfer,BT2375434,"Guest: James Karanja, event overnight",2024-09-07T16:00:00,119
+907,2024-09-21,income,29,,1,14,,,Room rental — Bedroom 4 (2 nights) — Birthday Party guest,14000,M-Pesa,SW7AL46U4Q,"Guest: Caroline Muthama, event overnight",2024-09-21T16:00:00,129
+908,2024-09-21,income,29,,1,14,,,Room rental — Bedroom 2 (2 nights) — Birthday Party guest,14000,Bank Transfer,SGPGC0ZYFA,"Guest: Beatrice Mwende, event overnight",2024-09-21T14:00:00,130
+909,2024-10-05,income,29,,1,15,,,Room rental — Master Bedroom (2 nights) — Wedding guest,16000,M-Pesa,SUX1S9SLO6,"Guest: Diana Cherop, event overnight",2024-10-05T15:00:00,139
+910,2024-10-05,income,29,,1,15,,,Room rental — Bedroom 5 (1 night) — Wedding guest,7000,M-Pesa,BT3824585,"Guest: Charles Ogutu, event overnight",2024-10-05T16:00:00,140
+911,2024-10-05,income,29,,1,15,,,Room rental — Bedroom 2 (1 night) — Wedding guest,7000,Bank Transfer,S9OG5FY73V,"Guest: Samuel Kirui, event overnight",2024-10-05T16:00:00,141
+912,2024-10-12,income,29,,1,16,,,Room rental — Bedroom 3 (2 nights) — Corporate Retreat guest,14000,M-Pesa,BT6227106,"Guest: Esther Nyokabi, event overnight",2024-10-12T17:00:00,144
+913,2024-11-02,income,29,,1,18,,,Room rental — Master Bedroom (2 nights) — Wedding guest,16000,Bank Transfer,SILTU5FWW7,"Guest: Rose Adhiambo, event overnight",2024-11-02T16:00:00,156
+914,2024-11-02,income,29,,1,18,,,Room rental — Bedroom 2 (1 night) — Wedding guest,7000,Bank Transfer,BT2071375,"Guest: Samuel Kirui, event overnight",2024-11-02T14:00:00,157
+915,2024-11-02,income,29,,1,18,,,Room rental — Bedroom 5 (2 nights) — Wedding guest,14000,M-Pesa,SO1WYULLA1,"Guest: Lucy Wanjiku, event overnight",2024-11-02T16:00:00,158
+916,2024-11-09,income,29,,1,19,,,Room rental — Bedroom 2 (2 nights) — Baby Shower guest,14000,Bank Transfer,BT6032592,"Guest: George Mwangi, event overnight",2024-11-09T15:00:00,163
+917,2024-11-23,income,29,,1,20,,,Room rental — Bedroom 3 (1 night) — Wedding guest,7000,M-Pesa,SYSTI0OTJL,"Guest: Janet Mukami, event overnight",2024-11-23T17:00:00,174
+918,2024-11-23,income,29,,1,20,,,Room rental — Master Bedroom (2 nights) — Wedding guest,16000,M-Pesa,SRL7SSYNSY,"Guest: Grace Akinyi, event overnight",2024-11-23T14:00:00,175
+919,2024-11-23,income,29,,1,20,,,Room rental — Bedroom 2 (1 night) — Wedding guest,7000,Bank Transfer,BT5080304,"Guest: James Karanja, event overnight",2024-11-23T17:00:00,176
+920,2024-01-05,expense,30,45,4,,,,Estate service charge — 2024-01,12000,Bank Transfer,BT9330135,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-01-05T10:00:00,
+921,2024-01-05,expense,31,45,1,,,,Borehole water supply — 2024-01,4109,Bank Transfer,BT8058845,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-01-05T10:15:00,
+922,2024-02-05,expense,30,45,4,,,,Estate service charge — 2024-02,12000,Bank Transfer,BT2533754,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-02-05T10:00:00,
+923,2024-02-05,expense,31,45,1,,,,Borehole water supply — 2024-02,4145,Bank Transfer,BT7756291,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-02-05T10:15:00,
+924,2024-03-05,expense,30,45,4,,,,Estate service charge — 2024-03,12000,Bank Transfer,BT6447701,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-03-05T10:00:00,
+925,2024-03-05,expense,31,45,1,,,,Borehole water supply — 2024-03,4354,Bank Transfer,BT5917231,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-03-05T10:15:00,
+926,2024-04-05,expense,30,45,4,,,,Estate service charge — 2024-04,12000,Bank Transfer,BT2213550,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-04-05T10:00:00,
+927,2024-04-05,expense,31,45,1,,,,Borehole water supply — 2024-04,4211,Bank Transfer,BT4209990,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-04-05T10:15:00,
+928,2024-05-05,expense,30,45,4,,,,Estate service charge — 2024-05,12000,Bank Transfer,BT7265694,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-05-05T10:00:00,
+929,2024-05-05,expense,31,45,1,,,,Borehole water supply — 2024-05,4348,Bank Transfer,BT3657546,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-05-05T10:15:00,
+930,2024-06-05,expense,30,45,4,,,,Estate service charge — 2024-06,12000,Bank Transfer,BT9765165,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-06-05T10:00:00,
+931,2024-06-05,expense,31,45,1,,,,Borehole water supply — 2024-06,4045,Bank Transfer,BT8270990,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-06-05T10:15:00,
+932,2024-07-05,expense,30,45,4,,,,Estate service charge — 2024-07,12000,Bank Transfer,BT2737627,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-07-05T10:00:00,
+933,2024-07-05,expense,31,45,1,,,,Borehole water supply — 2024-07,3509,Bank Transfer,BT2558600,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-07-05T10:15:00,
+934,2024-08-05,expense,30,45,4,,,,Estate service charge — 2024-08,12000,Bank Transfer,BT4387903,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-08-05T10:00:00,
+935,2024-08-05,expense,31,45,1,,,,Borehole water supply — 2024-08,3786,Bank Transfer,BT4098230,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-08-05T10:15:00,
+936,2024-09-05,expense,30,45,4,,,,Estate service charge — 2024-09,12000,Bank Transfer,BT7293225,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-09-05T10:00:00,
+937,2024-09-05,expense,31,45,1,,,,Borehole water supply — 2024-09,3652,Bank Transfer,BT2940805,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-09-05T10:15:00,
+938,2024-10-05,expense,30,45,4,,,,Estate service charge — 2024-10,12000,Bank Transfer,BT5503369,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-10-05T10:00:00,
+939,2024-10-05,expense,31,45,1,,,,Borehole water supply — 2024-10,3791,Bank Transfer,BT1297509,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-10-05T10:15:00,
+940,2024-11-05,expense,30,45,4,,,,Estate service charge — 2024-11,12000,Bank Transfer,BT3546485,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-11-05T10:00:00,
+941,2024-11-05,expense,31,45,1,,,,Borehole water supply — 2024-11,4072,Bank Transfer,BT2206977,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-11-05T10:15:00,
+942,2024-12-05,expense,30,45,4,,,,Estate service charge — 2024-12,12000,Bank Transfer,BT5649916,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2024-12-05T10:00:00,
+943,2024-12-05,expense,31,45,1,,,,Borehole water supply — 2024-12,4174,Bank Transfer,BT4835808,Monthly estate borehole water. Supplements Nairobi Water supply.,2024-12-05T10:15:00,
+944,2025-01-05,expense,30,45,4,,,,Estate service charge — 2025-01,12000,Bank Transfer,BT8737659,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2025-01-05T10:00:00,
+945,2025-01-05,expense,31,45,1,,,,Borehole water supply — 2025-01,4495,Bank Transfer,BT7618250,Monthly estate borehole water. Supplements Nairobi Water supply.,2025-01-05T10:15:00,
+946,2025-02-05,expense,30,45,4,,,,Estate service charge — 2025-02,12000,Bank Transfer,BT2780373,"Monthly gated community service charge. Covers estate security, common areas, garbage, roads.",2025-02-05T10:00:00,
+947,2025-02-05,expense,31,45,1,,,,Borehole water supply — 2025-02,3985,Bank Transfer,BT4710015,Monthly estate borehole water. Supplements Nairobi Water supply.,2025-02-05T10:15:00,

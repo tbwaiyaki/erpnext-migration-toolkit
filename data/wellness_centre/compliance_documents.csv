@@ -1,0 +1,10 @@
+id,document_type,document_number,issuing_authority,issue_date,expiry_date,status,renewal_fee,notes,created_at
+1,KRA PIN Certificate,A005847293K,Kenya Revenue Authority,2024-01-10,,active,,Business KRA PIN. Registered as sole proprietor under Veronica Muthoni.,2024-01-10T09:00:00
+2,Single Business Permit,SBP/NBI/2024/038472,Nairobi County Government,2024-01-15,2024-12-31,active,15000,Annual business permit for events venue and hospitality services. Renewed annually.,2024-01-15T09:00:00
+3,Tax Compliance Certificate,TCC/2024/0293847,Kenya Revenue Authority,2024-02-20,2025-02-19,active,,Valid 12 months from issue. Required for tenders and government dealings.,2024-02-20T09:00:00
+4,eTIMS Registration Certificate,ETIMS/CU/2024/00384,Kenya Revenue Authority,2024-01-20,,active,,eTIMS Control Unit registered. CU Serial: KRCU0384729156. All income invoiced via eTIMS.,2024-01-20T09:00:00
+5,Fire Safety Certificate,FSC/NBI/2024/009283,Nairobi County Fire Department,2024-01-25,2025-01-24,active,5000,Annual fire safety inspection and certification for events venue.,2024-01-25T09:00:00
+6,Public Health License,PHL/NBI/2024/004827,Nairobi County Public Health,2024-02-05,2024-12-31,active,8000,Required for food handling during events. Annual renewal.,2024-02-05T09:00:00
+7,NEMA Environmental License,NEMA/2024/EL/003948,National Environment Management Authority,2024-03-01,2025-02-28,active,10000,Environmental compliance for poultry operations and events. Annual.,2024-03-01T09:00:00
+8,Business Registration Certificate,BN/2024/038291,Office of the Registrar of Companies,2024-01-08,,active,,Business name registration: Veronica's Wellness Garden.,2024-01-08T09:00:00
+9,Poultry Keeping Permit,VET/NBI/2024/002938,County Veterinary Office,2024-01-30,2024-12-31,active,3000,License to keep poultry (up to 500 birds) within Nairobi County.,2024-01-30T09:00:00

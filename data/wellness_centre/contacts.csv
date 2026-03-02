@@ -1,0 +1,46 @@
+id,contact_type_id,name,phone,email,company_name,daily_rate,monthly_salary,notes,created_at,kra_pin
+1,1,Veronica Muthoni,0722223698,veronica.muthoni@gmail.com,,,,Property owner and main shareholder. Funds all startup costs from personal finances.,2024-01-15T13:03:00,A134984606J
+2,2,Njoki Gachanja,0771578984,njoki.gachanja28@gmail.com,,,35000,"Live-in manager. Occupies the 2-bed guest house. Full-time, manages day-to-day operations.",2024-01-17T08:25:00,
+3,2,Ogola Muriuki,0115347792,,,,12000,Part-time groundskeeper. Maintains the landscaped gardens and outdoor areas.,2024-01-18T09:20:00,
+4,3,Githui Ndambuki,0748635930,,,1500,,Security Guard. Day-hire security. Called for events and routine patrols 2-3x/week.,2024-02-07T11:41:00,
+5,3,Waitherero Gitau,0111842986,,,1500,,Security Guard. Day-hire security. Reliable backup guard for busy periods.,2024-02-16T08:41:00,
+6,3,Achieng Towett,0738306407,,,1200,,Cleaner. Day-hire cleaner. Pre/post event deep cleaning and routine housekeeping.,2024-01-31T11:20:00,
+7,3,Kabiru Nzomo,0737348421,,,1200,,Cleaner. Day-hire cleaner. Available for big events and weekly deep cleans.,2024-01-26T10:24:00,
+8,3,Mburu Thuku,0740762453,,,2500,,"Fundi (Maintenance). Day-hire handyman. Plumbing, electrical, carpentry repairs.",2024-01-27T18:29:00,
+9,3,Anyango Kairu,0739974884,,,2000,,"Fundi (Painter/General). Day-hire fundi. Painting, general maintenance, minor renovations.",2024-02-15T19:48:00,
+10,3,Kipketer Khaemba,0758369056,,,2000,,"Driver. Day-hire driver with own vehicle. Deliveries, errands, transport.",2024-01-29T14:07:00,
+11,3,Musyoka Odhiambo,0770830139,,,1800,,Driver. Day-hire driver. Available for feed pickups and event logistics.,2024-02-12T13:51:00,
+12,3,Omar Gachoki,0113978865,,,1500,,"Event Helper. Day-hire event setup and teardown. Arranges chairs, tables, decorations.",2024-01-29T15:47:00,
+13,3,Nchoe Koech,0115432233,,,1500,,Event Helper. Day-hire event setup. Helps with serving and cleanup.,2024-02-02T16:36:00,
+14,4,Nthiwa Kamore,0112013347,nthiwa.kamore@kamaufeedspoultrysupplies.co.ke,Kamau Feeds & Poultry Supplies,,,Main chicken feed supplier. Delivers biweekly to the property.,2024-01-25T13:31:00,A171817954S
+15,4,Awino Ali,0745634099,awino.ali32@gmail.com,Nairobi Provisions Ltd,,,Grocery and kitchen provisions. Delivers weekly.,2024-01-18T10:43:00,A932010810Q
+16,4,Mugo Nyaboke,0738221629,mugo.nyaboke86@gmail.com,Eastleigh Hardware & Electrical,,,"Hardware, electrical supplies, plumbing materials.",2024-01-22T09:55:00,A199347503F
+17,4,Florence Mugo,0736577585,florence.mugo@mamanjeriscleaningsupplies.co.ke,Mama Njeri's Cleaning Supplies,,,"Cleaning products, detergents, toiletries.",2024-01-31T13:34:00,A821263510W
+18,4,Ndungu Gesare,0745583291,ndungu.gesare@safarieventrentals.co.ke,Safari Event Rentals,,,"Rents out extra chairs, tables, tents, PA systems for large events.",2024-01-25T14:44:00,A158932669H
+19,4,Noor Kinyanjui,0733451888,noor.kinyanjui@gmail.com,Nyama Choma Pet Supplies,,,"Dog food, grooming products, pet accessories.",2024-01-19T18:20:00,A526957294L
+20,4,Njeri Ngaruiya,0728233533,njeri.ngaruiya@westlandsfurnitureworkshop.co.ke,Westlands Furniture Workshop,,,"Custom furniture, repairs, fittings.",2024-01-20T09:57:00,A956261750U
+21,4,Monica Mungai,0745485284,monica.mungai@gmail.com,Green Valley Nursery,,,"Plants, seedlings, fertiliser, garden supplies.",2024-01-30T15:46:00,A492236427B
+22,4,Achieng Macharia,0722062635,achieng.macharia@ngongroadlinencentre.co.ke,Ngong Road Linen Centre,,,"Tablecloths, napkins, seat covers, curtains, bedsheets.",2024-01-18T08:31:00,A711891095Z
+23,5,Dr. Odhiambo Wanyonyi,0772617412,odhiambo.wanyonyi@hotmail.com,Nairobi Vet Clinic,,,"Veterinary Consultant. Handles chicken flock health, vaccinations, and dog checkups.",2024-01-27T17:21:00,A537711463A
+24,5,Veronica Njagi,0790652769,veronica.njagi@gmail.com,Wanjiku & Associates,,,"Accountant. Manages books, tax compliance, and financial advice.",2024-02-14T17:01:00,A700767248G
+25,5,Pauline Omweri,0741802476,pauline.omweri32@outlook.com,,,,"Event Planner. Freelance event planner. Advises on event setup, decor, and logistics.",2024-01-25T11:20:00,A151196210X
+26,5,Ochieng Kiptanui,0738949467,ochieng.kiptanui@gmail.com,,,,"Wellness Practitioner. Conducts wellness sessions — yoga, meditation, massage therapy.",2024-02-04T10:55:00,A213976306Y
+27,6,Wanjiru Ombima,0757406881,wanjiru.ombima60@outlook.com,Prestige Events Nairobi,,,"Event booking agent. Sources clients for weddings, corporate events.",2024-02-12T14:25:00,
+28,6,Eunice Syokau,0112088500,eunice.syokau47@gmail.com,Safari Links Events,,,Event booking agent. Focuses on garden parties and outdoor events.,2024-02-12T11:33:00,
+29,6,Musembi Kemboi,0745079905,musembi.kemboi97@hotmail.com,Nairobi Transport Services,,,Transport agent. Arranges vehicles and drivers for events and deliveries.,2024-01-30T09:58:00,
+30,6,Kamau Okello,0745987248,kamau.okello@outlook.com,,,,Freelance events agent. Word-of-mouth referrals for venue hire.,2024-03-05T12:29:00,
+31,7,Dorothy Barasa,0745477028,,,,,Venue Client. Hired venue for a wedding reception.,2024-03-08T18:33:00,
+32,7,Mwangi Naliaka,0757691578,mwangi.naliaka@gmail.com,Safaricom Staff Welfare,,,Venue Client. Corporate retreat and team building.,2024-02-14T13:42:00,
+33,7,Owuor Muchiri,0112706446,,,,,Venue Client. Birthday party — 50th birthday celebration.,2024-02-05T15:28:00,
+34,7,Alice Kahiga,0758575464,alice.kahiga55@yahoo.com,,,,Venue Client. Baby shower event.,2024-02-06T10:17:00,
+35,7,Lagat Nyambura,0112339407,lagat.nyambura@kenyaredcrossnairobi.co.ke,Kenya Red Cross Nairobi,,,Venue Client. Charity fundraiser garden party.,2024-03-27T16:37:00,
+36,7,Kiprono Muhoro,0738306079,,,,,Venue Client. Hired venue for a bridal shower.,2024-04-06T17:57:00,
+37,7,Maina Mundia,0728448968,maina.mundia@techhubnairobi.co.ke,TechHub Nairobi,,,Venue Client. Corporate year-end party.,2024-03-10T14:50:00,
+38,7,Juma Korir,0110972919,juma.korir96@gmail.com,,,,Venue Client. Memorial service.,2024-03-31T12:58:00,
+39,7,Damaris Sigei,0727462922,damaris.sigei12@yahoo.com,,,,"Egg Buyer (Individual). Regular egg buyer. Neighbour, picks up 2-3 trays weekly.",2024-02-17T17:15:00,
+40,7,Atieno Ndirangu,0759734426,,,,,"Egg Buyer (Individual). Regular egg buyer. Friend of owner, orders 1-2 trays weekly.",2024-04-04T17:36:00,
+41,7,Apiyo Kibe,0772314016,apiyo.kibe@mamaakinyiskiosk.co.ke,Mama Akinyi's Kiosk,,,Egg Buyer (Retailer). Small kiosk on Ngong Road. Buys 5-8 trays weekly.,2024-03-06T08:42:00,
+42,7,Murimi Onyango,0733132805,murimi.onyango@freshcornergrocers.co.ke,Fresh Corner Grocers,,,Egg Buyer (Retailer). Neighbourhood grocery store. Buys 4-6 trays twice a week.,2024-02-19T14:24:00,
+43,8,Kenya Power,0800088451,billing@kenyapower.co.ke,Kenya Power,,,Electricity utility provider. Monthly bill.,2024-01-24T17:54:00,A897189429E
+44,8,Nairobi City Water,0800069311,billing@nairobicitywater.co.ke,Nairobi City Water,,,Water utility provider. Monthly bill.,2024-01-18T08:26:00,A776188291D
+45,8,Estate Management Association,0722384950,admin@estatemanagement.co.ke,Estate Management Association,,,"Gated community estate management. Handles service charge, borehole water, estate security, common areas.",2024-01-15T09:00:00,A250276441K

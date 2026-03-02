@@ -1,0 +1,194 @@
+id,inventory_item_id,movement_type,quantity,event_id,contact_id,transaction_id,movement_date,notes,created_at
+1,70,Purchase,5,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+2,71,Purchase,4,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+3,72,Purchase,3,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+4,73,Purchase,6,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+5,74,Purchase,4,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+6,75,Purchase,6,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+7,76,Purchase,10,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+8,77,Purchase,3,,17,,2024-01-26,Initial stock purchase — startup,2024-01-26T10:00:00
+9,62,Purchase,2,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+10,63,Purchase,2,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+11,64,Purchase,3,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+12,65,Purchase,3,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+13,66,Purchase,2,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+14,67,Purchase,1,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+15,68,Purchase,2,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+16,69,Purchase,3,,16,,2024-01-27,Initial stock purchase — startup,2024-01-27T10:00:00
+17,1,Purchase,4,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+18,2,Purchase,3,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+19,3,Purchase,3,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+20,4,Purchase,2,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+21,5,Purchase,10,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+22,6,Purchase,2,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+23,7,Purchase,4,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+24,8,Purchase,1,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+25,9,Purchase,1,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+26,10,Purchase,2,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+27,11,Purchase,3,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+28,12,Purchase,1,,15,,2024-01-28,Initial stock purchase — startup,2024-01-28T10:00:00
+29,13,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+30,14,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+31,15,Purchase,80,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+32,16,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+33,17,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+34,18,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+35,19,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+36,20,Purchase,120,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+37,21,Purchase,60,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+38,22,Purchase,80,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+39,23,Purchase,12,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+40,24,Purchase,15,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+41,25,Purchase,10,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+42,26,Purchase,8,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+43,27,Purchase,15,,15,,2024-01-29,Initial stock purchase — startup,2024-01-29T10:00:00
+44,28,Purchase,8,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+45,29,Purchase,6,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+46,30,Purchase,30,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+47,31,Purchase,20,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+48,32,Purchase,10,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+49,33,Purchase,4,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+50,34,Purchase,10,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+51,35,Purchase,4,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+52,36,Purchase,2,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+53,37,Purchase,2,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+54,38,Purchase,2,,16,,2024-02-01,Initial stock purchase — startup,2024-02-01T10:00:00
+55,58,Purchase,6,,20,,2024-02-02,Initial stock purchase — startup,2024-02-02T10:00:00
+56,59,Purchase,3,,20,,2024-02-02,Initial stock purchase — startup,2024-02-02T10:00:00
+57,60,Purchase,2,,20,,2024-02-02,Initial stock purchase — startup,2024-02-02T10:00:00
+58,61,Purchase,4,,20,,2024-02-02,Initial stock purchase — startup,2024-02-02T10:00:00
+59,39,Purchase,120,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+60,40,Purchase,13,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+61,41,Purchase,4,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+62,42,Purchase,2,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+63,43,Purchase,15,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+64,44,Purchase,6,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+65,45,Purchase,50,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+66,46,Purchase,15,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+67,47,Purchase,2,,18,,2024-02-03,Initial stock purchase — startup,2024-02-03T10:00:00
+68,48,Purchase,20,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+69,49,Purchase,10,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+70,50,Purchase,120,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+71,51,Purchase,60,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+72,52,Purchase,120,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+73,53,Purchase,120,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+74,54,Purchase,6,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+75,55,Purchase,10,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+76,56,Purchase,6,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+77,57,Purchase,12,,22,,2024-02-05,Initial stock purchase — startup,2024-02-05T10:00:00
+78,21,Breakage,3,,,,2024-03-15,Found broken after event,2024-03-15T17:00:00
+79,21,Breakage,2,,,,2024-03-15,Chipped — disposed,2024-03-15T17:00:00
+80,46,Breakage,3,,,,2024-03-26,Found broken after event,2024-03-26T16:00:00
+81,25,Breakage,3,,,,2024-03-31,Cracked during washing,2024-03-31T18:00:00
+82,74,Audit Adjustment,2,,,,2024-04-01,Found extra stock during quarterly audit,2024-04-01T14:00:00
+83,57,Audit Adjustment,1,,,,2024-04-01,Found extra stock during quarterly audit,2024-04-01T14:00:00
+84,14,Breakage,1,,,,2024-04-11,Chipped — disposed,2024-04-11T18:00:00
+85,70,Purchase,4,,17,,2024-04-15,Restock — replacing broken/worn items,2024-04-15T11:00:00
+86,46,Purchase,10,,18,,2024-04-15,Restock — replacing broken/worn items,2024-04-15T11:00:00
+87,25,Breakage,2,,,,2024-04-16,Broken during event cleanup,2024-04-16T17:00:00
+88,46,Breakage,3,,,,2024-04-18,Chipped — disposed,2024-04-18T18:00:00
+89,25,Breakage,3,,,,2024-04-24,Damaged in storage,2024-04-24T16:00:00
+90,53,Loss,5,,,,2024-04-24,Missing after stock count — likely misplaced or taken during event,2024-04-24T18:00:00
+91,18,Loss,2,,,,2024-05-04,Missing after stock count — likely misplaced or taken during event,2024-05-04T18:00:00
+92,46,Breakage,2,,,,2024-05-14,Cracked during washing,2024-05-14T18:00:00
+93,25,Breakage,1,,,,2024-05-14,Cracked during washing,2024-05-14T16:00:00
+94,71,Purchase,3,,17,,2024-05-20,Restock — replacing broken/worn items,2024-05-20T11:00:00
+95,46,Purchase,7,,18,,2024-05-20,Restock — replacing broken/worn items,2024-05-20T11:00:00
+96,21,Purchase,8,,15,,2024-05-20,Restock — replacing broken/worn items,2024-05-20T11:00:00
+97,24,Purchase,3,,15,,2024-05-20,Restock — replacing broken/worn items,2024-05-20T11:00:00
+98,71,Purchase,3,,17,,2024-05-20,Restock — replacing broken/worn items,2024-05-20T11:00:00
+99,25,Breakage,1,,,,2024-06-03,Chipped — disposed,2024-06-03T19:00:00
+100,17,Loss,1,,,,2024-06-06,Missing after stock count — likely misplaced or taken during event,2024-06-06T18:00:00
+101,4,Disposal,3,,,,2024-06-12,Too worn/damaged for further use — disposed,2024-06-12T10:00:00
+102,15,Breakage,3,,,,2024-06-17,Damaged in storage,2024-06-17T19:00:00
+103,21,Purchase,8,,15,,2024-06-18,Restock — replacing broken/worn items,2024-06-18T11:00:00
+104,56,Purchase,3,,22,,2024-06-18,Restock — replacing broken/worn items,2024-06-18T11:00:00
+105,20,Purchase,10,,15,,2024-06-18,Restock — replacing broken/worn items,2024-06-18T11:00:00
+106,22,Breakage,4,,,,2024-07-01,Broken during event cleanup,2024-07-01T18:00:00
+107,65,Audit Adjustment,-2,,,,2024-07-01,Stock count lower than expected — adjusted down,2024-07-01T14:00:00
+108,71,Audit Adjustment,2,,,,2024-07-01,Found extra stock during quarterly audit,2024-07-01T14:00:00
+109,22,Breakage,4,,,,2024-07-03,Chipped — disposed,2024-07-03T16:00:00
+110,22,Breakage,2,,,,2024-07-10,Cracked during washing,2024-07-10T18:00:00
+111,17,Loss,3,,,,2024-07-15,Missing after stock count — likely misplaced or taken during event,2024-07-15T18:00:00
+112,46,Purchase,5,,18,,2024-07-15,Restock — replacing broken/worn items,2024-07-15T11:00:00
+113,13,Purchase,5,,15,,2024-07-15,Restock — replacing broken/worn items,2024-07-15T11:00:00
+114,24,Purchase,3,,15,,2024-07-15,Restock — replacing broken/worn items,2024-07-15T11:00:00
+115,20,Breakage,2,,,,2024-07-22,Found broken after event,2024-07-22T19:00:00
+116,19,Loss,1,,,,2024-07-26,Missing after stock count — likely misplaced or taken during event,2024-07-26T18:00:00
+117,19,Loss,3,,,,2024-07-31,Missing after stock count — likely misplaced or taken during event,2024-07-31T18:00:00
+118,20,Breakage,3,,,,2024-08-03,Found broken after event,2024-08-03T17:00:00
+119,24,Breakage,3,,,,2024-08-05,Found broken after event,2024-08-05T16:00:00
+120,31,Disposal,3,,,,2024-08-06,Too worn/damaged for further use — disposed,2024-08-06T10:00:00
+121,18,Loss,2,,,,2024-08-07,Missing after stock count — likely misplaced or taken during event,2024-08-07T18:00:00
+122,21,Breakage,3,,,,2024-08-10,Chipped — disposed,2024-08-10T19:00:00
+123,21,Breakage,2,,,,2024-08-12,Dropped during serving,2024-08-12T16:00:00
+124,20,Breakage,1,,,,2024-08-12,Broken during event cleanup,2024-08-12T19:00:00
+125,22,Purchase,4,,15,,2024-08-12,Restock — replacing broken/worn items,2024-08-12T11:00:00
+126,20,Purchase,11,,15,,2024-08-12,Restock — replacing broken/worn items,2024-08-12T11:00:00
+127,13,Breakage,4,,,,2024-08-13,Broken during event cleanup,2024-08-13T16:00:00
+128,22,Breakage,3,,,,2024-08-23,Dropped during serving,2024-08-23T17:00:00
+129,50,Disposal,2,,,,2024-08-23,Too worn/damaged for further use — disposed,2024-08-23T10:00:00
+130,13,Breakage,1,,,,2024-08-28,Dropped during serving,2024-08-28T16:00:00
+131,21,Breakage,1,,,,2024-08-29,Found broken after event,2024-08-29T16:00:00
+132,15,Breakage,1,,,,2024-09-05,Broken during event cleanup,2024-09-05T19:00:00
+133,23,Purchase,2,,15,,2024-09-10,Restock — replacing broken/worn items,2024-09-10T11:00:00
+134,25,Breakage,1,,,,2024-09-12,Broken during event cleanup,2024-09-12T17:00:00
+135,17,Loss,2,,,,2024-09-13,Missing after stock count — likely misplaced or taken during event,2024-09-13T18:00:00
+136,50,Disposal,3,,,,2024-09-19,Too worn/damaged for further use — disposed,2024-09-19T10:00:00
+137,51,Loss,6,,,,2024-09-22,Missing after stock count — likely misplaced or taken during event,2024-09-22T18:00:00
+138,50,Purchase,3,,22,,2024-09-28,Restock — replacing broken/worn items,2024-09-28T11:00:00
+139,70,Purchase,1,,17,,2024-09-28,Restock — replacing broken/worn items,2024-09-28T11:00:00
+140,75,Purchase,4,,17,,2024-09-28,Restock — replacing broken/worn items,2024-09-28T11:00:00
+141,20,Purchase,10,,15,,2024-09-28,Restock — replacing broken/worn items,2024-09-28T11:00:00
+142,38,Audit Adjustment,2,,,,2024-10-01,Found extra stock during quarterly audit,2024-10-01T14:00:00
+143,10,Audit Adjustment,-1,,,,2024-10-01,Stock count lower than expected — adjusted down,2024-10-01T14:00:00
+144,20,Breakage,2,,,,2024-10-05,Cracked during washing,2024-10-05T18:00:00
+145,75,Disposal,3,,,,2024-10-10,Too worn/damaged for further use — disposed,2024-10-10T10:00:00
+146,23,Breakage,4,,,,2024-10-11,Broken during event cleanup,2024-10-11T16:00:00
+147,51,Loss,2,,,,2024-10-11,Missing after stock count — likely misplaced or taken during event,2024-10-11T18:00:00
+148,52,Disposal,1,,,,2024-10-24,Too worn/damaged for further use — disposed,2024-10-24T10:00:00
+149,20,Breakage,1,,,,2024-10-26,Damaged in storage,2024-10-26T16:00:00
+150,50,Disposal,2,,,,2024-10-29,Too worn/damaged for further use — disposed,2024-10-29T10:00:00
+151,75,Purchase,2,,17,,2024-10-30,Restock — replacing broken/worn items,2024-10-30T11:00:00
+152,76,Purchase,3,,17,,2024-10-30,Restock — replacing broken/worn items,2024-10-30T11:00:00
+153,23,Purchase,4,,15,,2024-10-30,Restock — replacing broken/worn items,2024-10-30T11:00:00
+154,23,Breakage,3,,,,2024-11-03,Damaged in storage,2024-11-03T16:00:00
+155,20,Breakage,3,,,,2024-11-08,Dropped during serving,2024-11-08T16:00:00
+156,23,Purchase,4,,15,,2024-11-11,Restock — replacing broken/worn items,2024-11-11T11:00:00
+157,23,Purchase,1,,15,,2024-11-11,Restock — replacing broken/worn items,2024-11-11T11:00:00
+158,50,Purchase,3,,22,,2024-11-11,Restock — replacing broken/worn items,2024-11-11T11:00:00
+159,18,Loss,3,,,,2024-11-12,Missing after stock count — likely misplaced or taken during event,2024-11-12T18:00:00
+160,25,Breakage,3,,,,2024-11-15,Cracked during washing,2024-11-15T17:00:00
+161,15,Breakage,3,,,,2024-11-15,Damaged in storage,2024-11-15T17:00:00
+162,15,Breakage,1,,,,2024-11-18,Broken during event cleanup,2024-11-18T16:00:00
+163,23,Breakage,3,,,,2024-11-25,Cracked during washing,2024-11-25T18:00:00
+164,71,Purchase,4,,17,,2024-11-25,Restock — replacing broken/worn items,2024-11-25T11:00:00
+165,13,Purchase,8,,15,,2024-11-25,Restock — replacing broken/worn items,2024-11-25T11:00:00
+166,20,Breakage,1,,,,2024-11-26,Found broken after event,2024-11-26T18:00:00
+167,3,Disposal,2,,,,2024-12-01,Too worn/damaged for further use — disposed,2024-12-01T10:00:00
+168,15,Purchase,4,,15,,2024-12-05,Restock — replacing broken/worn items,2024-12-05T11:00:00
+169,14,Purchase,5,,15,,2024-12-05,Restock — replacing broken/worn items,2024-12-05T11:00:00
+170,20,Purchase,5,,15,,2024-12-05,Restock — replacing broken/worn items,2024-12-05T11:00:00
+171,21,Breakage,1,,,,2024-12-06,Found broken after event,2024-12-06T16:00:00
+172,20,Breakage,3,,,,2024-12-09,Dropped during serving,2024-12-09T17:00:00
+173,70,Purchase,1,,17,,2024-12-18,Restock — replacing broken/worn items,2024-12-18T11:00:00
+174,71,Purchase,3,,17,,2024-12-18,Restock — replacing broken/worn items,2024-12-18T11:00:00
+175,46,Purchase,7,,18,,2024-12-18,Restock — replacing broken/worn items,2024-12-18T11:00:00
+176,14,Purchase,11,,15,,2024-12-18,Restock — replacing broken/worn items,2024-12-18T11:00:00
+177,75,Purchase,2,,17,,2024-12-18,Restock — replacing broken/worn items,2024-12-18T11:00:00
+178,15,Breakage,3,,,,2024-12-21,Cracked during washing,2024-12-21T17:00:00
+179,20,Breakage,3,,,,2024-12-25,Chipped — disposed,2024-12-25T17:00:00
+180,71,Disposal,2,,,,2024-12-29,Too worn/damaged for further use — disposed,2024-12-29T10:00:00
+181,68,Audit Adjustment,1,,,,2025-01-02,Found extra stock during quarterly audit,2025-01-02T14:00:00
+182,59,Audit Adjustment,1,,,,2025-01-02,Found extra stock during quarterly audit,2025-01-02T14:00:00
+183,20,Breakage,2,,,,2025-01-04,Damaged in storage,2025-01-04T18:00:00
+184,24,Breakage,3,,,,2025-01-07,Damaged in storage,2025-01-07T19:00:00
+185,46,Purchase,5,,18,,2025-01-08,Restock — replacing broken/worn items,2025-01-08T11:00:00
+186,70,Purchase,4,,17,,2025-01-08,Restock — replacing broken/worn items,2025-01-08T11:00:00
+187,56,Purchase,3,,22,,2025-01-08,Restock — replacing broken/worn items,2025-01-08T11:00:00
+188,13,Breakage,2,,,,2025-01-09,Damaged in storage,2025-01-09T17:00:00
+189,15,Breakage,3,,,,2025-01-10,Broken during event cleanup,2025-01-10T17:00:00
+190,15,Breakage,4,,,,2025-01-13,Dropped during serving,2025-01-13T17:00:00
+191,75,Purchase,4,,17,,2025-01-20,Restock — replacing broken/worn items,2025-01-20T11:00:00
+192,46,Breakage,1,,,,2025-01-21,Chipped — disposed,2025-01-21T17:00:00
+193,21,Breakage,2,,,,2025-01-26,Damaged in storage,2025-01-26T16:00:00

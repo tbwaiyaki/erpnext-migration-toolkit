@@ -1,0 +1,32 @@
+id,name,type,description
+1,Owner Capital Injection,capital_injection,Funds invested by the property owner from personal finances
+2,Events Venue Hire,income,Revenue from hiring out the venue for events
+3,Wellness Services,income,Revenue from wellness and retreat services
+4,Egg Sales,income,Revenue from selling eggs in trays
+5,Permanent Staff Salaries,expense,Monthly salaries for live-in manager and part-time groundskeeper
+6,Casual Labour — Security,expense,Day-hire security guards
+7,Casual Labour — Cleaning & Housekeeping,expense,Day-hire cleaners for events and routine deep cleans
+8,Casual Labour — Maintenance & Repairs,expense,"Day-hire fundis for plumbing, electrical, carpentry work"
+9,Casual Labour — Transport,expense,Day-hire drivers for deliveries and errands
+10,Casual Labour — Event Setup,expense,Day-hire helpers for event setup and teardown
+11,Animal Feed (Chicken),expense,Chicken feed purchased regularly for ~200 hens
+12,Veterinary Care,expense,Vet visits and medicine for chickens and dogs
+13,Utilities (Water),expense,Nairobi Water monthly bill
+14,Utilities (Electricity),expense,Kenya Power monthly bill
+15,Garden & Landscaping Maintenance,expense,"Plants, seeds, fertiliser, landscaping supplies"
+16,Property Renovations,expense,Major renovation and improvement works
+17,Consultant Fees,expense,"Fees for vets, accountants, event planners, wellness practitioners"
+18,Agent Commissions,expense,Commissions paid to event booking and transport agents
+19,Supplies & Provisions,expense,"General supplies — toiletries, kitchen consumables, cleaning products"
+20,Dog Care,expense,"Dog food, grooming, vet visits for the 2 dogs"
+21,Event Supplies & Setup,expense,"Decorations, disposables, rentals for specific events"
+22,Inventory Purchases,expense,"Purchasing cutlery, electrical items, linens, equipment"
+23,Livestock Acquisition,expense,"Purchase of chickens, dogs, or other animals"
+24,Business Registration & Permits,expense,"County permits, business registration, compliance fees"
+25,Furniture & Fittings,expense,Furniture purchases and fitting installations
+26,Miscellaneous,expense,Other expenses not categorised elsewhere
+27,Savings — Generator Fund,savings,Monthly set-aside for purchasing a backup generator (target KES 150K-250K)
+28,Savings — Large Events Tent Fund,savings,Monthly set-aside for purchasing a large events tent (target KES 300K-500K)
+29,Room Rentals,income,Revenue from short-stay guest room bookings
+30,Estate Service Charge,expense,Monthly service charge for gated community estate
+31,Borehole Water,expense,Monthly estate borehole water supply charge

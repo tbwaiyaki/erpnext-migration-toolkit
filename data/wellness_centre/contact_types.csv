@@ -1,0 +1,9 @@
+id,name,description
+1,Owner/Shareholder,Property owner and main shareholder — funds startup from personal finances
+2,Permanent Staff,Full-time or part-time employees on monthly payroll
+3,Casual/Temporary Worker,"Day-hire workers for security, cleaning, maintenance, transport, events"
+4,Supplier,"Vendors providing goods — feed, provisions, hardware, equipment"
+5,Consultant,"Professional advisors — vet, accountant, event planner, wellness practitioner"
+6,Agent,"Intermediaries — event booking agents, transport agents"
+7,Client,People/organisations hiring the venue for events or wellness services
+8,Service Provider,"External service companies — utilities, telecoms"

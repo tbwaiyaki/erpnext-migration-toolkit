@@ -1,0 +1,78 @@
+id,category_id,property_id,item_name,description,quantity_on_hand,unit,reorder_level,unit_cost,notes,created_at,updated_at
+1,1,1,Cooking Pot (Large),"Heavy-duty aluminium, 20L",4,piece,2,3500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+2,1,1,Cooking Pot (Medium),"Aluminium, 10L",3,piece,2,2000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+3,1,1,Frying Pan (Large),"Non-stick, 30cm",3,piece,2,1500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+4,1,1,Frying Pan (Small),"Non-stick, 20cm",2,piece,1,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+5,1,1,Serving Spoons (Large),Stainless steel,10,piece,6,200,,2024-01-25T09:00:00,2024-01-25T09:00:00
+6,1,1,Kitchen Knives Set,"Chef, bread, paring, utility",2,set,1,2500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+7,1,1,Chopping Boards,"Wooden, large",4,piece,2,600,,2024-01-25T09:00:00,2024-01-25T09:00:00
+8,1,1,Blender,"Kenwood, 1.5L",1,piece,1,5500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+9,1,1,Microwave,Samsung 20L,1,piece,1,12000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+10,1,1,Electric Kettle,2L stainless steel,2,piece,1,2500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+11,1,1,Thermos Flask (Large),5L pump thermos,3,piece,2,3000,Used for events — tea/coffee service,2024-01-25T09:00:00,2024-01-25T09:00:00
+12,1,1,Water Dispenser,"Hot & cold, floor-standing",1,piece,1,8000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+13,2,1,Dinner Plates,"White ceramic, 10 inch",120,piece,80,250,Sized for 100 guests + buffer,2024-01-25T09:00:00,2024-01-25T09:00:00
+14,2,1,Side Plates,"White ceramic, 7 inch",120,piece,80,180,,2024-01-25T09:00:00,2024-01-25T09:00:00
+15,2,1,Soup Bowls,"White ceramic, deep",80,piece,50,200,,2024-01-25T09:00:00,2024-01-25T09:00:00
+16,2,1,Stainless Steel Forks,Standard dinner forks,120,piece,80,80,,2024-01-25T09:00:00,2024-01-25T09:00:00
+17,2,1,Stainless Steel Knives,Standard dinner knives,120,piece,80,80,,2024-01-25T09:00:00,2024-01-25T09:00:00
+18,2,1,Stainless Steel Spoons,Dessert/soup spoons,120,piece,80,60,,2024-01-25T09:00:00,2024-01-25T09:00:00
+19,2,1,Teaspoons,Stainless steel,120,piece,80,40,,2024-01-25T09:00:00,2024-01-25T09:00:00
+20,2,1,Drinking Glasses,"Clear tumbler, 300ml",120,piece,80,120,,2024-01-25T09:00:00,2024-01-25T09:00:00
+21,2,1,Wine Glasses,"Stemmed, 250ml",60,piece,30,250,Used for weddings and upscale events,2024-01-25T09:00:00,2024-01-25T09:00:00
+22,2,1,Cups & Saucers,"White ceramic, tea/coffee",80,piece,50,200,,2024-01-25T09:00:00,2024-01-25T09:00:00
+23,2,1,Serving Dishes (Large),Oval ceramic platters,12,piece,6,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+24,2,1,Serving Dishes (Medium),Round ceramic bowls,15,piece,8,500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+25,2,1,Water Jugs,"Glass, 2L",10,piece,5,450,,2024-01-25T09:00:00,2024-01-25T09:00:00
+26,2,1,Serving Trays,"Stainless steel, round",8,piece,4,600,,2024-01-25T09:00:00,2024-01-25T09:00:00
+27,2,1,Salt & Pepper Shakers,"Glass, paired sets",15,set,8,150,,2024-01-25T09:00:00,2024-01-25T09:00:00
+28,3,1,Extension Cords (10m),"4-way, heavy duty",8,piece,4,1500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+29,3,1,Extension Cords (5m),"4-way, standard",6,piece,3,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+30,3,1,LED Bulbs (Warm White),"12W, E27 screw-in",30,piece,10,250,,2024-01-25T09:00:00,2024-01-25T09:00:00
+31,3,1,LED Bulbs (Daylight),"15W, E27 screw-in",20,piece,8,280,,2024-01-25T09:00:00,2024-01-25T09:00:00
+32,3,1,Multi-plug Adapters,3-way adapters,10,piece,5,400,,2024-01-25T09:00:00,2024-01-25T09:00:00
+33,3,1,Power Strips (Surge),6-way with surge protection,4,piece,2,2000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+34,3,4,Fairy Lights (String),"10m warm white LED, solar",10,piece,5,1200,Used for outdoor event decor,2024-01-25T09:00:00,2024-01-25T09:00:00
+35,3,4,Fairy Lights (Curtain),3x3m curtain lights,4,piece,2,2500,Veranda/tent decoration,2024-01-25T09:00:00,2024-01-25T09:00:00
+36,3,1,Bluetooth Speaker (Large),"JBL PartyBox, portable",2,piece,1,15000,Main sound for events,2024-01-25T09:00:00,2024-01-25T09:00:00
+37,3,1,Bluetooth Speaker (Small),"JBL Flip, portable",2,piece,1,6000,Background music for wellness sessions,2024-01-25T09:00:00,2024-01-25T09:00:00
+38,3,1,Microphone (Wireless),UHF wireless mic + receiver,2,piece,1,4500,"Speeches, MC use at events",2024-01-25T09:00:00,2024-01-25T09:00:00
+39,4,4,Plastic Chairs (White),"Stackable, standard",120,piece,80,800,100 for guests + 20 spare,2024-01-25T09:00:00,2024-01-25T09:00:00
+40,4,4,Round Tables (8-seater),"Folding, 6ft diameter",13,piece,10,6000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+41,4,4,Rectangular Tables (6-seater),"Folding, 6ft long",4,piece,2,4500,"Used for buffet, cake, gifts",2024-01-25T09:00:00,2024-01-25T09:00:00
+42,4,4,Tent/Canopy (5x5m),White gazebo canopy,2,piece,1,25000,Current tents — plans for large tent upgrade,2024-01-25T09:00:00,2024-01-25T09:00:00
+43,4,4,Table Covers (Round),"White polyester, fits 6ft round",15,piece,10,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+44,4,4,Table Covers (Rectangular),"White polyester, fits 6ft",6,piece,4,700,,2024-01-25T09:00:00,2024-01-25T09:00:00
+45,4,4,Decorative Ribbons & Bows,"Assorted colours, satin",50,piece,20,50,Tied to chairs for events,2024-01-25T09:00:00,2024-01-25T09:00:00
+46,4,4,Flower Vases (Glass),"Cylinder vases, 25cm",15,piece,8,350,Table centrepieces,2024-01-25T09:00:00,2024-01-25T09:00:00
+47,4,6,Welcome Banner Stand,"Roll-up banner stand, adjustable",2,piece,1,3500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+48,5,1,White Tablecloths,"Polyester, 120x120 inch",20,piece,12,1200,,2024-01-25T09:00:00,2024-01-25T09:00:00
+49,5,1,Coloured Tablecloths,"Polyester, assorted colours",10,piece,6,1200,"Burgundy, gold, navy",2024-01-25T09:00:00,2024-01-25T09:00:00
+50,5,1,Cloth Napkins (White),"Polyester, 20x20 inch",120,piece,80,100,,2024-01-25T09:00:00,2024-01-25T09:00:00
+51,5,1,Cloth Napkins (Coloured),"Assorted, 20x20 inch",60,piece,30,120,,2024-01-25T09:00:00,2024-01-25T09:00:00
+52,5,1,Chair Seat Covers (White),"Spandex stretch, fits standard",120,piece,80,350,,2024-01-25T09:00:00,2024-01-25T09:00:00
+53,5,1,Chair Sashes,"Organza, assorted colours",120,piece,80,80,,2024-01-25T09:00:00,2024-01-25T09:00:00
+54,5,2,Bedsheets (Double),"Cotton, white",6,set,4,2500,Guest house,2024-01-25T09:00:00,2024-01-25T09:00:00
+55,5,2,Bath Towels (Large),White cotton,10,piece,6,800,Guest house,2024-01-25T09:00:00,2024-01-25T09:00:00
+56,5,1,Kitchen Towels,"Cotton, pack of 3",6,pack,4,500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+57,5,1,Curtains (Main House),"Sheer + blackout, assorted rooms",12,pair,8,2000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+58,6,6,Outdoor Lounge Chairs,"Wooden, cushioned",6,piece,4,8000,Veranda seating,2024-01-25T09:00:00,2024-01-25T09:00:00
+59,6,6,Outdoor Coffee Tables,"Wooden, low",3,piece,2,4000,Veranda,2024-01-25T09:00:00,2024-01-25T09:00:00
+60,6,1,Bookshelf/Display Stand,"Wooden, 5-tier",2,piece,1,6000,Sitting area decor,2024-01-25T09:00:00,2024-01-25T09:00:00
+61,6,1,Side Tables,"Wooden, round",4,piece,2,3000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+62,7,4,Wheelbarrow,"Metal, standard",2,piece,1,4500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+63,7,4,Garden Hose (30m),Flexible PVC with nozzle,2,piece,1,3000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+64,7,4,Rakes,"Metal, leaf rake",3,piece,2,600,,2024-01-25T09:00:00,2024-01-25T09:00:00
+65,7,4,Machetes (Pangas),"18 inch, wooden handle",3,piece,2,400,,2024-01-25T09:00:00,2024-01-25T09:00:00
+66,7,4,Pruning Shears,Bypass pruner,2,piece,1,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+67,7,4,Lawn Mower,Petrol push mower,1,piece,1,35000,,2024-01-25T09:00:00,2024-01-25T09:00:00
+68,7,4,Spade,"D-handle, steel",2,piece,1,800,,2024-01-25T09:00:00,2024-01-25T09:00:00
+69,7,4,Watering Cans (10L),"Plastic, green",3,piece,2,500,,2024-01-25T09:00:00,2024-01-25T09:00:00
+70,8,1,Mops (Cotton),Standard floor mop + handle,5,piece,3,350,,2024-01-25T09:00:00,2024-01-25T09:00:00
+71,8,1,Brooms,"Soft bristle, indoor",4,piece,2,250,,2024-01-25T09:00:00,2024-01-25T09:00:00
+72,8,4,Brooms (Outdoor),"Hard bristle, yard broom",3,piece,2,300,,2024-01-25T09:00:00,2024-01-25T09:00:00
+73,8,1,Buckets (20L),Heavy duty plastic,6,piece,3,350,,2024-01-25T09:00:00,2024-01-25T09:00:00
+74,8,1,Dustpans,"With brush, plastic",4,piece,2,200,,2024-01-25T09:00:00,2024-01-25T09:00:00
+75,8,1,Spray Bottles,"500ml, trigger spray",6,piece,4,150,,2024-01-25T09:00:00,2024-01-25T09:00:00
+76,8,1,Rubber Gloves,"Pairs, medium",10,pair,6,120,,2024-01-25T09:00:00,2024-01-25T09:00:00
+77,8,1,Squeegee,Window/floor squeegee,3,piece,2,400,,2024-01-25T09:00:00,2024-01-25T09:00:00
