@@ -1,0 +1,142 @@
+# Account Mapping Configuration
+# Maps transaction categories to ERPNext Chart of Accounts
+#
+# This file is business-scenario agnostic - modify patterns and rules
+# to match your transaction categories and account structure.
+
+company_suffix: "WC"  # Will append " - WC" to all accounts
+
+# Default parent accounts for different expense types
+default_parents:
+  operating_expense: "Direct Expenses"
+  administrative: "Indirect Expenses"
+  general: "Expenses"
+
+# Category to Account mapping rules
+# Processed in order - first match wins
+expense_mappings:
+  
+  # Inventory & COGS
+  - pattern: ["Inventory Purchase", "Stock Purchase", "COGS"]
+    account_name: "Cost of Goods Sold"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  # Payroll & Salaries
+  - pattern: ["Salary", "Salaries", "Wages", "Payroll"]
+    account_name: "Salary"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  # Casual Labour (multiple types - create specific accounts)
+  - pattern: ["Casual Labour"]
+    account_name: "{category_name}"  # Use exact category name
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Utilities (consolidate to one account)
+  - pattern: ["Utilities", "Electricity", "Water", "Gas", "Internet", "Borehole"]
+    account_name: "Utility Expenses"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  # Farm/Livestock expenses
+  - pattern: ["Feed", "Veterinary", "Livestock", "Animal"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Property & Maintenance
+  - pattern: ["Renovation", "Maintenance", "Repair", "Garden", "Landscaping"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Professional Services
+  - pattern: ["Consultant", "Legal", "Accounting", "Professional"]
+    account_name: "{category_name}"
+    parent: "Indirect Expenses"
+    create_if_missing: true
+    
+  # Sales & Marketing
+  - pattern: ["Agent Commission", "Commission", "Sales Commission"]
+    account_name: "Commission on Sales"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  - pattern: ["Marketing", "Advertising", "Promotion"]
+    account_name: "Marketing Expenses"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  # Event & Operations
+  - pattern: ["Event Supplies", "Event Setup", "Catering"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Assets & Capital
+  - pattern: ["Furniture", "Fittings", "Equipment", "Asset"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Permits & Registration
+  - pattern: ["Registration", "Permit", "License", "Compliance"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Supplies & Provisions
+  - pattern: ["Supplies", "Provisions"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Service Charges & Estate
+  - pattern: ["Service Charge", "Estate"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # Dog Care
+  - pattern: ["Dog Care", "Pet"]
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+    
+  # General/Miscellaneous (catch-all)
+  - pattern: ["Miscellaneous", "Other", "General"]
+    account_name: "Miscellaneous Expenses"
+    parent: "Expenses"
+    create_if_missing: false
+    
+  # Default fallback rule
+  - pattern: ["*"]  # Matches anything not caught above
+    account_name: "{category_name}"
+    parent: "Direct Expenses"
+    create_if_missing: true
+
+# Income account mappings (for other scenarios)
+income_mappings:
+  - pattern: ["Sales", "Revenue", "Service Income"]
+    account_name: "Sales"
+    parent: "Income"
+    create_if_missing: false
+    
+  - pattern: ["*"]
+    account_name: "{category_name}"
+    parent: "Income"
+    create_if_missing: true
+
+# Capital & Equity mappings
+equity_mappings:
+  - pattern: ["Capital Injection", "Owner Capital", "Investment"]
+    account_name: "Owner Capital"
+    parent: "Capital Stock"
+    create_if_missing: true
+    
+  - pattern: ["Retained Earnings", "Profit"]
+    account_name: "Retained Earnings"
+    parent: "Equity"
+    create_if_missing: false
