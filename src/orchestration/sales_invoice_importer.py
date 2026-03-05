@@ -27,6 +27,8 @@ class SalesInvoiceImporter:
         results = importer.import_batch(invoices_df, items_df, contacts_df)
     """
     
+    VERSION = "2.1-fixed-submit-method"  # Version marker
+    
     def __init__(self, client: FrappeClient, company: str):
         """
         Initialize importer.
@@ -60,6 +62,7 @@ class SalesInvoiceImporter:
         Returns:
             Results dict with successful/failed counts
         """
+        print(f"[SalesInvoiceImporter {self.VERSION}]")
         print(f"Importing {len(invoices_df)} sales invoices...")
         
         for idx, inv_row in invoices_df.iterrows():
@@ -77,7 +80,10 @@ class SalesInvoiceImporter:
                 
                 # Insert and submit
                 created = self.client.insert(invoice_doc)
-                self.client.submit(created)
+                
+                # Submit by updating docstatus (submit() method is broken)
+                created['docstatus'] = 1
+                self.client.update(created)
                 
                 self.results['successful'] += 1
                 
@@ -87,10 +93,14 @@ class SalesInvoiceImporter:
                 
             except Exception as e:
                 self.results['failed'] += 1
+                error_msg = str(e)
+                # If HTML response (server error), extract meaningful part
+                if error_msg.startswith('<!DOCTYPE html>') or '<html' in error_msg[:100]:
+                    error_msg = "Server returned HTML error - likely validation failure"
                 self.results['errors'].append({
                     'invoice_id': inv_row['id'],
                     'invoice_number': inv_row.get('invoice_number'),
-                    'error': str(e)[:500]  # Increased from 200 to 500 chars
+                    'error': error_msg[:500]
                 })
         
         return self.results
@@ -121,7 +131,6 @@ class SalesInvoiceImporter:
             "due_date": invoice_date,  # Must be explicit and >= posting_date
             "set_posting_time": 1,  # CRITICAL: Allow historical dates
             "company": self.company,
-            "naming_series": "ACC-SINV-.YYYY.-",
             "items": [],
             "taxes": []
         }
