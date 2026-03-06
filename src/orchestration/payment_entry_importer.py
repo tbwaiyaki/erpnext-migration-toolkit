@@ -23,6 +23,8 @@ class PaymentEntryImporter:
         results = importer.import_batch(transactions_df, invoices_df)
     """
     
+    VERSION = "3.0-duplicate-prevention"  # Version marker
+    
     # Payment method mapping
     PAYMENT_MODE_MAP = {
         'Cash': 'Cash',
@@ -44,6 +46,7 @@ class PaymentEntryImporter:
         self.results = {
             'successful': 0,
             'failed': 0,
+            'skipped': 0,  # Added for duplicate detection
             'errors': []
         }
         
@@ -71,6 +74,7 @@ class PaymentEntryImporter:
             transactions_df['etims_invoice_id'].notna()
         ].copy()
         
+        print(f"[PaymentEntryImporter {self.VERSION}]")
         print(f"Importing {len(payments)} payment entries...")
         
         # Build invoice lookup
@@ -81,12 +85,45 @@ class PaymentEntryImporter:
         
         for idx, pay_row in payments.iterrows():
             try:
+                # Get invoice details first
+                invoice_id = int(pay_row['etims_invoice_id'])
+                invoice_number = self._invoices_cache.get(invoice_id)
+                
+                if not invoice_number:
+                    raise ValueError(f"Invoice ID {invoice_id} not found in source data")
+                
+                # Find invoice in ERPNext
+                invoices = self.client.get_list(
+                    "Sales Invoice",
+                    filters={
+                        "docstatus": 1,
+                        "original_invoice_number": invoice_number
+                    },
+                    fields=["name", "outstanding_amount"],
+                    limit_page_length=1
+                )
+                
+                if not invoices:
+                    raise ValueError(f"ERPNext invoice not found for {invoice_number}")
+                
+                invoice = invoices[0]
+                
+                # Check if already paid (outstanding = 0)
+                if invoice['outstanding_amount'] == 0:
+                    self.results['skipped'] += 1
+                    if self.results['skipped'] % 50 == 0:
+                        print(f"  Skipped {self.results['skipped']} (already paid)...")
+                    continue
+                
                 # Build payment document
                 payment_doc = self._build_payment_doc(pay_row)
                 
                 # Insert and submit
                 created = self.client.insert(payment_doc)
-                self.client.submit("Payment Entry", created['name'])
+                
+                # Submit by updating docstatus (submit() method is broken)
+                created['docstatus'] = 1
+                self.client.update(created)
                 
                 self.results['successful'] += 1
                 
@@ -146,24 +183,21 @@ class PaymentEntryImporter:
         if not invoice_number:
             raise ValueError(f"Invoice ID {invoice_id} not found in source data")
         
-        # Get invoice from ERPNext to get exact amount
+        # Get invoice from ERPNext using custom field
         invoices = self.client.get_list(
             "Sales Invoice",
-            filters={"docstatus": 1},
+            filters={
+                "docstatus": 1,
+                "original_invoice_number": invoice_number
+            },
             fields=["name", "grand_total", "outstanding_amount", "customer"],
-            limit_page_length=500
+            limit_page_length=5
         )
         
-        # Find matching invoice by checking all invoices
-        # (since invoice numbers might not match exactly)
-        invoice = None
-        for inv in invoices:
-            if invoice_number in inv['name']:
-                invoice = inv
-                break
-        
-        if not invoice:
+        if not invoices:
             raise ValueError(f"ERPNext invoice not found for {invoice_number}")
+        
+        invoice = invoices[0]  # Should only be one match
         
         # Build payment document
         doc = {
@@ -204,6 +238,7 @@ class PaymentEntryImporter:
         lines.append("PAYMENT ENTRY IMPORT SUMMARY")
         lines.append("=" * 70)
         lines.append(f"Successful: {self.results['successful']}")
+        lines.append(f"Skipped:    {self.results['skipped']} (already paid)")
         lines.append(f"Failed:     {self.results['failed']}")
         
         if self.results['errors']:

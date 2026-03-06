@@ -27,7 +27,7 @@ class SalesInvoiceImporter:
         results = importer.import_batch(invoices_df, items_df, contacts_df)
     """
     
-    VERSION = "2.1-fixed-submit-method"  # Version marker
+    VERSION = "3.0-duplicate-prevention"  # Version marker
     
     def __init__(self, client: FrappeClient, company: str):
         """
@@ -42,6 +42,7 @@ class SalesInvoiceImporter:
         self.results = {
             'successful': 0,
             'failed': 0,
+            'skipped': 0,  # Added for duplicate detection
             'errors': []
         }
     
@@ -67,6 +68,21 @@ class SalesInvoiceImporter:
         
         for idx, inv_row in invoices_df.iterrows():
             try:
+                # Check if invoice already exists
+                original_number = inv_row['invoice_number']
+                existing = self.client.get_list(
+                    "Sales Invoice",
+                    filters={"original_invoice_number": original_number},
+                    fields=["name"],
+                    limit_page_length=1
+                )
+                
+                if existing:
+                    self.results['skipped'] += 1
+                    if self.results['skipped'] % 50 == 0:
+                        print(f"  Skipped {self.results['skipped']} duplicates...")
+                    continue
+                
                 # Get line items for this invoice
                 inv_items = invoice_items_df[
                     invoice_items_df['invoice_id'] == inv_row['id']
@@ -131,6 +147,7 @@ class SalesInvoiceImporter:
             "due_date": invoice_date,  # Must be explicit and >= posting_date
             "set_posting_time": 1,  # CRITICAL: Allow historical dates
             "company": self.company,
+            "original_invoice_number": inv_row['invoice_number'],  # For duplicate prevention
             "items": [],
             "taxes": []
         }
@@ -168,6 +185,7 @@ class SalesInvoiceImporter:
         lines.append("SALES INVOICE IMPORT SUMMARY")
         lines.append("=" * 70)
         lines.append(f"Successful: {self.results['successful']}")
+        lines.append(f"Skipped:    {self.results['skipped']} (already exist)")
         lines.append(f"Failed:     {self.results['failed']}")
         
         if self.results['errors']:
