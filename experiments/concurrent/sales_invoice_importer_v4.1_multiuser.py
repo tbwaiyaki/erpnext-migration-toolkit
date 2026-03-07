@@ -9,6 +9,7 @@ import pandas as pd
 from typing import Dict, List
 from frappeclient import FrappeClient
 from datetime import datetime
+import time
 
 
 class SalesInvoiceImporter:
@@ -43,7 +44,9 @@ class SalesInvoiceImporter:
             'successful': 0,
             'failed': 0,
             'skipped': 0,  # Added for duplicate detection
-            'errors': []
+            'errors': [],
+            'duration_seconds': 0.0,
+            'rate_per_second': 0.0
         }
     
     def import_batch(
@@ -65,6 +68,9 @@ class SalesInvoiceImporter:
         """
         print(f"[SalesInvoiceImporter {self.VERSION}]")
         print(f"Importing {len(invoices_df)} sales invoices...")
+        
+        # Start timing
+        start_time = time.time()
         
         for idx, inv_row in invoices_df.iterrows():
             try:
@@ -118,6 +124,14 @@ class SalesInvoiceImporter:
                     'invoice_number': inv_row.get('invoice_number'),
                     'error': error_msg[:500]
                 })
+        
+        # Calculate timing metrics
+        duration = time.time() - start_time
+        self.results['duration_seconds'] = round(duration, 2)
+        
+        # Calculate rate (successful imports per second)
+        if duration > 0 and self.results['successful'] > 0:
+            self.results['rate_per_second'] = round(self.results['successful'] / duration, 2)
         
         return self.results
     
@@ -187,6 +201,13 @@ class SalesInvoiceImporter:
         lines.append(f"Successful: {self.results['successful']}")
         lines.append(f"Skipped:    {self.results['skipped']} (already exist)")
         lines.append(f"Failed:     {self.results['failed']}")
+        
+        # Add performance metrics
+        lines.append(f"\nPerformance:")
+        duration = self.results['duration_seconds']
+        minutes = duration / 60
+        lines.append(f"  Duration: {duration} seconds ({minutes:.2f} minutes)")
+        lines.append(f"  Rate: {self.results['rate_per_second']} invoices/second")
         
         if self.results['errors']:
             lines.append(f"\nFirst 5 errors:")
