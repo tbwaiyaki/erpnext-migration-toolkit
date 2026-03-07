@@ -1,0 +1,46 @@
+# ERPNext Connection Configuration
+#
+# Copy this file to erpnext_connection.yaml and fill in your credentials
+# DO NOT commit erpnext_connection.yaml (it's in .gitignore)
+
+# ERPNext instance URL (include https://)
+url: https://well.rosslyn.cloud
+
+# For internal Docker access, uncomment:
+url: http://erpnext-frontend:8080
+headers:
+  Host: well.rosslyn.cloud
+
+# ERPNext Connection Configuration
+url: http://erpnext-frontend:8080
+headers:
+  Host: well.rosslyn.cloud
+
+# API credentials - Option 1: CSV file (checked first)
+api_csv: config/api_keys.csv  # Relative to REPO_ROOT
+
+# API credentials (generate from: User menu → My Settings → API Access)
+api_key: 76fd2dec15e1aa8
+api_secret: 51c2ab02c5db1a9
+
+# Optional: Custom headers for reverse proxy setups
+# headers:
+#   Host: your-site-name.com
+
+# Optional: Timeout settings (seconds)
+# timeout: 30
+
+# Optional: Retry configuration
+# retry_count: 3
+# retry_delay: 5
+
+# Alternative: Load from CSV if config file doesn't exist
+# Uncomment and modify path if needed:
+#
+# API_KEYS_FILE = REPO_ROOT / 'config' / 'api_keys.csv'
+# with open(API_KEYS_FILE) as f:
+#     reader = csv.DictReader(f)
+#     row = next(reader)
+#     API_KEY = row['api_key']
+#     API_SECRET = row['api_secret']
+#     ERPNEXT_URL = "https://well.rosslyn.cloud"

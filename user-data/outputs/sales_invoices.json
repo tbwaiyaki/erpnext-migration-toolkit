@@ -1,0 +1,5098 @@
+[
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Dorothy Barasa",
+    "customer_name": "Dorothy Barasa",
+    "posting_date": "2024-03-16",
+    "due_date": "2024-03-31",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Dorothy's Nephew's 10th Birthday",
+        "description": "Event Venue Hire - Dorothy's Nephew's 10th Birthday",
+        "qty": 1.0,
+        "rate": 35000.0,
+        "amount": 35000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 5600.0
+      }
+    ],
+    "remarks": "Birthday Party event: Dorothy's Nephew's 10th Birthday (40 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Mwangi Naliaka",
+    "customer_name": "Mwangi Naliaka",
+    "posting_date": "2024-03-30",
+    "due_date": "2024-04-14",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Naliaka Ladies' Afternoon Tea",
+        "description": "Event Venue Hire - Naliaka Ladies' Afternoon Tea",
+        "qty": 1.0,
+        "rate": 45000.0,
+        "amount": 45000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 7200.0
+      }
+    ],
+    "remarks": "Garden Party event: Naliaka Ladies' Afternoon Tea (50 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Owuor Muchiri",
+    "customer_name": "Owuor Muchiri",
+    "posting_date": "2024-04-13",
+    "due_date": "2024-04-28",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Muchiri Baby Shower",
+        "description": "Event Venue Hire - Muchiri Baby Shower",
+        "qty": 1.0,
+        "rate": 30000.0,
+        "amount": 30000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 4800.0
+      }
+    ],
+    "remarks": "Baby Shower event: Muchiri Baby Shower (35 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Alice Kahiga",
+    "customer_name": "Alice Kahiga",
+    "posting_date": "2024-04-27",
+    "due_date": "2024-05-12",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Weekend Wellness Retreat",
+        "description": "Event Venue Hire - Weekend Wellness Retreat",
+        "qty": 1.0,
+        "rate": 60000.0,
+        "amount": 60000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 9600.0
+      }
+    ],
+    "remarks": "Wellness Retreat event: Weekend Wellness Retreat (15 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Lagat Nyambura",
+    "customer_name": "Lagat Nyambura",
+    "posting_date": "2024-05-11",
+    "due_date": "2024-05-26",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Nyambura-Odhiambo Wedding Reception",
+        "description": "Event Venue Hire - Nyambura-Odhiambo Wedding Reception",
+        "qty": 1.0,
+        "rate": 100000.0,
+        "amount": 100000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 16000.0
+      }
+    ],
+    "remarks": "Wedding event: Nyambura-Odhiambo Wedding Reception (80 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Kiprono Muhoro",
+    "customer_name": "Kiprono Muhoro",
+    "posting_date": "2024-05-25",
+    "due_date": "2024-06-09",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Muhoro Corporate Family Day",
+        "description": "Event Venue Hire - Muhoro Corporate Family Day",
+        "qty": 1.0,
+        "rate": 50000.0,
+        "amount": 50000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 8000.0
+      }
+    ],
+    "remarks": "Garden Party event: Muhoro Corporate Family Day (60 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Maina Mundia",
+    "customer_name": "Maina Mundia",
+    "posting_date": "2024-06-08",
+    "due_date": "2024-06-23",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Mundia Bridal Shower",
+        "description": "Event Venue Hire - Mundia Bridal Shower",
+        "qty": 1.0,
+        "rate": 35000.0,
+        "amount": 35000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 5600.0
+      }
+    ],
+    "remarks": "Bridal Shower event: Mundia Bridal Shower (30 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Juma Korir",
+    "customer_name": "Juma Korir",
+    "posting_date": "2024-06-22",
+    "due_date": "2024-07-07",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Korir's 50th Birthday Celebration",
+        "description": "Event Venue Hire - Korir's 50th Birthday Celebration",
+        "qty": 1.0,
+        "rate": 55000.0,
+        "amount": 55000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 8800.0
+      }
+    ],
+    "remarks": "Birthday Party event: Korir's 50th Birthday Celebration (70 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-07-06",
+    "due_date": "2024-07-21",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Sigei Garden Luncheon",
+        "description": "Event Venue Hire - Sigei Garden Luncheon",
+        "qty": 1.0,
+        "rate": 45000.0,
+        "amount": 45000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 7200.0
+      }
+    ],
+    "remarks": "Garden Party event: Sigei Garden Luncheon (55 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-20",
+    "due_date": "2024-08-04",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Ndirangu Memorial Gathering",
+        "description": "Event Venue Hire - Ndirangu Memorial Gathering",
+        "qty": 1.0,
+        "rate": 60000.0,
+        "amount": 60000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 9600.0
+      }
+    ],
+    "remarks": "Memorial Service event: Ndirangu Memorial Gathering (90 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-08-10",
+    "due_date": "2024-08-25",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Kibe-Wafula Wedding Reception",
+        "description": "Event Venue Hire - Kibe-Wafula Wedding Reception",
+        "qty": 1.0,
+        "rate": 120000.0,
+        "amount": 120000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 19200.0
+      }
+    ],
+    "remarks": "Wedding event: Kibe-Wafula Wedding Reception (95 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Alice Kahiga",
+    "customer_name": "Alice Kahiga",
+    "posting_date": "2024-08-24",
+    "due_date": "2024-09-08",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - August Wellness Weekend",
+        "description": "Event Venue Hire - August Wellness Weekend",
+        "qty": 1.0,
+        "rate": 70000.0,
+        "amount": 70000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 11200.0
+      }
+    ],
+    "remarks": "Wellness Retreat event: August Wellness Weekend (20 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-09-07",
+    "due_date": "2024-09-22",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Onyango Housewarming Celebration",
+        "description": "Event Venue Hire - Onyango Housewarming Celebration",
+        "qty": 1.0,
+        "rate": 40000.0,
+        "amount": 40000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 6400.0
+      }
+    ],
+    "remarks": "Garden Party event: Onyango Housewarming Celebration (45 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Dorothy Barasa",
+    "customer_name": "Dorothy Barasa",
+    "posting_date": "2024-09-21",
+    "due_date": "2024-10-06",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Barasa Sweet 16 Party",
+        "description": "Event Venue Hire - Barasa Sweet 16 Party",
+        "qty": 1.0,
+        "rate": 45000.0,
+        "amount": 45000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 7200.0
+      }
+    ],
+    "remarks": "Birthday Party event: Barasa Sweet 16 Party (50 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Kiprono Muhoro",
+    "customer_name": "Kiprono Muhoro",
+    "posting_date": "2024-10-05",
+    "due_date": "2024-10-20",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Muhoro-Chebet Wedding",
+        "description": "Event Venue Hire - Muhoro-Chebet Wedding",
+        "qty": 1.0,
+        "rate": 130000.0,
+        "amount": 130000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 20800.0
+      }
+    ],
+    "remarks": "Wedding event: Muhoro-Chebet Wedding (100 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Maina Mundia",
+    "customer_name": "Maina Mundia",
+    "posting_date": "2024-10-12",
+    "due_date": "2024-10-27",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - TechBridge Team Building Day",
+        "description": "Event Venue Hire - TechBridge Team Building Day",
+        "qty": 1.0,
+        "rate": 65000.0,
+        "amount": 65000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 10400.0
+      }
+    ],
+    "remarks": "Corporate Retreat event: TechBridge Team Building Day (30 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Juma Korir",
+    "customer_name": "Juma Korir",
+    "posting_date": "2024-10-26",
+    "due_date": "2024-11-10",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Korir Anniversary Garden Party",
+        "description": "Event Venue Hire - Korir Anniversary Garden Party",
+        "qty": 1.0,
+        "rate": 55000.0,
+        "amount": 55000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 8800.0
+      }
+    ],
+    "remarks": "Garden Party event: Korir Anniversary Garden Party (65 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-11-02",
+    "due_date": "2024-11-17",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Sigei-Rotich Wedding Reception",
+        "description": "Event Venue Hire - Sigei-Rotich Wedding Reception",
+        "qty": 1.0,
+        "rate": 120000.0,
+        "amount": 120000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 19200.0
+      }
+    ],
+    "remarks": "Wedding event: Sigei-Rotich Wedding Reception (90 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-11-09",
+    "due_date": "2024-11-24",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Ndirangu Baby Shower",
+        "description": "Event Venue Hire - Ndirangu Baby Shower",
+        "qty": 1.0,
+        "rate": 28000.0,
+        "amount": 28000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 4480.0
+      }
+    ],
+    "remarks": "Baby Shower event: Ndirangu Baby Shower (25 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-11-23",
+    "due_date": "2024-12-08",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Onyango-Akinyi Grand Wedding",
+        "description": "Event Venue Hire - Onyango-Akinyi Grand Wedding",
+        "qty": 1.0,
+        "rate": 140000.0,
+        "amount": 140000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 22400.0
+      }
+    ],
+    "remarks": "Wedding event: Onyango-Akinyi Grand Wedding (100 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Owuor Muchiri",
+    "customer_name": "Owuor Muchiri",
+    "posting_date": "2024-12-07",
+    "due_date": "2024-12-22",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Muchiri-Ndegwa December Wedding",
+        "description": "Event Venue Hire - Muchiri-Ndegwa December Wedding",
+        "qty": 1.0,
+        "rate": 115000.0,
+        "amount": 115000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 18400.0
+      }
+    ],
+    "remarks": "Wedding event: Muchiri-Ndegwa December Wedding (85 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Lagat Nyambura",
+    "customer_name": "Lagat Nyambura",
+    "posting_date": "2024-12-14",
+    "due_date": "2024-12-29",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Nyambura Year-End Garden Party",
+        "description": "Event Venue Hire - Nyambura Year-End Garden Party",
+        "qty": 1.0,
+        "rate": 60000.0,
+        "amount": 60000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 9600.0
+      }
+    ],
+    "remarks": "Garden Party event: Nyambura Year-End Garden Party (70 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-12-21",
+    "due_date": "2025-01-05",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - Kibe Family Christmas & Birthday",
+        "description": "Event Venue Hire - Kibe Family Christmas & Birthday",
+        "qty": 1.0,
+        "rate": 50000.0,
+        "amount": 50000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 8000.0
+      }
+    ],
+    "remarks": "Birthday Party event: Kibe Family Christmas & Birthday (60 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Mwangi Naliaka",
+    "customer_name": "Mwangi Naliaka",
+    "posting_date": "2024-12-31",
+    "due_date": "2025-01-15",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - New Year's Eve Celebration",
+        "description": "Event Venue Hire - New Year's Eve Celebration",
+        "qty": 1.0,
+        "rate": 80000.0,
+        "amount": 80000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 12800.0
+      }
+    ],
+    "remarks": "Garden Party event: New Year's Eve Celebration (80 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Alice Kahiga",
+    "customer_name": "Alice Kahiga",
+    "posting_date": "2025-01-11",
+    "due_date": "2025-01-26",
+    "items": [
+      {
+        "item_name": "Event Venue Hire - New Year Reset Retreat",
+        "description": "Event Venue Hire - New Year Reset Retreat",
+        "qty": 1.0,
+        "rate": 65000.0,
+        "amount": 65000.0,
+        "uom": "Nos",
+        "item_code": "Event Venue Hire"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 10400.0
+      }
+    ],
+    "remarks": "Wellness Retreat event: New Year Reset Retreat (18 guests)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Rose Adhiambo",
+    "customer_name": "Rose Adhiambo",
+    "posting_date": "2024-04-05",
+    "due_date": "2024-04-20",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-04-05 to 2024-04-07"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Rose Adhiambo",
+    "customer_name": "Rose Adhiambo",
+    "posting_date": "2024-04-13",
+    "due_date": "2024-04-28",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-04-13 to 2024-04-15"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Peter Omondi",
+    "customer_name": "Peter Omondi",
+    "posting_date": "2024-05-13",
+    "due_date": "2024-05-28",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-05-13 to 2024-05-15"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Robert Kipchoge",
+    "customer_name": "Robert Kipchoge",
+    "posting_date": "2024-05-08",
+    "due_date": "2024-05-23",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-05-08 to 2024-05-10"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Faith Chebet",
+    "customer_name": "Faith Chebet",
+    "posting_date": "2024-06-18",
+    "due_date": "2024-07-03",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-06-18 to 2024-06-20"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Janet Mukami",
+    "customer_name": "Janet Mukami",
+    "posting_date": "2024-06-24",
+    "due_date": "2024-07-09",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-06-24 to 2024-06-26"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Alice Kahiga",
+    "customer_name": "Alice Kahiga",
+    "posting_date": "2024-06-19",
+    "due_date": "2024-07-04",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-06-19 to 2024-06-20"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Patrick Kimani",
+    "customer_name": "Patrick Kimani",
+    "posting_date": "2024-07-17",
+    "due_date": "2024-08-01",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-07-17 to 2024-07-19"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Charles Ogutu",
+    "customer_name": "Charles Ogutu",
+    "posting_date": "2024-07-19",
+    "due_date": "2024-08-03",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-07-19 to 2024-07-21"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Mercy Auma",
+    "customer_name": "Mercy Auma",
+    "posting_date": "2024-07-12",
+    "due_date": "2024-07-27",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-07-12 to 2024-07-14"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Rose Adhiambo",
+    "customer_name": "Rose Adhiambo",
+    "posting_date": "2024-07-21",
+    "due_date": "2024-08-05",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-07-21 to 2024-07-23"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Mercy Auma",
+    "customer_name": "Mercy Auma",
+    "posting_date": "2024-08-02",
+    "due_date": "2024-08-17",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-08-02 to 2024-08-04"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Mercy Auma",
+    "customer_name": "Mercy Auma",
+    "posting_date": "2024-08-21",
+    "due_date": "2024-09-05",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-08-21 to 2024-08-22"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Diana Cherop",
+    "customer_name": "Diana Cherop",
+    "posting_date": "2024-08-19",
+    "due_date": "2024-09-03",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-08-19 to 2024-08-21"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "David Mutua",
+    "customer_name": "David Mutua",
+    "posting_date": "2024-09-21",
+    "due_date": "2024-10-06",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 3.0,
+        "rate": 7000.0,
+        "amount": 21000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 3360.0
+      }
+    ],
+    "remarks": "3 night(s) - 2024-09-21 to 2024-09-24"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Robert Kipchoge",
+    "customer_name": "Robert Kipchoge",
+    "posting_date": "2024-09-15",
+    "due_date": "2024-09-30",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 1.0,
+        "rate": 8000.0,
+        "amount": 8000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1280.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-09-15 to 2024-09-16"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Patrick Kimani",
+    "customer_name": "Patrick Kimani",
+    "posting_date": "2024-10-09",
+    "due_date": "2024-10-24",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-10-09 to 2024-10-11"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Kiprono Muhoro",
+    "customer_name": "Kiprono Muhoro",
+    "posting_date": "2024-10-16",
+    "due_date": "2024-10-31",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 3.0,
+        "rate": 7000.0,
+        "amount": 21000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 3360.0
+      }
+    ],
+    "remarks": "3 night(s) - 2024-10-16 to 2024-10-19"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Beatrice Mwende",
+    "customer_name": "Beatrice Mwende",
+    "posting_date": "2024-11-06",
+    "due_date": "2024-11-21",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-06 to 2024-11-07"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "George Mwangi",
+    "customer_name": "George Mwangi",
+    "posting_date": "2024-11-12",
+    "due_date": "2024-11-27",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-12 to 2024-11-13"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-11-20",
+    "due_date": "2024-12-05",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-20 to 2024-11-21"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Dorothy Barasa",
+    "customer_name": "Dorothy Barasa",
+    "posting_date": "2024-11-17",
+    "due_date": "2024-12-02",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-17 to 2024-11-18"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Kiprono Muhoro",
+    "customer_name": "Kiprono Muhoro",
+    "posting_date": "2024-12-09",
+    "due_date": "2024-12-24",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-12-09 to 2024-12-11"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "David Mutua",
+    "customer_name": "David Mutua",
+    "posting_date": "2024-12-04",
+    "due_date": "2024-12-19",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-12-04 to 2024-12-06"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Charles Ogutu",
+    "customer_name": "Charles Ogutu",
+    "posting_date": "2024-12-24",
+    "due_date": "2025-01-08",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-12-24 to 2024-12-25"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Dorothy Barasa",
+    "customer_name": "Dorothy Barasa",
+    "posting_date": "2025-01-18",
+    "due_date": "2025-02-02",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2025-01-18 to 2025-01-20"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Beatrice Mwende",
+    "customer_name": "Beatrice Mwende",
+    "posting_date": "2025-01-16",
+    "due_date": "2025-01-31",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2025-01-16 to 2025-01-17"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Sarah Wambui",
+    "customer_name": "Sarah Wambui",
+    "posting_date": "2025-02-06",
+    "due_date": "2025-02-21",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 1.0,
+        "rate": 8000.0,
+        "amount": 8000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1280.0
+      }
+    ],
+    "remarks": "1 night(s) - 2025-02-06 to 2025-02-07"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "James Karanja",
+    "customer_name": "James Karanja",
+    "posting_date": "2025-02-11",
+    "due_date": "2025-02-26",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2025-02-11 to 2025-02-13"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Peter Omondi",
+    "customer_name": "Peter Omondi",
+    "posting_date": "2025-02-01",
+    "due_date": "2025-02-16",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2025-02-01 to 2025-02-03"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Samuel Kirui",
+    "customer_name": "Samuel Kirui",
+    "posting_date": "2024-03-16",
+    "due_date": "2024-03-31",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-03-16 to 2024-03-17"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Robert Kipchoge",
+    "customer_name": "Robert Kipchoge",
+    "posting_date": "2024-04-13",
+    "due_date": "2024-04-28",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 1.0,
+        "rate": 8000.0,
+        "amount": 8000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1280.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-04-13 to 2024-04-14"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Rose Adhiambo",
+    "customer_name": "Rose Adhiambo",
+    "posting_date": "2024-04-13",
+    "due_date": "2024-04-28",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-04-13 to 2024-04-14"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Beatrice Mwende",
+    "customer_name": "Beatrice Mwende",
+    "posting_date": "2024-05-11",
+    "due_date": "2024-05-26",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 1.0,
+        "rate": 8000.0,
+        "amount": 8000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1280.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-05-11 to 2024-05-12"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Henry Odhiambo",
+    "customer_name": "Henry Odhiambo",
+    "posting_date": "2024-05-11",
+    "due_date": "2024-05-26",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-05-11 to 2024-05-12"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Esther Nyokabi",
+    "customer_name": "Esther Nyokabi",
+    "posting_date": "2024-06-08",
+    "due_date": "2024-06-23",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-06-08 to 2024-06-10"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Faith Chebet",
+    "customer_name": "Faith Chebet",
+    "posting_date": "2024-06-08",
+    "due_date": "2024-06-23",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-06-08 to 2024-06-10"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Sarah Wambui",
+    "customer_name": "Sarah Wambui",
+    "posting_date": "2024-07-06",
+    "due_date": "2024-07-21",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-07-06 to 2024-07-07"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Lucy Wanjiku",
+    "customer_name": "Lucy Wanjiku",
+    "posting_date": "2024-08-24",
+    "due_date": "2024-09-08",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 1.0,
+        "rate": 8000.0,
+        "amount": 8000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1280.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-08-24 to 2024-08-25"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Sarah Wambui",
+    "customer_name": "Sarah Wambui",
+    "posting_date": "2024-09-07",
+    "due_date": "2024-09-22",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-09-07 to 2024-09-08"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "James Karanja",
+    "customer_name": "James Karanja",
+    "posting_date": "2024-09-07",
+    "due_date": "2024-09-22",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-09-07 to 2024-09-08"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Caroline Muthama",
+    "customer_name": "Caroline Muthama",
+    "posting_date": "2024-09-21",
+    "due_date": "2024-10-06",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 4",
+        "description": "Room Accommodation - Bedroom 4",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-09-21 to 2024-09-23"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Beatrice Mwende",
+    "customer_name": "Beatrice Mwende",
+    "posting_date": "2024-09-21",
+    "due_date": "2024-10-06",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-09-21 to 2024-09-23"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Diana Cherop",
+    "customer_name": "Diana Cherop",
+    "posting_date": "2024-10-05",
+    "due_date": "2024-10-20",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-10-05 to 2024-10-07"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Charles Ogutu",
+    "customer_name": "Charles Ogutu",
+    "posting_date": "2024-10-05",
+    "due_date": "2024-10-20",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-10-05 to 2024-10-06"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Samuel Kirui",
+    "customer_name": "Samuel Kirui",
+    "posting_date": "2024-10-05",
+    "due_date": "2024-10-20",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-10-05 to 2024-10-06"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Esther Nyokabi",
+    "customer_name": "Esther Nyokabi",
+    "posting_date": "2024-10-12",
+    "due_date": "2024-10-27",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-10-12 to 2024-10-14"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Rose Adhiambo",
+    "customer_name": "Rose Adhiambo",
+    "posting_date": "2024-11-02",
+    "due_date": "2024-11-17",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-11-02 to 2024-11-04"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Samuel Kirui",
+    "customer_name": "Samuel Kirui",
+    "posting_date": "2024-11-02",
+    "due_date": "2024-11-17",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-02 to 2024-11-03"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Lucy Wanjiku",
+    "customer_name": "Lucy Wanjiku",
+    "posting_date": "2024-11-02",
+    "due_date": "2024-11-17",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 5",
+        "description": "Room Accommodation - Bedroom 5",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-11-02 to 2024-11-04"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "George Mwangi",
+    "customer_name": "George Mwangi",
+    "posting_date": "2024-11-09",
+    "due_date": "2024-11-24",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 2.0,
+        "rate": 7000.0,
+        "amount": 14000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2240.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-11-09 to 2024-11-11"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Janet Mukami",
+    "customer_name": "Janet Mukami",
+    "posting_date": "2024-11-23",
+    "due_date": "2024-12-08",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 3",
+        "description": "Room Accommodation - Bedroom 3",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-23 to 2024-11-24"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Grace Akinyi",
+    "customer_name": "Grace Akinyi",
+    "posting_date": "2024-11-23",
+    "due_date": "2024-12-08",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Master Bedroom",
+        "description": "Room Accommodation - Master Bedroom",
+        "qty": 2.0,
+        "rate": 8000.0,
+        "amount": 16000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 2560.0
+      }
+    ],
+    "remarks": "2 night(s) - 2024-11-23 to 2024-11-25"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "James Karanja",
+    "customer_name": "James Karanja",
+    "posting_date": "2024-11-23",
+    "due_date": "2024-12-08",
+    "items": [
+      {
+        "item_name": "Room Accommodation - Bedroom 2",
+        "description": "Room Accommodation - Bedroom 2",
+        "qty": 1.0,
+        "rate": 7000.0,
+        "amount": 7000.0,
+        "uom": "Night",
+        "item_code": "Room Accommodation"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 16%",
+        "rate": 16.0,
+        "tax_amount": 1120.0
+      }
+    ],
+    "remarks": "1 night(s) - 2024-11-23 to 2024-11-24"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-03-01",
+    "due_date": "2024-03-16",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 345.0,
+        "amount": 1035.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-03-05",
+    "due_date": "2024-03-20",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 340.0,
+        "amount": 2720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-03-08",
+    "due_date": "2024-03-23",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 360.0,
+        "amount": 720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-03-08",
+    "due_date": "2024-03-23",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-03-12",
+    "due_date": "2024-03-27",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-03-15",
+    "due_date": "2024-03-30",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 350.0,
+        "amount": 700.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-03-16",
+    "due_date": "2024-03-31",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 350.0,
+        "amount": 2100.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-03-19",
+    "due_date": "2024-04-03",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 7.0,
+        "rate": 355.0,
+        "amount": 2485.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 7 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-03-22",
+    "due_date": "2024-04-06",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 350.0,
+        "amount": 700.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-03-23",
+    "due_date": "2024-04-07",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 350.0,
+        "amount": 350.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-03-26",
+    "due_date": "2024-04-10",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 340.0,
+        "amount": 2720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-04-05",
+    "due_date": "2024-04-20",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 350.0,
+        "amount": 700.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-04-05",
+    "due_date": "2024-04-20",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 355.0,
+        "amount": 355.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-04-09",
+    "due_date": "2024-04-24",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 350.0,
+        "amount": 700.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-04-12",
+    "due_date": "2024-04-27",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 345.0,
+        "amount": 1725.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-04-16",
+    "due_date": "2024-05-01",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 345.0,
+        "amount": 1035.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-04-19",
+    "due_date": "2024-05-04",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-04-19",
+    "due_date": "2024-05-04",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 7.0,
+        "rate": 350.0,
+        "amount": 2450.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 7 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-04-23",
+    "due_date": "2024-05-08",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 355.0,
+        "amount": 1420.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-04-26",
+    "due_date": "2024-05-11",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 350.0,
+        "amount": 2800.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-04-30",
+    "due_date": "2024-05-15",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 355.0,
+        "amount": 1065.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-05-03",
+    "due_date": "2024-05-18",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-05-07",
+    "due_date": "2024-05-22",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-05-07",
+    "due_date": "2024-05-22",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 345.0,
+        "amount": 1035.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-05-10",
+    "due_date": "2024-05-25",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 355.0,
+        "amount": 710.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-05-17",
+    "due_date": "2024-06-01",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-05-21",
+    "due_date": "2024-06-05",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 355.0,
+        "amount": 710.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-05-24",
+    "due_date": "2024-06-08",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 340.0,
+        "amount": 2720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-05-28",
+    "due_date": "2024-06-12",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 355.0,
+        "amount": 355.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-05-31",
+    "due_date": "2024-06-15",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-06-04",
+    "due_date": "2024-06-19",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-06-07",
+    "due_date": "2024-06-22",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 340.0,
+        "amount": 2720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-06-11",
+    "due_date": "2024-06-26",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 335.0,
+        "amount": 670.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-06-11",
+    "due_date": "2024-06-26",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 345.0,
+        "amount": 1380.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-06-14",
+    "due_date": "2024-06-29",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 345.0,
+        "amount": 2760.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-06-18",
+    "due_date": "2024-07-03",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 330.0,
+        "amount": 990.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-06-25",
+    "due_date": "2024-07-10",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 350.0,
+        "amount": 1400.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-06-28",
+    "due_date": "2024-07-13",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 335.0,
+        "amount": 1005.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-07-02",
+    "due_date": "2024-07-17",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 7.0,
+        "rate": 340.0,
+        "amount": 2380.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 7 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-07-05",
+    "due_date": "2024-07-20",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 335.0,
+        "amount": 335.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-09",
+    "due_date": "2024-07-24",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 350.0,
+        "amount": 350.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-12",
+    "due_date": "2024-07-27",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 330.0,
+        "amount": 660.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-07-16",
+    "due_date": "2024-07-31",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 335.0,
+        "amount": 2010.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-19",
+    "due_date": "2024-08-03",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 340.0,
+        "amount": 680.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-23",
+    "due_date": "2024-08-07",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 330.0,
+        "amount": 660.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-07-26",
+    "due_date": "2024-08-10",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 335.0,
+        "amount": 2680.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-07-30",
+    "due_date": "2024-08-14",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-08-02",
+    "due_date": "2024-08-17",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 340.0,
+        "amount": 1020.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-08-02",
+    "due_date": "2024-08-17",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 340.0,
+        "amount": 680.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-08-03",
+    "due_date": "2024-08-18",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 350.0,
+        "amount": 1400.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-08-06",
+    "due_date": "2024-08-21",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 350.0,
+        "amount": 350.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-08-09",
+    "due_date": "2024-08-24",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 350.0,
+        "amount": 350.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-08-13",
+    "due_date": "2024-08-28",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-08-16",
+    "due_date": "2024-08-31",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 335.0,
+        "amount": 2010.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-08-20",
+    "due_date": "2024-09-04",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 345.0,
+        "amount": 2760.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-08-23",
+    "due_date": "2024-09-07",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 7.0,
+        "rate": 335.0,
+        "amount": 2345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 7 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-08-23",
+    "due_date": "2024-09-07",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-08-24",
+    "due_date": "2024-09-08",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 340.0,
+        "amount": 1020.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-08-27",
+    "due_date": "2024-09-11",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 330.0,
+        "amount": 1650.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-08-30",
+    "due_date": "2024-09-14",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 330.0,
+        "amount": 1650.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-09-06",
+    "due_date": "2024-09-21",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 355.0,
+        "amount": 2840.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-09-10",
+    "due_date": "2024-09-25",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 360.0,
+        "amount": 360.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-09-13",
+    "due_date": "2024-09-28",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 355.0,
+        "amount": 1065.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-09-17",
+    "due_date": "2024-10-02",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 340.0,
+        "amount": 1360.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-09-20",
+    "due_date": "2024-10-05",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 360.0,
+        "amount": 1080.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-09-24",
+    "due_date": "2024-10-09",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 360.0,
+        "amount": 1800.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-09-27",
+    "due_date": "2024-10-12",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 355.0,
+        "amount": 2130.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-10-01",
+    "due_date": "2024-10-16",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 360.0,
+        "amount": 2880.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-10-01",
+    "due_date": "2024-10-16",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 350.0,
+        "amount": 1400.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-10-04",
+    "due_date": "2024-10-19",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 355.0,
+        "amount": 355.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-10-15",
+    "due_date": "2024-10-30",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 345.0,
+        "amount": 345.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-10-22",
+    "due_date": "2024-11-06",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 345.0,
+        "amount": 2070.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-10-29",
+    "due_date": "2024-11-13",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 355.0,
+        "amount": 710.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-11-01",
+    "due_date": "2024-11-16",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 360.0,
+        "amount": 2160.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-11-05",
+    "due_date": "2024-11-20",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 360.0,
+        "amount": 720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-11-08",
+    "due_date": "2024-11-23",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 370.0,
+        "amount": 2960.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2024-11-12",
+    "due_date": "2024-11-27",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 370.0,
+        "amount": 2220.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-11-15",
+    "due_date": "2024-11-30",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 375.0,
+        "amount": 1875.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-11-19",
+    "due_date": "2024-12-04",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 370.0,
+        "amount": 370.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-11-22",
+    "due_date": "2024-12-07",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 365.0,
+        "amount": 365.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-11-26",
+    "due_date": "2024-12-11",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 370.0,
+        "amount": 1480.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-11-29",
+    "due_date": "2024-12-14",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 365.0,
+        "amount": 1095.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-03",
+    "due_date": "2024-12-18",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 375.0,
+        "amount": 750.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-06",
+    "due_date": "2024-12-21",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 360.0,
+        "amount": 360.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-13",
+    "due_date": "2024-12-28",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 3.0,
+        "rate": 365.0,
+        "amount": 1095.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 3 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2024-12-17",
+    "due_date": "2025-01-01",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 375.0,
+        "amount": 375.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-20",
+    "due_date": "2025-01-04",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 375.0,
+        "amount": 375.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-21",
+    "due_date": "2025-01-05",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 375.0,
+        "amount": 750.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-24",
+    "due_date": "2025-01-08",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 370.0,
+        "amount": 740.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2024-12-27",
+    "due_date": "2025-01-11",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 360.0,
+        "amount": 2880.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2024-12-31",
+    "due_date": "2025-01-15",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 375.0,
+        "amount": 375.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2025-01-03",
+    "due_date": "2025-01-18",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 370.0,
+        "amount": 1480.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2025-01-07",
+    "due_date": "2025-01-22",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 365.0,
+        "amount": 1460.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2025-01-10",
+    "due_date": "2025-01-25",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 8.0,
+        "rate": 360.0,
+        "amount": 2880.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 8 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2025-01-14",
+    "due_date": "2025-01-29",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 6.0,
+        "rate": 370.0,
+        "amount": 2220.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 6 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Apiyo Kibe",
+    "customer_name": "Apiyo Kibe",
+    "posting_date": "2025-01-21",
+    "due_date": "2025-02-05",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 360.0,
+        "amount": 1800.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Damaris Sigei",
+    "customer_name": "Damaris Sigei",
+    "posting_date": "2025-01-24",
+    "due_date": "2025-02-08",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 365.0,
+        "amount": 730.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2025-01-25",
+    "due_date": "2025-02-09",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 7.0,
+        "rate": 365.0,
+        "amount": 2555.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 7 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2025-01-28",
+    "due_date": "2025-02-12",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 370.0,
+        "amount": 370.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2025-01-31",
+    "due_date": "2025-02-15",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 5.0,
+        "rate": 380.0,
+        "amount": 1900.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 5 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2025-02-04",
+    "due_date": "2025-02-19",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 1.0,
+        "rate": 340.0,
+        "amount": 340.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 1 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Murimi Onyango",
+    "customer_name": "Murimi Onyango",
+    "posting_date": "2025-02-04",
+    "due_date": "2025-02-19",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 4.0,
+        "rate": 350.0,
+        "amount": 1400.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 4 tray(s)"
+  },
+  {
+    "doctype": "Sales Invoice",
+    "customer": "Atieno Ndirangu",
+    "customer_name": "Atieno Ndirangu",
+    "posting_date": "2025-02-07",
+    "due_date": "2025-02-22",
+    "items": [
+      {
+        "item_name": "Farm Eggs (Fresh)",
+        "description": "Farm Eggs (Fresh)",
+        "qty": 2.0,
+        "rate": 360.0,
+        "amount": 720.0,
+        "uom": "Tray",
+        "item_code": "Farm Eggs"
+      }
+    ],
+    "taxes": [
+      {
+        "charge_type": "On Net Total",
+        "account_head": "VAT - WC",
+        "description": "VAT @ 0% (Zero Rated)",
+        "rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "remarks": "Egg sale: 2 tray(s)"
+  }
+]

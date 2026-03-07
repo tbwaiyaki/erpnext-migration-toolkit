@@ -1,0 +1,1013 @@
+.:
+total 84K
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 .
+drwxr-sr-x  7 jovyan users 4.0K Feb 26 12:25 ..
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:33 config
+drwxr-sr-x  5 jovyan users 4.0K Feb 27 08:30 data
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:34 docs
+-rw-r--r--  1 jovyan users 3.4K Feb 26 13:23 ERPNext Migration Toolkit README.md
+-rw-r--r--  1 jovyan users    0 Feb 27 11:29 folder_tree
+drwxr-sr-x  8 jovyan users 4.0K Feb 27 09:48 .git
+-rw-r--r--  1 jovyan users 4.6K Feb 26 13:38 .gitignore
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:59 .ipynb_checkpoints
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 11:08 notebooks
+-rw-r--r--  1 jovyan users  378 Feb 26 13:36 pytest.ini
+-rw-r--r--  1 jovyan users 5.6K Feb 26 20:21 README.md
+-rw-r--r--  1 jovyan users  226 Feb 26 13:36 requirements-dev.txt
+-rw-r--r--  1 jovyan users  401 Feb 26 13:58 requirements.txt
+-rw-r--r--  1 jovyan users 1.8K Feb 26 13:46 setup_old.py
+-rw-r--r--  1 jovyan users 2.1K Feb 26 13:55 setup.py
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 src
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 13:39 tests
+drwxr-sr-x  4 jovyan users 4.0K Feb 27 08:45 user-data
+
+./config:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:33 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+-rw-r--r--  1 jovyan users  604 Feb 26 13:33 erpnext_connection.yaml.example
+
+./data:
+total 20K
+drwxr-sr-x  5 jovyan users 4.0K Feb 27 08:30 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 examples
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:30 .ipynb_checkpoints
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:18 wellness_centre
+
+./data/examples:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 27 08:30 ..
+-rw-r--r-- 1 jovyan users    0 Feb 26 13:39 .gitkeep
+
+./data/.ipynb_checkpoints:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:30 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 27 08:30 ..
+
+./data/wellness_centre:
+total 300K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 19:18 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 27 08:30 ..
+-rw-r--r-- 1 jovyan users  405 Feb 26 19:18 animals.csv
+-rw-r--r-- 1 jovyan users 1.9K Feb 26 19:18 compliance_documents.csv
+-rw-r--r-- 1 jovyan users 7.1K Feb 26 19:18 contacts.csv
+-rw-r--r-- 1 jovyan users  680 Feb 26 19:18 contact_types.csv
+-rw-r--r-- 1 jovyan users 2.4K Feb 26 19:18 egg_production.csv
+-rw-r--r-- 1 jovyan users 3.4K Feb 26 19:18 egg_sales.csv
+-rw-r--r-- 1 jovyan users  14K Feb 26 19:18 etims_invoice_items.csv
+-rw-r--r-- 1 jovyan users  43K Feb 26 19:18 etims_invoices.csv
+-rw-r--r-- 1 jovyan users 5.4K Feb 26 19:18 events.csv
+-rw-r--r-- 1 jovyan users    0 Feb 26 13:39 .gitkeep
+-rw-r--r-- 1 jovyan users  762 Feb 26 19:18 inventory_categories.csv
+-rw-r--r-- 1 jovyan users 8.4K Feb 26 19:18 inventory_items.csv
+-rw-r--r-- 1 jovyan users  17K Feb 26 19:18 inventory_movements.csv
+-rw-r--r-- 1 jovyan users 2.4K Feb 26 19:18 prepare_customers.py
+-rw-r--r-- 1 jovyan users 3.8K Feb 26 19:18 prepare_invoices.py
+-rw-r--r-- 1 jovyan users  531 Feb 26 19:18 properties.csv
+-rw-r--r-- 1 jovyan users 1.3K Feb 26 19:18 README.md
+-rw-r--r-- 1 jovyan users 6.8K Feb 26 19:18 room_bookings.csv
+-rw-r--r-- 1 jovyan users  484 Feb 26 19:18 rooms.csv
+-rw-r--r-- 1 jovyan users 2.6K Feb 26 19:18 transaction_categories.csv
+-rw-r--r-- 1 jovyan users 123K Feb 26 19:18 transactions.csv
+-rw-r--r-- 1 jovyan users 1002 Feb 26 19:18 utility_accounts.csv
+
+./docs:
+total 24K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:34 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+-rw-r--r--  1 jovyan users 4.3K Feb 26 13:34 architecture.md
+-rw-r--r--  1 jovyan users 5.7K Feb 26 13:34 getting_started.md
+
+./.git:
+total 60K
+drwxr-sr-x  8 jovyan users 4.0K Feb 27 09:48 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 branches
+-rw-r--r--  1 jovyan users  401 Feb 27 09:28 COMMIT_EDITMSG
+-rw-r--r--  1 jovyan users  334 Feb 26 13:00 config
+-rw-r--r--  1 jovyan users   73 Feb 26 12:25 description
+-rw-r--r--  1 jovyan users   21 Feb 26 12:25 HEAD
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 hooks
+-rw-r--r--  1 jovyan users 5.1K Feb 27 09:28 index
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 info
+drwxr-sr-x  3 jovyan users 4.0K Feb 26 12:25 logs
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 objects
+-rw-r--r--  1 jovyan users  112 Feb 26 12:25 packed-refs
+drwxr-sr-x  5 jovyan users 4.0K Feb 26 12:25 refs
+
+./.git/branches:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 8 jovyan users 4.0K Feb 27 09:48 ..
+
+./.git/hooks:
+total 68K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 8 jovyan users 4.0K Feb 27 09:48 ..
+-rwxr-xr-x 1 jovyan users  478 Feb 26 12:25 applypatch-msg.sample
+-rwxr-xr-x 1 jovyan users  896 Feb 26 12:25 commit-msg.sample
+-rwxr-xr-x 1 jovyan users 4.6K Feb 26 12:25 fsmonitor-watchman.sample
+-rwxr-xr-x 1 jovyan users  189 Feb 26 12:25 post-update.sample
+-rwxr-xr-x 1 jovyan users  424 Feb 26 12:25 pre-applypatch.sample
+-rwxr-xr-x 1 jovyan users 1.7K Feb 26 12:25 pre-commit.sample
+-rwxr-xr-x 1 jovyan users  416 Feb 26 12:25 pre-merge-commit.sample
+-rwxr-xr-x 1 jovyan users 1.5K Feb 26 12:25 prepare-commit-msg.sample
+-rwxr-xr-x 1 jovyan users 1.4K Feb 26 12:25 pre-push.sample
+-rwxr-xr-x 1 jovyan users 4.8K Feb 26 12:25 pre-rebase.sample
+-rwxr-xr-x 1 jovyan users  544 Feb 26 12:25 pre-receive.sample
+-rwxr-xr-x 1 jovyan users 2.8K Feb 26 12:25 push-to-checkout.sample
+-rwxr-xr-x 1 jovyan users 3.6K Feb 26 12:25 update.sample
+
+./.git/info:
+total 12K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 8 jovyan users 4.0K Feb 27 09:48 ..
+-rw-r--r-- 1 jovyan users  240 Feb 26 12:25 exclude
+
+./.git/logs:
+total 16K
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 8 jovyan users 4.0K Feb 27 09:48 ..
+-rw-r--r-- 1 jovyan users 2.0K Feb 27 09:28 HEAD
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 12:25 refs
+
+./.git/logs/refs:
+total 16K
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 ..
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 heads
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 remotes
+
+./.git/logs/refs/heads:
+total 12K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 12:25 ..
+-rw-r--r-- 1 jovyan users 2.0K Feb 27 09:28 main
+
+./.git/logs/refs/remotes:
+total 12K
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 12:25 ..
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 14:11 origin
+
+./.git/logs/refs/remotes/origin:
+total 16K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 14:11 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 ..
+-rw-r--r-- 1 jovyan users  198 Feb 26 12:25 HEAD
+-rw-r--r-- 1 jovyan users 1.4K Feb 27 09:28 main
+
+./.git/objects:
+total 328K
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x  8 jovyan users 4.0K Feb 27 09:48 ..
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 04
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 05
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 0a
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 0b
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 11
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 13
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 17
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 18
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 1d
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 1f
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 20
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 22
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 23
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 2b
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 2e
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 2f
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 33
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 35
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 38
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 39
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 3a
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 3b
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 3f
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 40
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 42
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 45
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 46
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 4d
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 50
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 51
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 54
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 57
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 58
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 5e
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 60
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 61
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 63
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 67
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 69
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 70
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 77
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 7d
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 7e
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 7f
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 84
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 85
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 8a
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 8b
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 8e
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 90
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 92
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 94
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 96
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 9d
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 9e
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 a0
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 a1
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 a6
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 b4
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 ba
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 bb
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 bc
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 c1
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 c4
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 cb
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 cc
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 d3
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 d4
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 d5
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 da
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 e0
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 e2
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 e6
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 e7
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 ed
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 f1
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 f8
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 ff
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 info
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 pack
+
+./.git/objects/04:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  461 Feb 26 20:22 107b1d803961bb19dcc06d0384ff2fc0c7bb09
+
+./.git/objects/05:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  320 Feb 26 18:08 649dfa8445b4099c511d13dfad132a2ec31406
+-r--r--r--  1 jovyan users  218 Feb 27 08:09 b76180694570c1a6be788faaae2634939a4e7e
+
+./.git/objects/0a:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 6.2K Feb 26 19:52 9918918c8c6820f2e5fe5c54cbc5875aa39d67
+
+./.git/objects/0b:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.3K Feb 27 07:56 5bdc2af9bca57fe81f632a158347cab94e5481
+
+./.git/objects/11:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  108 Feb 26 14:10 c4a65df8b81ea86409c114a1da8b510306b59a
+
+./.git/objects/13:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  240 Feb 26 14:10 b8fa214f05072444fe31f1d511e4629dd8bf62
+
+./.git/objects/17:
+total 24K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  16K Feb 26 19:52 dde3981bc7d67d96e4773a4ab001141948655d
+
+./.git/objects/18:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.7K Feb 26 14:10 e6eff298cbd9ea755461ac8dd90e70016f8bff
+
+./.git/objects/1d:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  461 Feb 26 14:10 1d2630ee66afb1b2444fff9a0dc2812e22fc5b
+
+./.git/objects/1f:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.6K Feb 26 20:21 b9883d0a12e986ae731eaa93c9a7641feecf31
+
+./.git/objects/20:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  758 Feb 26 14:10 bdaa5ad1e97756dea97c44b4c75f25bbb084b9
+
+./.git/objects/22:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.2K Feb 27 08:24 929a92f6a1744a2e293cca069723445e2c28b4
+
+./.git/objects/23:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  363 Feb 27 09:28 b2c67f2fc397db739114b2cfe985f6a9be61f3
+
+./.git/objects/2b:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  461 Feb 26 18:58 e0e8ec1e1f04e6eb11fcdcf76cd8ce645a9dce
+
+./.git/objects/2e:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   86 Feb 26 14:10 46974dc5497cc6d646091d2fdc44f13b785de1
+-r--r--r--  1 jovyan users  293 Feb 26 19:53 6e36e1bf8055fa22fbf1ce238bba36ee22eb28
+
+./.git/objects/2f:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 5.8K Feb 26 18:58 cc4a5dfff9ec8a9e6ded4daa497126a6f8e0a3
+
+./.git/objects/33:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  226 Feb 27 08:24 ac2b8da8f59e09ed2033ea6dd44c96e8791467
+
+./.git/objects/35:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.6K Feb 27 08:24 7af8fe7426827bb4da1c82fa5acbd1e27c4fbf
+
+./.git/objects/38:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.2K Feb 26 14:10 bd007934f9b9b82b80a25f1381a2a8883328cd
+-r--r--r--  1 jovyan users 2.3K Feb 26 18:58 e6033c42e6c842180cc85dc37dda01429c9e87
+
+./.git/objects/39:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 4.2K Feb 26 14:10 7e1b2a75a43679960cca5902ab0b1da871b081
+
+./.git/objects/3a:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  154 Feb 26 18:08 36c0394332d6a0d8285cd5032fb522360ec2c3
+-r--r--r--  1 jovyan users  461 Feb 27 08:09 3ffee8c5d7da1ca0b54492088d86fe2a6adf80
+
+./.git/objects/3b:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  287 Feb 26 14:10 adaf17c8be18867ec17968c6b842912112fbbf
+
+./.git/objects/3f:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  461 Feb 27 09:28 ea05db1136f833e8cab3d0f0c1d7347cd72b89
+
+./.git/objects/40:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  193 Feb 26 20:22 7b0fcef10ed14596915725a8bdde2517b2e635
+
+./.git/objects/42:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.9K Feb 26 18:58 7a67eea9cc094124accb4e8f414436bb43f979
+
+./.git/objects/45:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  179 Feb 26 18:58 0005ac3fa9e33214f535c0d7f28dfa1feaefa0
+
+./.git/objects/46:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  171 Feb 26 18:58 9825924956568a2da12c4cc7f3f3e6c4658d32
+
+./.git/objects/4d:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.7K Feb 26 14:10 77be8ff6b8f561ecf86edf6f88076eb9698b81
+
+./.git/objects/50:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  518 Feb 26 18:58 2c03ff4a70c9fb01df9043f7e39e2f309a238b
+
+./.git/objects/51:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  150 Feb 26 18:58 2bd9a3e2eba439d8966e343c1931fc1f098b5e
+
+./.git/objects/54:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.7K Feb 27 08:24 f8650b4ae460e574095f3c09d1bbef5c0cc2d4
+
+./.git/objects/57:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 3.3K Feb 26 19:52 19f05e98bd0002f1e7439c747c49401ec53c63
+-r--r--r--  1 jovyan users 2.9K Feb 26 18:58 25c6150cc6adc65ae60d8cc441cd53660aab31
+
+./.git/objects/58:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  253 Feb 27 09:28 689dcd4bbaca1d09d941c74f702829fe79f8c4
+
+./.git/objects/5e:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  186 Feb 26 19:53 a460988f623b936048046c5aac546a08ced2c4
+
+./.git/objects/60:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 5.0K Feb 26 19:52 2a643ab558042e9c8337f87f4d5fb7054419b9
+
+./.git/objects/61:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 4.7K Feb 26 19:52 31ca068e90aa0f77b635279a1e4f5b4ecdbd77
+
+./.git/objects/63:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.7K Feb 26 20:21 9ab7a75cd0b2a0c950b2e02ce48acb25fd37e3
+
+./.git/objects/67:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  151 Feb 26 20:21 e370f2f258d88a88e073e9374d5517a50d5450
+
+./.git/objects/69:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  233 Feb 27 07:56 ed3b5ebc99fed20acdb3be1af5c14eff2eb9a1
+
+./.git/objects/70:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  193 Feb 27 07:56 d2a7428cba01c421a2837e164608c5dce157f5
+
+./.git/objects/77:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  462 Feb 26 19:53 fde3088aff17b209552208662cb446e24c02eb
+
+./.git/objects/7d:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   69 Feb 26 14:10 b11e42faa1e1b7081edb418ae7d1d6b7396bf8
+
+./.git/objects/7e:
+total 20K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  149 Feb 26 18:08 29f85421d10bce3299d70dc686ca1fb6ae0546
+-r--r--r--  1 jovyan users  947 Feb 27 07:56 30b923f8fc76705b45598bb112aaecd454c6f6
+-r--r--r--  1 jovyan users 1.6K Feb 27 08:09 324decc741b93bf82fc52f615c114e976964f3
+
+./.git/objects/7f:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  104 Feb 26 18:58 ef2396b79c85dfd65d54be61bb7818d7407776
+
+./.git/objects/84:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  174 Feb 27 08:24 5c2e9ae90f1babce29aff31cab31e727eb3588
+-r--r--r--  1 jovyan users 2.4K Feb 27 07:56 94600c4a596c9e04862af1c8e69208ea05c890
+
+./.git/objects/85:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  461 Feb 27 08:24 191a04bc554de9a0e523b8988e4806d0cf5344
+
+./.git/objects/8a:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 3.3K Feb 26 18:08 2a5c47f7311c899cc033ec56ea7007edfdf4f6
+
+./.git/objects/8b:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  132 Feb 26 14:10 77b99cbb564e15ef81d91623540fc2991bdf9d
+
+./.git/objects/8e:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  363 Feb 26 14:10 76f8e02123d2d060c6d84bc9be7172954214f6
+
+./.git/objects/90:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  252 Feb 27 08:24 61a892b493093321088d1590c5368b795826bb
+
+./.git/objects/92:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:58 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.3K Feb 26 18:58 16481e8d16793399487b3c1785f5dc6d720e68
+
+./.git/objects/94:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  148 Feb 26 14:10 1bdfe012b234e5554248753e37d27a16da5fce
+-r--r--r--  1 jovyan users  171 Feb 26 19:53 e49b9acadfb71beb23029248afc3ba977fb3b8
+
+./.git/objects/96:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  366 Feb 26 14:10 46fd3cc960ffbab85367c5e50b9e4c287b7471
+
+./.git/objects/9d:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   56 Feb 26 14:10 1dcfdaf1a6857c5f83dc27019c7600e1ffaff8
+-r--r--r--  1 jovyan users  461 Feb 26 18:08 421f94361499e9d9c407ca0dad6405d03cb28b
+
+./.git/objects/9e:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 4.0K Feb 26 19:52 b6f29c8a7adcccd6c385b7b6591185e94d7eca
+-r--r--r--  1 jovyan users 2.4K Feb 26 14:10 f5c6e32c0692f474d5fc50be06b79f20e1d2d0
+
+./.git/objects/a0:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   76 Feb 26 14:10 03e8afb7eca91adc8956bf83dde706bc2451b3
+
+./.git/objects/a1:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  100 Feb 26 14:10 52e41785d9d5bafe9ffe09d547276a2686c610
+
+./.git/objects/a6:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:56 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  225 Feb 27 07:56 916d77215e7867e5aa5d90ce5e05ac9f725a85
+
+./.git/objects/b4:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  173 Feb 26 14:10 7497708f779f6ea452144e43f8ed4488152825
+
+./.git/objects/ba:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.6K Feb 26 19:52 5d3d6445ccff6432a379eb165f909fabd7fd2e
+
+./.git/objects/bb:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  550 Feb 26 18:08 98a9319066e1734a35efe551d552fccb3319b0
+
+./.git/objects/bc:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   63 Feb 26 14:10 2b5d4201ce844136ccf5cd8b75b0bff40c120a
+-r--r--r--  1 jovyan users 1.7K Feb 27 08:09 f5fd39544eeb67e37de2e44c2ea9259aef182f
+
+./.git/objects/c1:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  156 Feb 26 20:22 ce3525878656464ba76224d7f4a7825fbe5374
+
+./.git/objects/c4:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  901 Feb 26 14:10 bf5f4a0e61f3f46634855854878a320b24b0b8
+
+./.git/objects/cb:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1008 Feb 27 08:09 dee397f9b562560344f9a1bb19c86178fec992
+
+./.git/objects/cc:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:22 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.2K Feb 26 20:22 3d3250f8514527458be48da98226d0c076e444
+
+./.git/objects/d3:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  215 Feb 27 08:09 68e896be3268abd52ef4e95839d092736dac19
+
+./.git/objects/d4:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:24 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  181 Feb 26 14:10 0e381b633350fcdfcd855be1edf0e7bbfa31b6
+-r--r--r--  1 jovyan users 2.3K Feb 27 08:24 67070875f3cd708f2cf703ff17c0c10f610e1f
+
+./.git/objects/d5:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 3.1K Feb 26 19:52 41c157ca25bfed056c44c227511dcf295377e1
+-r--r--r--  1 jovyan users   53 Feb 26 14:10 64d0bc3dd917926892c55e3706cc116d5b165e
+
+./.git/objects/da:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 20:21 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.7K Feb 26 20:21 69baebe6401e316e217cd5434f49335744a662
+
+./.git/objects/e0:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.2K Feb 27 08:09 f720a5aab911d946f8273c97d5f4ae00527c90
+
+./.git/objects/e2:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:09 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  156 Feb 27 08:09 18f7ef877d5e5e6b5a60d61679470eb5946e1f
+-r--r--r--  1 jovyan users  461 Feb 27 07:56 7fdf72ed096ef70cdf3daf13bf1d1230a1a599
+
+./.git/objects/e6:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 14:10 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users   15 Feb 26 14:10 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+
+./.git/objects/e7:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:53 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.2K Feb 26 19:53 4c6b9e23b08c18aab5713624249e9c0fc74460
+
+./.git/objects/ed:
+total 20K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:52 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  11K Feb 26 19:52 064f688a364bf5d01cc77eee62f49d558614ca
+
+./.git/objects/f1:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:08 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 3.1K Feb 26 18:08 a5e0a745c69a9775d0e7c7f114e0cfe16260a5
+
+./.git/objects/f8:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 2.3K Feb 27 09:28 14252cac532024d92f7552cda82e3b8bf9c4f8
+
+./.git/objects/ff:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users  174 Feb 27 09:28 98c96b7abcc31d34f7e5a5bac3b6ef82e7ea89
+
+./.git/objects/info:
+total 8.0K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+
+./.git/objects/pack:
+total 16K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 82 jovyan users 4.0K Feb 27 09:28 ..
+-r--r--r--  1 jovyan users 1.2K Feb 26 12:25 pack-68b6c3e475e0b0ad4d791a762eaa8ef17e55c00f.idx
+-r--r--r--  1 jovyan users 2.9K Feb 26 14:10 pack-68b6c3e475e0b0ad4d791a762eaa8ef17e55c00f.pack
+
+./.git/refs:
+total 20K
+drwxr-sr-x 5 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 8 jovyan users 4.0K Feb 27 09:48 ..
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:28 heads
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 remotes
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 tags
+
+./.git/refs/heads:
+total 12K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 26 12:25 ..
+-rw-r--r-- 1 jovyan users   41 Feb 27 09:28 main
+
+./.git/refs/remotes:
+total 12K
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 26 12:25 ..
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:28 origin
+
+./.git/refs/remotes/origin:
+total 16K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:28 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 26 12:25 ..
+-rw-r--r-- 1 jovyan users   30 Feb 26 12:25 HEAD
+-rw-r--r-- 1 jovyan users   41 Feb 27 09:28 main
+
+./.git/refs/tags:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 12:25 .
+drwxr-sr-x 5 jovyan users 4.0K Feb 26 12:25 ..
+
+./.ipynb_checkpoints:
+total 24K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:59 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+-rw-r--r--  1 jovyan users  401 Feb 26 13:58 requirements-checkpoint.txt
+-rw-r--r--  1 jovyan users  226 Feb 26 13:36 requirements-dev-checkpoint.txt
+-rw-r--r--  1 jovyan users 2.1K Feb 26 13:55 setup-checkpoint.py
+-rw-r--r--  1 jovyan users 1.8K Feb 26 13:46 setup_old-checkpoint.py
+
+./notebooks:
+total 244K
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 11:08 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+-rw-r--r--  1 jovyan users  66K Feb 26 18:12 01_core_types.ipynb
+-rw-r--r--  1 jovyan users  29K Feb 26 19:03 02_gl_foundation.ipynb
+-rw-r--r--  1 jovyan users  46K Feb 26 19:49 03_apply_to_wellness_data.ipynb
+-rw-r--r--  1 jovyan users  21K Feb 27 11:08 04_run_migration.ipynb
+-rw-r--r--  1 jovyan users 9.7K Feb 26 14:25 account_notebook_tests.txt
+-rw-r--r--  1 jovyan users  14K Feb 26 18:32 gl_notebook_tests.txt
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:30 .ipynb_checkpoints
+-rw-r--r--  1 jovyan users  16K Feb 26 17:48 tax_fiscal_notebook_tests.txt
+-rw-r--r--  1 jovyan users  15K Feb 26 19:14 wellness_data_notebook.txt
+
+./notebooks/.ipynb_checkpoints:
+total 196K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:30 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 27 11:08 ..
+-rw-r--r-- 1 jovyan users  65K Feb 26 18:08 01_core_types-checkpoint.ipynb
+-rw-r--r-- 1 jovyan users  66K Feb 26 18:31 02_gl_foundation-checkpoint.ipynb
+-rw-r--r-- 1 jovyan users  46K Feb 26 19:49 03_apply_to_wellness_data-checkpoint.ipynb
+-rw-r--r-- 1 jovyan users 1.9K Feb 27 08:38 04_run_migration-checkpoint.ipynb
+
+./src:
+total 48K
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 19:43 core
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 07:51 documents
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 08:08 domain
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 erpnext
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:57 erpnext_migration_toolkit.egg-info
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 18:44 gl
+-rw-r--r--  1 jovyan users  148 Feb 26 13:32 __init__.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:32 .ipynb_checkpoints
+drwxr-sr-x  4 jovyan users 4.0K Feb 27 08:52 orchestration
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 utils
+
+./src/core:
+total 68K
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 19:43 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users  11K Feb 26 14:22 account.py
+-rw-r--r--  1 jovyan users  12K Feb 26 17:44 fiscal_period.py
+-rw-r--r--  1 jovyan users  748 Feb 26 17:46 __init__.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:37 .ipynb_checkpoints
+-rw-r--r--  1 jovyan users 8.5K Feb 26 19:43 money.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 19:43 __pycache__
+-rw-r--r--  1 jovyan users  11K Feb 26 17:44 tax.py
+
+./src/core/.ipynb_checkpoints:
+total 20K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 19:37 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 19:43 ..
+-rw-r--r-- 1 jovyan users 8.5K Feb 26 19:43 money-checkpoint.py
+
+./src/core/__pycache__:
+total 76K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 19:43 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 19:43 ..
+-rw-r--r-- 1 jovyan users  13K Feb 26 14:28 account.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  16K Feb 26 17:50 fiscal_period.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  890 Feb 26 17:50 __init__.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  13K Feb 26 19:43 money.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  14K Feb 26 17:50 tax.cpython-311.pyc
+
+./src/documents:
+total 60K
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 07:51 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users  511 Feb 27 07:52 __init__.py
+-rw-r--r--  1 jovyan users 4.7K Feb 26 20:17 invoice_item.py
+-rw-r--r--  1 jovyan users 4.6K Feb 26 20:17 invoice_tax.py
+-rw-r--r--  1 jovyan users 8.2K Feb 27 07:51 payment_entry.py
+-rw-r--r--  1 jovyan users 6.7K Feb 27 07:51 purchase_invoice.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 07:55 __pycache__
+-rw-r--r--  1 jovyan users 8.0K Feb 26 20:17 sales_invoice.py
+
+./src/documents/__pycache__:
+total 68K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 07:55 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 27 07:51 ..
+-rw-r--r-- 1 jovyan users  741 Feb 27 07:55 __init__.cpython-311.pyc
+-rw-r--r-- 1 jovyan users 6.8K Feb 26 20:18 invoice_item.cpython-311.pyc
+-rw-r--r-- 1 jovyan users 6.1K Feb 26 20:18 invoice_tax.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  11K Feb 27 07:55 payment_entry.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  12K Feb 27 07:55 purchase_invoice.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  13K Feb 26 20:18 sales_invoice.cpython-311.pyc
+
+./src/domain:
+total 40K
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 08:08 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users 4.2K Feb 27 08:07 egg_sale.py
+-rw-r--r--  1 jovyan users 6.9K Feb 27 08:07 event_booking.py
+-rw-r--r--  1 jovyan users  357 Feb 27 08:08 __init__.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:08 __pycache__
+-rw-r--r--  1 jovyan users 4.7K Feb 27 08:07 room_booking.py
+
+./src/domain/__pycache__:
+total 40K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:08 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 27 08:08 ..
+-rw-r--r-- 1 jovyan users 5.8K Feb 27 08:08 egg_sale.cpython-311.pyc
+-rw-r--r-- 1 jovyan users 8.9K Feb 27 08:08 event_booking.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  589 Feb 27 08:08 __init__.cpython-311.pyc
+-rw-r--r-- 1 jovyan users 6.7K Feb 27 08:08 room_booking.cpython-311.pyc
+
+./src/erpnext:
+total 8.0K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users    0 Feb 26 13:39 __init__.py
+
+./src/erpnext_migration_toolkit.egg-info:
+total 32K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:57 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users   73 Feb 26 13:57 dependency_links.txt
+-rw-r--r--  1 jovyan users 4.7K Feb 26 13:57 PKG-INFO
+-rw-r--r--  1 jovyan users  177 Feb 26 13:57 requires.txt
+-rw-r--r--  1 jovyan users  435 Feb 26 13:57 SOURCES.txt
+-rw-r--r--  1 jovyan users   39 Feb 26 13:57 top_level.txt
+
+./src/gl:
+total 60K
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 18:44 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users  252 Feb 26 18:30 __init__.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:43 .ipynb_checkpoints
+-rw-r--r--  1 jovyan users 7.9K Feb 26 18:29 journal_entry_line_old.py
+-rw-r--r--  1 jovyan users 7.9K Feb 26 18:43 journal_entry_line.py
+-rw-r--r--  1 jovyan users 9.3K Feb 26 18:30 journal_entry_old.py
+-rw-r--r--  1 jovyan users 9.3K Feb 26 18:43 journal_entry.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 18:45 __pycache__
+
+./src/gl/.ipynb_checkpoints:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 18:43 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 18:44 ..
+
+./src/gl/__pycache__:
+total 40K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 18:45 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 18:44 ..
+-rw-r--r-- 1 jovyan users  452 Feb 26 18:35 __init__.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  14K Feb 26 18:45 journal_entry.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  11K Feb 26 18:45 journal_entry_line.cpython-311.pyc
+
+./src/.ipynb_checkpoints:
+total 12K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:32 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users  148 Feb 26 13:32 __init__-checkpoint.py
+
+./src/orchestration:
+total 56K
+drwxr-sr-x  4 jovyan users 4.0K Feb 27 08:52 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users 6.2K Feb 27 08:20 csv_loader_old.py
+-rw-r--r--  1 jovyan users 9.0K Feb 27 08:52 csv_loader.py
+-rw-r--r--  1 jovyan users  393 Feb 27 08:21 __init__.py
+-rw-r--r--  1 jovyan users 6.9K Feb 27 08:20 invoice_generator.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:52 .ipynb_checkpoints
+-rw-r--r--  1 jovyan users 7.9K Feb 27 08:20 migration_orchestrator.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:53 __pycache__
+
+./src/orchestration/.ipynb_checkpoints:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:52 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 27 08:52 ..
+
+./src/orchestration/__pycache__:
+total 52K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:53 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 27 08:52 ..
+-rw-r--r-- 1 jovyan users  12K Feb 27 08:53 csv_loader.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  601 Feb 27 08:21 __init__.cpython-311.pyc
+-rw-r--r-- 1 jovyan users 9.5K Feb 27 08:21 invoice_generator.cpython-311.pyc
+-rw-r--r-- 1 jovyan users  13K Feb 27 08:21 migration_orchestrator.cpython-311.pyc
+
+./src/utils:
+total 8.0K
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 08:19 ..
+-rw-r--r--  1 jovyan users    0 Feb 26 13:39 __init__.py
+
+./tests:
+total 16K
+drwxr-sr-x  4 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+-rw-r--r--  1 jovyan users    0 Feb 26 13:39 __init__.py
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 test_core
+drwxr-sr-x  2 jovyan users 4.0K Feb 26 13:39 test_integration
+
+./tests/test_core:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 13:39 ..
+-rw-r--r-- 1 jovyan users    0 Feb 26 13:39 __init__.py
+
+./tests/test_integration:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 26 13:39 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 26 13:39 ..
+-rw-r--r-- 1 jovyan users    0 Feb 26 13:39 __init__.py
+
+./user-data:
+total 16K
+drwxr-sr-x  4 jovyan users 4.0K Feb 27 08:45 .
+drwxr-sr-x 11 jovyan users 4.0K Feb 27 11:29 ..
+drwxr-sr-x  2 jovyan users 4.0K Feb 27 08:45 .ipynb_checkpoints
+drwxr-sr-x  3 jovyan users 4.0K Feb 27 09:27 outputs
+
+./user-data/.ipynb_checkpoints:
+total 8.0K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 08:45 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 27 08:45 ..
+
+./user-data/outputs:
+total 140K
+drwxr-sr-x 3 jovyan users 4.0K Feb 27 09:27 .
+drwxr-sr-x 4 jovyan users 4.0K Feb 27 08:45 ..
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:27 .ipynb_checkpoints
+-rw-r--r-- 1 jovyan users 125K Feb 27 08:53 sales_invoices.json
+
+./user-data/outputs/.ipynb_checkpoints:
+total 136K
+drwxr-sr-x 2 jovyan users 4.0K Feb 27 09:27 .
+drwxr-sr-x 3 jovyan users 4.0K Feb 27 09:27 ..
+-rw-r--r-- 1 jovyan users 125K Feb 27 08:53 sales_invoices-checkpoint.json

@@ -1,0 +1,135 @@
+#!/bin/bash
+SITE_NAME="$1"
+OPERATION="$2"
+SNAPSHOT_ID="$3"
+
+if [ -z "$SITE_NAME" ] || [ -z "$OPERATION" ]; then
+    echo "Usage: $0 SITE_NAME {snapshot|restore|list} [SNAPSHOT_ID]"
+    exit 1
+fi
+
+# Get password from MariaDB container (source of truth)
+DB_PASSWORD=$(docker exec erpnext-mariadb printenv MYSQL_ROOT_PASSWORD)
+
+PYTHON_CODE=$(cat <<'PYTHON'
+import subprocess, sys, os, json
+from datetime import datetime
+from pathlib import Path
+
+site = sys.argv[1]
+op = sys.argv[2]
+snap_id = sys.argv[3] if len(sys.argv) > 3 else None
+
+db_pass = os.getenv('DB_PASSWORD')
+snapshot_dir = Path(f"/home/frappe/frappe-bench/sites/.snapshots/{site}")
+snapshot_dir.mkdir(parents=True, exist_ok=True)
+
+if op == "snapshot":
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    snap_path = snapshot_dir / timestamp
+    snap_path.mkdir()
+
+    print(f"Creating snapshot: {timestamp}")
+
+    with open(f"/home/frappe/frappe-bench/sites/{site}/site_config.json") as f:
+        config = json.load(f)
+    db_name = config["db_name"]
+
+    print(f"  Database: {db_name}")
+    print(f"  Backing up site files...")
+
+    subprocess.run([
+        "tar", "czf", str(snap_path / "files.tar.gz"),
+        "-C", f"/home/frappe/frappe-bench/sites/{site}", "."
+    ], check=True)
+
+    print(f"  Backing up database...")
+
+    mysql_cnf = snap_path / ".my.cnf"
+    with open(mysql_cnf, 'w') as f:
+        f.write("[client]\n")
+        f.write(f"password={db_pass}\n")
+    mysql_cnf.chmod(0o600)
+
+    subprocess.run(
+        f"mysqldump --defaults-extra-file={mysql_cnf} -h erpnext-mariadb -uroot {db_name} | gzip > {snap_path}/db.sql.gz",
+        shell=True, check=True
+    )
+
+    mysql_cnf.unlink()
+
+    files_size = (snap_path / "files.tar.gz").stat().st_size / 1048576
+    db_size = (snap_path / "db.sql.gz").stat().st_size / 1048576
+
+    print(f"\n✓ Snapshot created: {timestamp}")
+    print(f"  Files: {files_size:.1f} MB")
+    print(f"  Database: {db_size:.1f} MB")
+    print(f"  Total: {files_size + db_size:.1f} MB")
+
+elif op == "restore":
+    if not snap_id:
+        print("Error: Snapshot ID required")
+        sys.exit(1)
+
+    snap_path = snapshot_dir / snap_id
+    if not snap_path.exists():
+        print(f"Error: Snapshot not found: {snap_id}")
+        sys.exit(1)
+
+    print(f"Restoring from: {snap_id}")
+
+    with open(f"/home/frappe/frappe-bench/sites/{site}/site_config.json") as f:
+        config = json.load(f)
+    db_name = config["db_name"]
+
+    print(f"  Restoring files...")
+    subprocess.run(
+        f"rm -rf /home/frappe/frappe-bench/sites/{site}/* && "
+        f"tar xzf {snap_path}/files.tar.gz -C /home/frappe/frappe-bench/sites/{site}",
+        shell=True, check=True
+    )
+
+    print(f"  Restoring database...")
+
+    mysql_cnf = snap_path / ".my.cnf"
+    with open(mysql_cnf, 'w') as f:
+        f.write("[client]\n")
+        f.write(f"password={db_pass}\n")
+    mysql_cnf.chmod(0o600)
+
+    subprocess.run(
+        f"gunzip < {snap_path}/db.sql.gz | mysql --defaults-extra-file={mysql_cnf} -h erpnext-mariadb -uroot {db_name}",
+        shell=True, check=True
+    )
+
+    mysql_cnf.unlink()
+
+    print(f"  Running migrate...")
+    subprocess.run(["bench", "--site", site, "migrate"], check=True, capture_output=True)
+
+    print(f"\n✓ Restored from: {snap_id}")
+
+elif op == "list":
+    if not snapshot_dir.exists():
+        print(f"No snapshots for {site}")
+        sys.exit(0)
+
+    snapshots = sorted([d.name for d in snapshot_dir.iterdir() if d.is_dir()], reverse=True)
+
+    if not snapshots:
+        print(f"No snapshots for {site}")
+    else:
+        print(f"Snapshots for {site}:")
+        for snap in snapshots:
+            snap_path = snapshot_dir / snap
+            files_path = snap_path / "files.tar.gz"
+            db_path = snap_path / "db.sql.gz"
+
+            if files_path.exists() and db_path.exists():
+                total_mb = (files_path.stat().st_size + db_path.stat().st_size) / 1048576
+                print(f"  {snap:<20} {total_mb:>8.1f} MB")
+
+PYTHON
+)
+
+echo "$PYTHON_CODE" | docker exec -i -e DB_PASSWORD="$DB_PASSWORD" erpnext-backend python3 - "$SITE_NAME" "$OPERATION" "$SNAPSHOT_ID"
