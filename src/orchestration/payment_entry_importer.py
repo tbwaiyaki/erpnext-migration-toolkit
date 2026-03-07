@@ -3,12 +3,19 @@ Payment Entry Importer - Import invoice payments into ERPNext.
 
 Handles batch import of payment entries linked to sales invoices,
 with proper mode of payment mapping and account reconciliation.
+
+Version 3.1: Complete rewrite with proper Kenyan account structure
+- M-Pesa → M-Pesa - WC account
+- Bank Transfer → Bank - KCB - WC account  
+- Cash → Cash - WC account
+- All mandatory fields included (exchange rates, paid_to, currencies)
+- Timing metrics added
 """
 
 import pandas as pd
-from typing import Dict, List
+from typing import Dict
 from frappeclient import FrappeClient
-from datetime import datetime
+import time
 
 
 class PaymentEntryImporter:
@@ -16,21 +23,21 @@ class PaymentEntryImporter:
     Import payment entries for sales invoices.
     
     Links payments to invoices based on etims_invoice_id,
-    maps payment methods, and reconciles accounts.
+    maps payment methods to proper Kenyan accounts.
     
     Usage:
         importer = PaymentEntryImporter(client, "Wellness Centre")
         results = importer.import_batch(transactions_df, invoices_df)
     """
     
-    VERSION = "3.0-duplicate-prevention"  # Version marker
+    VERSION = "3.1-kenyan-accounts-fix"  # Version marker
     
-    # Payment method mapping
-    PAYMENT_MODE_MAP = {
-        'Cash': 'Cash',
-        'M-Pesa': 'M-Pesa',
-        'Bank Transfer': 'Bank Transfer',
-        'Cheque': 'Bank Transfer'
+    # Payment method to account mapping (Kenyan accounting best practice)
+    PAYMENT_ACCOUNT_MAP = {
+        'M-Pesa': 'M-Pesa - WC',
+        'Bank Transfer': 'Bank - KCB - WC',
+        'Cash': 'Cash - WC',
+        'Cheque': 'Bank - KCB - WC'
     }
     
     def __init__(self, client: FrappeClient, company: str):
@@ -46,12 +53,13 @@ class PaymentEntryImporter:
         self.results = {
             'successful': 0,
             'failed': 0,
-            'skipped': 0,  # Added for duplicate detection
-            'errors': []
+            'skipped': 0,
+            'errors': [],
+            'duration_seconds': 0.0,
+            'rate_per_second': 0.0
         }
         
-        # Cache accounts and invoices
-        self._accounts_cache = None
+        # Cache invoices
         self._invoices_cache = {}
     
     def import_batch(
@@ -67,7 +75,7 @@ class PaymentEntryImporter:
             invoices_df: Invoice data for matching
             
         Returns:
-            Results dict with successful/failed counts
+            Results dict with successful/failed counts and timing
         """
         # Filter for payment transactions
         payments = transactions_df[
@@ -77,11 +85,11 @@ class PaymentEntryImporter:
         print(f"[PaymentEntryImporter {self.VERSION}]")
         print(f"Importing {len(payments)} payment entries...")
         
+        # Start timing
+        start_time = time.time()
+        
         # Build invoice lookup
         self._build_invoice_cache(invoices_df)
-        
-        # Load accounts
-        self._load_accounts()
         
         for idx, pay_row in payments.iterrows():
             try:
@@ -116,7 +124,7 @@ class PaymentEntryImporter:
                     continue
                 
                 # Build payment document
-                payment_doc = self._build_payment_doc(pay_row)
+                payment_doc = self._build_payment_doc(pay_row, invoice)
                 
                 # Insert and submit
                 created = self.client.insert(payment_doc)
@@ -136,8 +144,16 @@ class PaymentEntryImporter:
                 self.results['errors'].append({
                     'transaction_id': pay_row['id'],
                     'invoice_id': pay_row.get('etims_invoice_id'),
-                    'error': str(e)[:200]
+                    'error': str(e)[:500]  # Increased from 200 for better debugging
                 })
+        
+        # Calculate timing metrics
+        duration = time.time() - start_time
+        self.results['duration_seconds'] = round(duration, 2)
+        
+        # Calculate rate (successful imports per second)
+        if duration > 0 and self.results['successful'] > 0:
+            self.results['rate_per_second'] = round(self.results['successful'] / duration, 2)
         
         return self.results
     
@@ -146,25 +162,13 @@ class PaymentEntryImporter:
         for _, inv in invoices_df.iterrows():
             self._invoices_cache[inv['id']] = inv['invoice_number']
     
-    def _load_accounts(self):
-        """Load company accounts for payment linking."""
-        if self._accounts_cache:
-            return
-        
-        # Get default debtors account
-        company_doc = self.client.get_doc("Company", self.company)
-        
-        self._accounts_cache = {
-            'debtors': company_doc.get('default_receivable_account'),
-            'cash': company_doc.get('default_cash_account'),
-        }
-    
-    def _build_payment_doc(self, pay_row: pd.Series) -> Dict:
+    def _build_payment_doc(self, pay_row: pd.Series, invoice: Dict) -> Dict:
         """
-        Build ERPNext Payment Entry document.
+        Build ERPNext Payment Entry document with all mandatory fields.
         
         Args:
             pay_row: Payment transaction row
+            invoice: ERPNext invoice dict (from get_list)
             
         Returns:
             Payment Entry document dict
@@ -172,44 +176,38 @@ class PaymentEntryImporter:
         # Parse payment date
         payment_date = pd.to_datetime(pay_row['transaction_date']).strftime('%Y-%m-%d')
         
-        # Get payment mode
+        # Get payment method and corresponding account
         payment_method = pay_row.get('payment_method', 'Cash')
-        mode_of_payment = self.PAYMENT_MODE_MAP.get(payment_method, 'Cash')
         
-        # Find related invoice in ERPNext
-        invoice_id = int(pay_row['etims_invoice_id'])
-        invoice_number = self._invoices_cache.get(invoice_id)
+        # Get the account based on payment method (Kenyan best practice)
+        paid_to_account = self.PAYMENT_ACCOUNT_MAP.get(payment_method, 'Cash - WC')
         
-        if not invoice_number:
-            raise ValueError(f"Invoice ID {invoice_id} not found in source data")
+        # Get customer from invoice
+        invoice_full = self.client.get_doc("Sales Invoice", invoice['name'])
         
-        # Get invoice from ERPNext using custom field
-        invoices = self.client.get_list(
-            "Sales Invoice",
-            filters={
-                "docstatus": 1,
-                "original_invoice_number": invoice_number
-            },
-            fields=["name", "grand_total", "outstanding_amount", "customer"],
-            limit_page_length=5
-        )
-        
-        if not invoices:
-            raise ValueError(f"ERPNext invoice not found for {invoice_number}")
-        
-        invoice = invoices[0]  # Should only be one match
-        
-        # Build payment document
+        # Build payment document with ALL mandatory fields
         doc = {
             "doctype": "Payment Entry",
             "payment_type": "Receive",
             "party_type": "Customer",
-            "party": invoice['customer'],
+            "party": invoice_full['customer'],
             "posting_date": payment_date,
             "company": self.company,
-            "mode_of_payment": mode_of_payment,
+            "mode_of_payment": payment_method,
+            
+            # CRITICAL: Account fields (mandatory)
+            "paid_to": paid_to_account,
+            "paid_to_account_currency": "KES",
+            
+            # Amounts
             "paid_amount": float(pay_row['amount']),
             "received_amount": float(pay_row['amount']),
+            
+            # CRITICAL: Exchange rates (mandatory even for single currency)
+            "source_exchange_rate": 1.0,
+            "target_exchange_rate": 1.0,
+            
+            # Invoice reference
             "references": [
                 {
                     "reference_doctype": "Sales Invoice",
@@ -241,10 +239,17 @@ class PaymentEntryImporter:
         lines.append(f"Skipped:    {self.results['skipped']} (already paid)")
         lines.append(f"Failed:     {self.results['failed']}")
         
+        # Add performance metrics
+        lines.append(f"\nPerformance:")
+        duration = self.results['duration_seconds']
+        minutes = duration / 60
+        lines.append(f"  Duration: {duration} seconds ({minutes:.2f} minutes)")
+        lines.append(f"  Rate: {self.results['rate_per_second']} payments/second")
+        
         if self.results['errors']:
             lines.append(f"\nFirst 5 errors:")
             for err in self.results['errors'][:5]:
-                lines.append(f"  Transaction {err['transaction_id']}: {err['error']}")
+                lines.append(f"  Transaction {err['transaction_id']}: {err['error'][:100]}")
         
         lines.append("=" * 70)
         return "\n".join(lines)
