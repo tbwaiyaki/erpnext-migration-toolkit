@@ -2,10 +2,13 @@
 Expense Importer - Imports expense transactions as Journal Entries.
 
 Maps expense categories to Chart of Accounts and creates proper
-double-entry journal entries in ERPNext.
+double-entry journal entries in ERPNext using AccountRegistry.
+
+Version 1.1: AccountRegistry integration (eliminates hard-coding)
 
 Usage:
-    importer = ExpenseImporter(client, company="Wellness Centre")
+    registry = AccountRegistry(client, "Wellness Centre")
+    importer = ExpenseImporter(client, company="Wellness Centre", registry=registry)
     results = importer.import_expenses(transactions_df, account_mappings)
 """
 
@@ -22,51 +25,27 @@ class ExpenseImporter:
     
     Creates proper double-entry accounting:
     - Debit: Expense account (from category mapping)
-    - Credit: Payment account (Cash/Bank/Mobile Money)
+    - Credit: Payment account (via AccountRegistry)
     """
     
-    # Payment method to account mapping
-    PAYMENT_ACCOUNT_MAP = {
-        'M-Pesa': 'Mobile Money - {suffix}',
-        'Bank Transfer': 'KCB - {suffix}',
-        'Cash': 'Cash - {suffix}',
-    }
+    VERSION = "1.1-accountregistry"
     
-    def __init__(self, client: FrappeClient, company: str, company_suffix: str = "WC"):
+    def __init__(self, client: FrappeClient, company: str, registry):
         """
         Initialize expense importer.
         
         Args:
             client: Authenticated FrappleClient
             company: Company name (e.g., "Wellness Centre")
-            company_suffix: Company suffix for accounts (e.g., "WC")
+            registry: AccountRegistry instance for dynamic account lookup
         """
         self.client = client
         self.company = company
-        self.suffix = company_suffix
+        self.registry = registry
         self.successes = []
         self.failures = []
         self.skipped = []
         
-    def _get_payment_account(self, payment_method: str) -> str:
-        """
-        Get ERPNext account for payment method.
-        
-        Args:
-            payment_method: Payment method from transaction (M-Pesa/Bank Transfer/Cash)
-            
-        Returns:
-            ERPNext account name with company suffix
-            
-        Raises:
-            ValueError: If payment method not recognized
-        """
-        template = self.PAYMENT_ACCOUNT_MAP.get(payment_method)
-        if not template:
-            raise ValueError(f"Unknown payment method: {payment_method}")
-        
-        return template.format(suffix=self.suffix)
-    
     def build_journal_entry(
         self,
         transaction: dict,
@@ -77,7 +56,7 @@ class ExpenseImporter:
         
         Creates double-entry:
         - Debit expense account (expense increases)
-        - Credit payment account (cash/bank decreases)
+        - Credit payment account (cash/bank decreases via AccountRegistry)
         
         Args:
             transaction: Transaction record from CSV
@@ -86,9 +65,14 @@ class ExpenseImporter:
         Returns:
             ERPNext Journal Entry payload
         """
-        # Get payment account
+        # Get payment account via AccountRegistry
         payment_method = transaction['payment_method']
-        payment_account = self._get_payment_account(payment_method)
+        try:
+            payment_account = self.registry.get_payment_account(payment_method)
+        except ValueError as e:
+            # Fallback to Cash if payment method not found
+            print(f"⚠ Payment method '{payment_method}' not found, using Cash: {e}")
+            payment_account = self.registry.get_payment_account('Cash')
         
         # Build journal entry
         amount = float(transaction['amount'])
@@ -157,12 +141,34 @@ class ExpenseImporter:
         
         for i, (_, tx) in enumerate(expenses.iterrows(), 1):
             category_id = tx['category_id']
+            transaction_id = tx['id']
+            
+            # Check for duplicate (existing Journal Entry with this source_transaction_id)
+            try:
+                existing = self.client.get_list(
+                    "Journal Entry",
+                    filters={"source_transaction_id": str(transaction_id)},
+                    fields=["name"],
+                    limit_page_length=1
+                )
+                
+                if existing:
+                    self.skipped.append({
+                        'transaction_id': transaction_id,
+                        'date': tx['transaction_date'],
+                        'amount': tx['amount'],
+                        'reason': f"Already exists: {existing[0]['name']}"
+                    })
+                    continue
+            except Exception:
+                # Custom field might not exist yet - proceed with import
+                pass
             
             # Get expense account
             expense_account = category_to_account.get(category_id)
             if not expense_account:
                 self.failures.append({
-                    'transaction_id': tx['id'],
+                    'transaction_id': transaction_id,
                     'date': tx['transaction_date'],
                     'error': f"No account mapping for category_id {category_id}"
                 })
@@ -174,6 +180,9 @@ class ExpenseImporter:
                     tx.to_dict(),
                     expense_account
                 )
+                
+                # Add source_transaction_id for duplicate detection
+                payload['source_transaction_id'] = str(transaction_id)
                 
                 # Insert
                 doc = self.client.insert(payload)
@@ -188,7 +197,7 @@ class ExpenseImporter:
                     })
                 
                 self.successes.append({
-                    'transaction_id': tx['id'],
+                    'transaction_id': transaction_id,
                     'je_name': je_name,
                     'amount': tx['amount'],
                     'account': expense_account
@@ -197,12 +206,12 @@ class ExpenseImporter:
                 # Progress indicator every 50 records
                 if i % 50 == 0 or i == len(expenses):
                     print(f"  Progress: {i}/{len(expenses)} "
-                          f"(✓ {len(self.successes)}, ✗ {len(self.failures)})")
+                          f"(✓ {len(self.successes)}, ⊘ {len(self.skipped)}, ✗ {len(self.failures)})")
                 
             except Exception as e:
                 error_msg = str(e)[:200]
                 self.failures.append({
-                    'transaction_id': tx['id'],
+                    'transaction_id': transaction_id,
                     'date': tx['transaction_date'],
                     'amount': tx['amount'],
                     'error': error_msg
@@ -222,11 +231,13 @@ class ExpenseImporter:
         success_total = sum(s['amount'] for s in self.successes)
         
         return {
-            'total_attempted': len(self.successes) + len(self.failures),
+            'total_attempted': len(self.successes) + len(self.skipped) + len(self.failures),
             'succeeded': len(self.successes),
+            'skipped': len(self.skipped),
             'failed': len(self.failures),
             'success_amount': success_total,
             'successes': self.successes,
+            'skipped_list': self.skipped,
             'failures': self.failures
         }
     
@@ -239,8 +250,14 @@ class ExpenseImporter:
         print("=" * 70)
         print(f"Total attempted:  {summary['total_attempted']}")
         print(f"Succeeded:        {summary['succeeded']}")
+        print(f"Skipped:          {summary['skipped']} (duplicates)")
         print(f"Failed:           {summary['failed']}")
         print(f"Success amount:   KES {summary['success_amount']:,.2f}")
+        
+        if summary['skipped'] > 0:
+            print("\nFirst 5 skipped (duplicates):")
+            for skip in summary['skipped_list'][:5]:
+                print(f"  ID {skip['transaction_id']}: {skip['reason']}")
         
         if summary['failed'] > 0:
             print("\nFirst 5 failures:")

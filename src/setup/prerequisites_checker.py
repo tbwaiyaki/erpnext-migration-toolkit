@@ -357,7 +357,9 @@ class PrerequisitesChecker:
         self.check_default_accounts()
         
         # Check 3: Fiscal years (CRITICAL - manual fix with comprehensive date check)
-        self.check_fiscal_years()
+        fy_ok = self.check_fiscal_years()
+        if not fy_ok:
+            return self._build_status(ready=False)
         
         # Check 4: Payment modes (FIXABLE)
         pm_ok = self.check_payment_modes()

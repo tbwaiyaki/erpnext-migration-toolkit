@@ -2,12 +2,11 @@
 Payment Entry Importer - Import invoice payments into ERPNext.
 
 Handles batch import of payment entries linked to sales invoices,
-with proper mode of payment mapping and account reconciliation.
+with dynamic account discovery via AccountRegistry.
 
-Version 3.1: Complete rewrite with proper Kenyan account structure
-- M-Pesa → M-Pesa - WC account
-- Bank Transfer → Bank - KCB - WC account  
-- Cash → Cash - WC account
+Version 3.2: AccountRegistry integration (eliminates hard-coding)
+- Uses AccountRegistry for dynamic payment account discovery
+- Works with ANY country's account naming convention
 - All mandatory fields included (exchange rates, paid_to, currencies)
 - Timing metrics added
 """
@@ -23,33 +22,28 @@ class PaymentEntryImporter:
     Import payment entries for sales invoices.
     
     Links payments to invoices based on etims_invoice_id,
-    maps payment methods to proper Kenyan accounts.
+    uses AccountRegistry for dynamic account discovery.
     
     Usage:
-        importer = PaymentEntryImporter(client, "Wellness Centre")
+        registry = AccountRegistry(client, "Wellness Centre")
+        importer = PaymentEntryImporter(client, "Wellness Centre", registry)
         results = importer.import_batch(transactions_df, invoices_df)
     """
     
-    VERSION = "3.1-kenyan-accounts-fix"  # Version marker
+    VERSION = "3.2-accountregistry"  # Version marker
     
-    # Payment method to account mapping (Kenyan accounting best practice)
-    PAYMENT_ACCOUNT_MAP = {
-        'M-Pesa': 'M-Pesa - WC',
-        'Bank Transfer': 'Bank - KCB - WC',
-        'Cash': 'Cash - WC',
-        'Cheque': 'Bank - KCB - WC'
-    }
-    
-    def __init__(self, client: FrappeClient, company: str):
+    def __init__(self, client: FrappeClient, company: str, registry):
         """
         Initialize importer.
         
         Args:
             client: Authenticated FrappeClient
             company: Company name
+            registry: AccountRegistry instance for dynamic account lookup
         """
         self.client = client
         self.company = company
+        self.registry = registry
         self.results = {
             'successful': 0,
             'failed': 0,
@@ -176,11 +170,16 @@ class PaymentEntryImporter:
         # Parse payment date
         payment_date = pd.to_datetime(pay_row['transaction_date']).strftime('%Y-%m-%d')
         
-        # Get payment method and corresponding account
+        # Get payment method
         payment_method = pay_row.get('payment_method', 'Cash')
         
-        # Get the account based on payment method (Kenyan best practice)
-        paid_to_account = self.PAYMENT_ACCOUNT_MAP.get(payment_method, 'Cash - WC')
+        # Get account dynamically via AccountRegistry
+        try:
+            paid_to_account = self.registry.get_payment_account(payment_method)
+        except ValueError as e:
+            # Fallback to Cash if payment method not found
+            print(f"⚠ Payment method '{payment_method}' not found, using Cash: {e}")
+            paid_to_account = self.registry.get_payment_account('Cash')
         
         # Get customer from invoice
         invoice_full = self.client.get_doc("Sales Invoice", invoice['name'])
