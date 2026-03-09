@@ -4,8 +4,9 @@ Payment Entry Importer - Import invoice payments into ERPNext.
 Handles batch import of payment entries linked to sales invoices,
 with dynamic account discovery via AccountRegistry.
 
-Version 3.2: AccountRegistry integration (eliminates hard-coding)
-- Uses AccountRegistry for dynamic payment account discovery
+Version 3.3: Auto-create payment accounts via ensure_payment_account
+- Uses AccountRegistry.ensure_payment_account() to create missing accounts
+- Respects AccountCreationPolicy (AUTOMATIC/CONFIRM/MANUAL)
 - Works with ANY country's account naming convention
 - All mandatory fields included (exchange rates, paid_to, currencies)
 - Timing metrics added
@@ -30,7 +31,7 @@ class PaymentEntryImporter:
         results = importer.import_batch(transactions_df, invoices_df)
     """
     
-    VERSION = "3.2-accountregistry"  # Version marker
+    VERSION = "3.3-ensure-accounts"  # Version marker - uses ensure_payment_account
     
     def __init__(self, client: FrappeClient, company: str, registry):
         """
@@ -174,12 +175,22 @@ class PaymentEntryImporter:
         payment_method = pay_row.get('payment_method', 'Cash')
         
         # Get account dynamically via AccountRegistry
+        # Use ensure_payment_account to create if missing (respects AccountCreationPolicy)
         try:
-            paid_to_account = self.registry.get_payment_account(payment_method)
+            # Determine account type based on payment method
+            if payment_method in ['M-Pesa', 'Bank Transfer']:
+                account_type = "Bank"
+            else:
+                account_type = "Cash"
+            
+            paid_to_account = self.registry.ensure_payment_account(
+                payment_method,
+                account_type=account_type
+            )
         except ValueError as e:
-            # Fallback to Cash if payment method not found
-            print(f"⚠ Payment method '{payment_method}' not found, using Cash: {e}")
-            paid_to_account = self.registry.get_payment_account('Cash')
+            # Fallback to Cash if creation declined or failed
+            print(f"⚠ Could not get/create account for '{payment_method}', using Cash: {e}")
+            paid_to_account = self.registry.ensure_payment_account('Cash', account_type="Cash")
         
         # Get customer from invoice
         invoice_full = self.client.get_doc("Sales Invoice", invoice['name'])

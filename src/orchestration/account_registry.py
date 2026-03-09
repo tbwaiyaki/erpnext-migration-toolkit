@@ -4,8 +4,9 @@ Account Registry - Dynamic account discovery for ERPNext migrations.
 Provides centralized account lookup with smart matching and caching.
 Eliminates hard-coded account names from importers.
 
-Version: 1.0
+Version: 1.1 - Added AccountCreationPolicy support
 Created: March 7, 2026
+Updated: March 9, 2026
 """
 
 from typing import Dict, Optional, List
@@ -41,13 +42,14 @@ class AccountRegistry:
         - Account creation support
     """
     
-    VERSION = "1.0"
+    VERSION = "1.1"
     
     def __init__(
         self,
         client: FrappeClient,
         company: str,
-        company_suffix: Optional[str] = None
+        company_suffix: Optional[str] = None,
+        policy: Optional['AccountCreationPolicy'] = None
     ):
         """
         Initialize account registry.
@@ -57,10 +59,18 @@ class AccountRegistry:
             company: Company name (e.g., "Wellness Centre")
             company_suffix: Optional suffix for accounts (e.g., "WC")
                           If None, auto-detected from first account
+            policy: Optional AccountCreationPolicy for controlling account creation
+                   If None, defaults to AUTOMATIC mode
         """
         self.client = client
         self.company = company
         self.suffix = company_suffix or self._detect_suffix()
+        
+        # Import here to avoid circular dependency
+        if policy is None:
+            from core.account_creation_policy import AccountCreationPolicy
+            policy = AccountCreationPolicy(mode=AccountCreationPolicy.AUTOMATIC)
+        self.policy = policy
         
         # Caches
         self._payment_accounts_cache = {}
@@ -546,6 +556,20 @@ class AccountRegistry:
                 "Expense": f"Indirect Expenses - {self.suffix}"
             }
             parent_account = parent_map.get(account_type, f"{account_type} - {self.suffix}")
+        
+        # Check policy before creating
+        should_create = self.policy.should_create_account(
+            account_name=full_name,
+            account_type=account_type,
+            parent_account=parent_account
+        )
+        
+        if not should_create:
+            # User declined in CONFIRM mode
+            raise ValueError(
+                f"Account creation declined by user: {full_name}\n"
+                f"Cannot proceed without this account."
+            )
         
         # Create account
         account_doc = {
