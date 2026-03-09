@@ -7,6 +7,7 @@ Provides three levels of verification:
 3. Financial Validation - Accounting integrity checks
 
 Version 1.0: Initial implementation
+Version 1.1: Fixed duplicate detection - uses source_transaction_id when available
 
 Usage:
     dashboard = MigrationDashboard(client, data_dir, company="Wellness Centre")
@@ -42,7 +43,7 @@ class MigrationDashboard:
     - Account balance verification
     """
     
-    VERSION = "1.0"
+    VERSION = "1.1"
     
     def __init__(
         self,
@@ -227,28 +228,47 @@ class MigrationDashboard:
         erp_count = len(erp_je)
         erp_total = sum(float(j.get('total_debit', 0)) for j in erp_je)
         
-        # Try to check for duplicates by source_transaction_id
-        # If the field doesn't exist or isn't populated, this will be empty
+        # Check for duplicates by source_transaction_id (proper method)
         try:
-            # Get full documents to access custom field
+            # Get all source_transaction_ids
             source_ids = []
-            for je in erp_je[:100]:  # Sample first 100 for performance
+            for je in erp_je:
                 try:
                     doc = self.client.get_doc("Journal Entry", je['name'])
-                    if doc.get('source_transaction_id'):
-                        source_ids.append(doc['source_transaction_id'])
+                    source_id = doc.get('source_transaction_id')
+                    if source_id:
+                        source_ids.append(source_id)
                 except:
                     pass
             
-            duplicates = [sid for sid, count in Counter(source_ids).items() if count > 1]
+            # Check for actual duplicate source IDs
+            duplicates_by_source = [sid for sid, count in Counter(source_ids).items() if count > 1]
             has_source_ids = len(source_ids) > 0
+            
+            # If source IDs are present and cover most entries, they're the truth
+            if has_source_ids and len(source_ids) >= erp_count * 0.9:  # 90% coverage
+                # Source IDs exist - use them for duplicate detection
+                duplicate_count = len(duplicates_by_source)
+                duplicate_details = {}
+                status_msg = 'PASS' if csv_count == erp_count and not duplicates_by_source else 'FAIL'
+            else:
+                # Fall back to date+amount detection (for old imports without source IDs)
+                date_amount_pairs = [(j['posting_date'], j.get('total_debit', 0)) for j in erp_je]
+                date_amount_dupes = {k: v for k, v in Counter(date_amount_pairs).items() if v > 1}
+                duplicates_by_source = []
+                duplicate_count = sum(count - 1 for count in date_amount_dupes.values())
+                duplicate_details = date_amount_dupes
+                status_msg = 'PASS' if csv_count == erp_count and not date_amount_dupes else 'FAIL'
+                
         except Exception as e:
-            duplicates = []
+            # Error case - fall back to date+amount
+            date_amount_pairs = [(j['posting_date'], j.get('total_debit', 0)) for j in erp_je]
+            date_amount_dupes = {k: v for k, v in Counter(date_amount_pairs).items() if v > 1}
+            duplicates_by_source = []
+            duplicate_count = sum(count - 1 for count in date_amount_dupes.values())
+            duplicate_details = date_amount_dupes
             has_source_ids = False
-        
-        # Check for duplicates by date+amount (works for all entries)
-        date_amount_pairs = [(j['posting_date'], j.get('total_debit', 0)) for j in erp_je]
-        date_amount_dupes = {k: v for k, v in Counter(date_amount_pairs).items() if v > 1}
+            status_msg = 'FAIL'
         
         return {
             'document_type': 'Journal Entry',
@@ -259,12 +279,11 @@ class MigrationDashboard:
             'count_match': csv_count == erp_count,
             'amount_match': abs(csv_total - erp_total) < 10,  # Allow small rounding
             'amount_diff': erp_total - csv_total,
-            'duplicates_by_source_id': duplicates if has_source_ids else None,
-            'duplicates_by_date_amount': len(date_amount_dupes),
-            'total_duplicate_entries': sum(count - 1 for count in date_amount_dupes.values()),
-            'duplicate_details': date_amount_dupes,
+            'duplicates_by_source_id': duplicates_by_source if has_source_ids else None,
+            'duplicate_count': duplicate_count,
+            'duplicate_details': duplicate_details if duplicate_count > 0 else {},
             'has_source_transaction_id': has_source_ids,
-            'status': 'PASS' if (csv_count == erp_count and not duplicates and not date_amount_dupes) else 'FAIL'
+            'status': status_msg
         }
     
     def full_reconciliation(self) -> Dict:
@@ -304,12 +323,17 @@ class MigrationDashboard:
                 print(f"  ⚠ Duplicates:        {len(data['duplicates'])} found")
             if data.get('missing'):
                 print(f"  ⚠ Missing:           {len(data['missing'])} records")
-            if data.get('total_duplicate_entries'):
-                print(f"  ⚠ Duplicate Entries: {data['total_duplicate_entries']} (by date+amount)")
+            if data.get('duplicate_count', 0) > 0:
+                print(f"  ⚠ Duplicate Entries: {data['duplicate_count']}")
                 if data.get('duplicate_details'):
-                    print(f"     Showing first 5 duplicate patterns:")
-                    for (date, amount), count in list(data['duplicate_details'].items())[:5]:
-                        print(f"       {date}, KES {amount:,.0f}: {count} entries ({count-1} duplicates)")
+                    # Only show details if using date+amount (no source IDs)
+                    if not data.get('has_source_transaction_id'):
+                        print(f"     WARNING: No source_transaction_id - using date+amount detection")
+                        print(f"     Showing first 5 duplicate patterns:")
+                        for (date, amount), count in list(data['duplicate_details'].items())[:5]:
+                            print(f"       {date}, KES {amount:,.0f}: {count} entries ({count-1} duplicates)")
+                    else:
+                        print(f"     By source_transaction_id: {len(data.get('duplicates_by_source_id', []))} actual duplicates")
             
             if key == 'journal_entries':
                 has_source_id = data.get('has_source_transaction_id', False)
