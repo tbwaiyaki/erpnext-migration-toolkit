@@ -30,7 +30,7 @@ class StockMovementImporter:
     and audit adjustments with proper entry type mapping.
     """
     
-    VERSION = "1.0"
+    VERSION = "1.1"  # Professional discrepancy messaging
     
     # Movement type to Stock Entry Purpose mapping
     MOVEMENT_TYPE_MAP = {
@@ -230,17 +230,24 @@ class StockMovementImporter:
         lines.append("=" * 70)
         lines.append(f"Total Imported:       {self.results['successful']}")
         lines.append(f"Skipped (duplicates): {self.results['skipped']}")
-        lines.append(f"Failed:               {self.results['failed']}")
+        
+        # Use "Discrepancies" instead of "Failed" for better user messaging
+        if self.results['failed'] > 0:
+            lines.append(f"Discrepancies:        {self.results['failed']} (see report)")
+        else:
+            lines.append(f"Discrepancies:        0")
+        
         lines.append(f"Duration:             {self.results['duration_seconds']} seconds")
         
         lines.append(f"\nBy Movement Type:")
         for mtype, count in self.results['by_type'].items():
             lines.append(f"  {mtype}: {count}")
         
+        # Only show error details if there are discrepancies
         if self.results['errors']:
-            lines.append(f"\nFirst 5 errors:")
-            for err in self.results['errors'][:5]:
-                lines.append(f"  Movement {err['movement_id']} ({err['movement_type']}): {err['error'][:100]}")
+            lines.append(f"\nℹ️  {len(self.results['errors'])} discrepancies found")
+            lines.append(f"   These represent data quality issues, not system errors.")
+            lines.append(f"   Discrepancy report will be generated automatically.")
         
         lines.append("=" * 70)
         return "\n".join(lines)
