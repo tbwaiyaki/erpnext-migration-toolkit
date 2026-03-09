@@ -492,6 +492,82 @@ class AccountRegistry:
         except Exception as e:
             raise ValueError(f"Failed to create expense account '{category_name}': {e}")
     
+    def ensure_account(
+        self,
+        account_name: str,
+        account_type: str,
+        parent_account: Optional[str] = None,
+        is_group: int = 0
+    ) -> str:
+        """
+        Ensure account exists, create if missing (idempotent).
+        
+        Generic account creation for any account type (Equity, Bank, Asset, etc.)
+        
+        Args:
+            account_name: Account name (without suffix, e.g., "Capital Stock")
+            account_type: ERPNext account type (Equity, Bank, Asset, Liability, Income, Expense, Cash)
+            parent_account: Parent account (with suffix, e.g., "Equity - WC")
+                          If None, uses default parent for account type
+            is_group: 1 for group account, 0 for leaf (default: 0)
+            
+        Returns:
+            Full account name (with suffix, e.g., "Capital Stock - WC")
+        
+        Example:
+            # Create equity account
+            account = registry.ensure_account("Capital Stock", "Equity", parent_account="Equity - WC")
+            # Returns: "Capital Stock - WC"
+        """
+        # Full account name with suffix
+        full_name = f"{account_name} - {self.suffix}"
+        
+        # Check if exists
+        try:
+            existing = self.client.get_list(
+                "Account",
+                filters={"name": full_name, "company": self.company},
+                limit_page_length=1
+            )
+            if existing:
+                return full_name
+        except Exception:
+            pass
+        
+        # Determine default parent if not provided
+        if not parent_account:
+            parent_map = {
+                "Equity": f"Equity - {self.suffix}",
+                "Bank": f"Bank Accounts - {self.suffix}",
+                "Cash": f"Cash - {self.suffix}",
+                "Asset": f"Assets - {self.suffix}",
+                "Liability": f"Liabilities - {self.suffix}",
+                "Income": f"Income - {self.suffix}",
+                "Expense": f"Indirect Expenses - {self.suffix}"
+            }
+            parent_account = parent_map.get(account_type, f"{account_type} - {self.suffix}")
+        
+        # Create account
+        account_doc = {
+            "doctype": "Account",
+            "account_name": account_name,
+            "company": self.company,
+            "account_type": account_type,
+            "parent_account": parent_account,
+            "is_group": is_group
+        }
+        
+        try:
+            result = self.client.insert(account_doc)
+            created_name = result.get('name')
+            
+            # Clear cache to pick up new account
+            self._all_accounts_cache = None
+            
+            return created_name
+        except Exception as e:
+            raise ValueError(f"Failed to create account '{account_name}': {e}")
+    
     def __repr__(self) -> str:
         """String representation for debugging."""
         return (
