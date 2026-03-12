@@ -1,7 +1,7 @@
 # ERPNext Migration Validation Report
 
 **Company:** Wellness Centre  
-**Generated:** 2026-03-12 11:28  
+**Generated:** 2026-03-12 13:47  
 **Reporter Version:** 1.1  
 
 ---
